@@ -1,0 +1,46 @@
+// SECTION frequently :: START
+
+.frequently {
+	padding-top: 135px;
+	padding-bottom: 59px;
+
+	.c-grid {
+		max-width: 1520px;
+	}
+
+	&__title {
+		padding-bottom: 146px;
+		font-size: 80px;
+		text-align: center;
+		color: #000;
+	}
+
+	&__block {
+		width: 100%;
+		max-width: 50%;
+		padding-bottom: 80px;
+
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&-title {
+			padding-bottom: 16px;
+			@extend %fontOpenSans;
+			font-size: 34px;
+			color: #000;
+		}
+
+		&-desc {
+			width: 100%;
+			max-width: 569px;
+			@extend %fontOpenSans;
+			font-weight: 300;
+			font-size: 26px;
+			color: #000;
+		}
+	}
+}
+
+// SECTION frequently :: END

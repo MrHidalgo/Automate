@@ -14,7 +14,7 @@ const initWebFontLoader = () => {
     google: {
       families: [
         'Lora:400,700',
-				'Open+Sans:400,600,700,800'
+				'Open+Sans:300,400,600,700,800'
       ]
     }
   });
