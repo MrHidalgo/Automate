@@ -40,6 +40,16 @@ body {
     flex-direction: column;
     justify-content: center;
     flex: 1 0 auto;
+		padding-top: 157px;
+		@include adaptive(1535) {
+			padding-top: 130px;
+		}
+		@include adaptive(1439) {
+			padding-top: 100px;
+		}
+		@include adaptive(1199) {
+			padding-top: 80px;
+		}
 
     &--start {
       justify-content: flex-start;
