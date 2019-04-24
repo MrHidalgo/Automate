@@ -56,7 +56,7 @@ var initWebFontLoader = function initWebFontLoader() {
    */
   WebFont.load({
     google: {
-      families: ['Roboto:100,300,400,500,700,900']
+      families: ['Lora:400,700', 'Open+Sans:400,600,700,800']
     }
   });
 
@@ -71,6 +71,7 @@ var initWebFontLoader = function initWebFontLoader() {
   //   }
   // };
 };
+
 /**
  * @description Document DOM ready.
  */

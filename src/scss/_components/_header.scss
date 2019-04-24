@@ -1,5 +1,129 @@
 // HEADER :: START
 
-.header {}
+.header {
+	z-index: 1001;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #ffffff;
+	box-shadow: 0 2px 18px rgba(0, 0, 0, 0.1);
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 157px;
+		padding-left: 81px;
+		padding-right: 110px;
+		@include adaptive(1599) {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		@include adaptive(1535) {
+			min-height: 130px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@include adaptive(1439) {
+			min-height: 100px;
+		}
+		@include adaptive(1199) {
+			min-height: 80px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+
+		&-left,
+		&-right {
+			width: 100%;
+			max-width: 345px;
+			@include adaptive(1439) {
+				max-width: 294px;
+			}
+			@include adaptive(1199) {
+				max-width: 200px;
+			}
+		}
+
+		&-left {}
+
+		&-middle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex: 1;
+		}
+
+		&-right {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		&-link,
+		&-btn {
+			display: flex;
+			align-items: center;
+			@extend %fontOpenSans;
+			font-size: 30px;
+			@include adaptive(1599) {
+				font-size: 26px;
+			}
+			@include adaptive(1535) {
+				font-size: 22px;
+			}
+			@include adaptive(1199) {
+				font-size: 18px;
+			}
+		}
+
+		&-link {
+			color: #707070;
+			@include transition(color);
+			@include adaptive(1535) {
+				justify-content: center;
+				flex: 1;
+			}
+
+			&:hover {
+				color: #2196f3;
+				@include transition(color);
+			}
+		}
+
+		&-btn {
+			justify-content: center;
+			width: 100%;
+			max-width: 206px;
+			height: 69px;
+			background-color: #2196f3;
+			border: 2px solid #2196f3;
+			color: #fff;
+			@include transition(background-color, color);
+			@include adaptive(1535) {
+				max-width: 180px;
+				height: 55px;
+			}
+			@include adaptive(1199) {
+				max-width: 130px;
+				height: 50px;
+			}
+
+			&:hover {
+				background-color: transparent;
+				color: #2196f3;
+				@include transition(background-color, color);
+			}
+		}
+	}
+}
 
 // HEADER :: END

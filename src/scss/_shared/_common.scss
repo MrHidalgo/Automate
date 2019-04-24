@@ -1,3 +1,91 @@
 // COMMON :: START
 
+// logo
+.logo {
+	&--header {
+		position: relative;
+		top: -4px;
+		@include adaptive(1199) {
+			top: 0;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+
+		&:nth-of-type(1) {
+			@include adaptive(1199) {
+				width: calc(53px / 2);
+			}
+		}
+		&:nth-of-type(2) {
+			@include adaptive(1199) {
+				width: calc(241px / 2);
+			}
+		}
+	}
+}
+// logo :: end
+
+// nav
+.nav {
+	&--header {
+		position: relative;
+		left: -25px;
+		@include adaptive(1439) {
+			left: 0;
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+
+		&-item {
+			display: flex;
+		}
+
+		&-link {
+			display: flex;
+			align-items: center;
+			margin-left: 31px;
+			margin-right: 31px;
+			@extend %fontOpenSans;
+			font-size: 30px;
+			color: #707070;
+			@include transition(color);
+			@include adaptive(1599) {
+				font-size: 26px;
+			}
+			@include adaptive(1535) {
+				font-size: 22px;
+			}
+			@include adaptive(1439) {
+				margin-left: 14px;
+				margin-right: 15px;
+			}
+			@include adaptive(1199) {
+				font-size: 18px;
+			}
+
+			&.is-active {
+				color: #2196f3;
+			}
+
+			&:hover {
+				color: #2196f3;
+				@include transition(color);
+			}
+		}
+	}
+}
+// nav :: end
+
 // COMMON :: END

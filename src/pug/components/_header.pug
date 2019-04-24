@@ -1,7 +1,30 @@
 // HEADER :: START
 
 header#header.header
-  .c-grid
-    .header__wrapper
+
+	.header__wrapper
+		.header__wrapper-left
+
+			.logo.logo--header
+				a.logo__btn(href="/" class="" title="")
+					img.logo__img(src="img/img-logo-icon.png" srcset="img/img-logo-icon@2x.png 2x" alt="" title="")
+					img.logo__img(src="img/img-logo-name.png" srcset="img/img-logo-name@2x.png 2x" alt="" title="")
+
+		.header__wrapper-middle
+
+			.nav.nav--header
+				ul.nav__list
+					li.nav__list-item
+						a.nav__list-link.is-active(href="#" class="" title="")!= "App Integrations"
+					li.nav__list-item
+						a.nav__list-link(href="#" class="" title="")!= "Pricing"
+					li.nav__list-item
+						a.nav__list-link(href="#" class="" title="")!= "Blog"
+
+		.header__wrapper-right
+
+			.header__btn
+				a.header__btn-link(href="#" class="" title="")!= "Login"
+				a.header__btn-btn(href="#" class="" title="")!= "Sign Up"
 
 // HEADER :: END
