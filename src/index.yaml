@@ -1,0 +1,18 @@
+ProjectTitle: Automate
+
+PageList:
+- file: index.html
+  titleName: Home
+  ready: 1
+- file: single-app.html
+  titleName: Single app
+  ready: 1
+- file: integrations.html
+  titleName: Integrations
+  ready: 1
+- file: dual-app.html
+  titleName: Dual app
+  ready: 1
+- file: plans.html
+  titleName: Plans
+  ready: 1
