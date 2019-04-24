@@ -18,16 +18,17 @@
 	&__block {
 		width: 100%;
 		max-width: 50%;
-		padding-bottom: 80px;
+		padding-bottom: 44px;
+		@extend %fontOpenSans;
 
 		&-wrapper {
 			display: flex;
 			flex-wrap: wrap;
+			padding-bottom: 65px;
 		}
 
 		&-title {
 			padding-bottom: 16px;
-			@extend %fontOpenSans;
 			font-size: 34px;
 			color: #000;
 		}
@@ -35,10 +36,32 @@
 		&-desc {
 			width: 100%;
 			max-width: 569px;
-			@extend %fontOpenSans;
 			font-weight: 300;
 			font-size: 26px;
 			color: #000;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 195px;
+		height: 71px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 4px;
+		background: #fff;
+		box-shadow: 0 24px 16px rgba(0, 0, 0, 0.1);
+		@extend %fontOpenSans;
+		font-size: 26px;
+		color: #000;
+		@include transition(box-shadow);
+
+		&:hover {
+			box-shadow: 0 12px 8px rgba(0, 0, 0, 0.05);
+			@include transition(box-shadow);
 		}
 	}
 }
