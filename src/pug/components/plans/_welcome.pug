@@ -1,0 +1,16 @@
+// SECTION welcome :: START
+
+section#welcome.welcome
+	.welcome__wrapper
+
+		.welcome__sheet
+			+sheetSVG()
+
+		h2.welcome__title!= "Welcome to the family"
+
+		.welcome__img-wrapper
+			each val, idx in [1,2,3,4]
+				.welcome__img(class!= "welcome__img-" + idx)
+					img(src="img/img-welcome-" + idx + ".png" srcset="img/img-welcome-" + idx + "@2x.png 2x" alt="" title="")
+
+// SECTION welcome :: END

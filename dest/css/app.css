@@ -515,31 +515,66 @@ picture {
 /* line 165, src/scss/_shared/_common.scss */
 .social__list a .icon-font {
   color: #000000;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 /* line 169, src/scss/_shared/_common.scss */
+.social__list a .icon-font:hover {
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 174, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-facebook {
   font-size: 33px;
 }
 
-/* line 172, src/scss/_shared/_common.scss */
+/* line 177, src/scss/_shared/_common.scss */
+.social__list a .icon-font.icon-facebook:hover {
+  color: #3b5999;
+}
+
+/* line 181, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-instagram {
   font-size: 36px;
 }
 
-/* line 175, src/scss/_shared/_common.scss */
+/* line 184, src/scss/_shared/_common.scss */
+.social__list a .icon-font.icon-instagram:hover {
+  color: #e4405f;
+}
+
+/* line 188, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-twitter {
   font-size: 40px;
 }
 
-/* line 178, src/scss/_shared/_common.scss */
+/* line 191, src/scss/_shared/_common.scss */
+.social__list a .icon-font.icon-twitter:hover {
+  color: #55acee;
+}
+
+/* line 195, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-linkedin {
   font-size: 37px;
 }
 
-/* line 181, src/scss/_shared/_common.scss */
+/* line 198, src/scss/_shared/_common.scss */
+.social__list a .icon-font.icon-linkedin:hover {
+  color: #0077B5;
+}
+
+/* line 202, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-youtube {
   font-size: 46px;
+}
+
+/* line 205, src/scss/_shared/_common.scss */
+.social__list a .icon-font.icon-youtube:hover {
+  color: #cd201f;
 }
 
 /* line 1, src/scss/_shared/_iconFont.scss */
@@ -862,6 +897,63 @@ picture {
   padding-bottom: 39px;
   font-size: 26px;
   color: #292929;
+}
+
+/* line 3, src/scss/_components/plans/_welcome.scss */
+.welcome {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #4f81e2;
+}
+
+/* line 8, src/scss/_components/plans/_welcome.scss */
+.welcome__sheet {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4px;
+}
+
+/* line 14, src/scss/_components/plans/_welcome.scss */
+.welcome__title {
+  padding-bottom: 44px;
+  font-size: 80px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 21, src/scss/_components/plans/_welcome.scss */
+.welcome__img {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/* line 25, src/scss/_components/plans/_welcome.scss */
+.welcome__img-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 31, src/scss/_components/plans/_welcome.scss */
+.welcome__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

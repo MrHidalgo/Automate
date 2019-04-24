@@ -164,22 +164,47 @@
 
 			.icon-font {
 				color: #000000;
+				@include transition(color);
+
+				&:hover {
+					@include transition(color);
+				}
 
 				&.icon {
 					&-facebook {
 						font-size: 33px;
+
+						&:hover {
+							color: #3b5999;
+						}
 					}
 					&-instagram {
 						font-size: 36px;
+
+						&:hover {
+							color: #e4405f;
+						}
 					}
 					&-twitter {
 						font-size: 40px;
+
+						&:hover {
+							color: #55acee;
+						}
 					}
 					&-linkedin {
 						font-size: 37px;
+
+						&:hover {
+							color: #0077B5;
+						}
 					}
 					&-youtube {
 						font-size: 46px;
+
+						&:hover {
+							color: #cd201f;
+						}
 					}
 				}
 			}
