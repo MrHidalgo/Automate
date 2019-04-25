@@ -3,16 +3,16 @@ ProjectTitle: Automate
 PageList:
 - file: index.html
   titleName: Home
-  ready: 1
+  ready: 5
 - file: single-app.html
   titleName: Single app
-  ready: 1
+  ready: 5
 - file: integrations.html
   titleName: Integrations
-  ready: 1
+  ready: 5
 - file: dual-app.html
   titleName: Dual app
-  ready: 1
+  ready: 15
 - file: plans.html
   titleName: Plans
   ready: 45

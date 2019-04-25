@@ -6,6 +6,8 @@ pageClassName: p-dual-app
 extends shared/_layout
 
 block footer
+	include components/_footer-small
+
 block content
 	div.body(class!= pageClassName)
 

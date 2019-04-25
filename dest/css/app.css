@@ -833,27 +833,65 @@ picture {
 }
 
 /* line 7, src/scss/_components/_footer.scss */
+.footer--small {
+  padding: 0;
+}
+
+/* line 11, src/scss/_components/_footer.scss */
+.footer--small .footer__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 214px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding: 0;
+  border-bottom: none;
+}
+
+/* line 21, src/scss/_components/_footer.scss */
+.footer--small .footer__wrapper > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 29, src/scss/_components/_footer.scss */
 .footer .c-grid {
   max-width: 1720px;
 }
 
-/* line 12, src/scss/_components/_footer.scss */
+/* line 34, src/scss/_components/_footer.scss */
 .footer__wrapper-0, .footer__wrapper-1 {
   border-bottom: 1px solid rgba(112, 112, 112, 0.16);
 }
 
-/* line 17, src/scss/_components/_footer.scss */
+/* line 39, src/scss/_components/_footer.scss */
 .footer__wrapper-0 {
   padding-bottom: 48px;
 }
 
-/* line 21, src/scss/_components/_footer.scss */
+/* line 43, src/scss/_components/_footer.scss */
 .footer__wrapper-1 {
   padding-top: 78px;
   padding-bottom: 179px;
 }
 
-/* line 26, src/scss/_components/_footer.scss */
+/* line 48, src/scss/_components/_footer.scss */
 .footer__wrapper-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -870,7 +908,7 @@ picture {
   padding-top: 58px;
 }
 
-/* line 34, src/scss/_components/_footer.scss */
+/* line 56, src/scss/_components/_footer.scss */
 .footer__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -882,7 +920,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 39, src/scss/_components/_footer.scss */
+/* line 61, src/scss/_components/_footer.scss */
 .footer__col {
   width: 100%;
   max-width: 100%;
@@ -893,7 +931,7 @@ picture {
   padding-right: 15px;
 }
 
-/* line 51, src/scss/_components/_footer.scss */
+/* line 73, src/scss/_components/_footer.scss */
 .footer__title {
   padding-bottom: 39px;
   font-size: 26px;

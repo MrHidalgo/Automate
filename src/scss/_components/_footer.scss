@@ -4,6 +4,28 @@
 	padding-top: 123px;
 	padding-bottom: 90px;
 
+	&--small {
+		padding: 0;
+
+		.footer {
+			&__wrapper {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				min-height: 214px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				padding: 0;
+				border-bottom: none;
+
+				> div {
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+	}
+
 	.c-grid {
 		max-width: 1720px;
 	}
