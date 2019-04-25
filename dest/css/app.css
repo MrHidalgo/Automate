@@ -1038,22 +1038,49 @@ picture {
 
 /* line 3, src/scss/_components/plans/_pricing.scss */
 .pricing {
+  overflow: hidden;
   position: relative;
   padding-top: 176px;
   padding-bottom: 180px;
 }
 
 /* line 9, src/scss/_components/plans/_pricing.scss */
+.pricing__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+}
+
+/* line 18, src/scss/_components/plans/_pricing.scss */
+.pricing__bg img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 27, src/scss/_components/plans/_pricing.scss */
+.pricing__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 31, src/scss/_components/plans/_pricing.scss */
 .pricing__wrapper-0 {
   padding-bottom: 102px;
 }
 
-/* line 12, src/scss/_components/plans/_pricing.scss */
+/* line 34, src/scss/_components/plans/_pricing.scss */
 .pricing__wrapper-1 {
   padding-bottom: 145px;
 }
 
-/* line 18, src/scss/_components/plans/_pricing.scss */
+/* line 40, src/scss/_components/plans/_pricing.scss */
 .pricing__title {
   padding-bottom: 48px;
   font-size: 76px;
@@ -1061,7 +1088,7 @@ picture {
   color: #000;
 }
 
-/* line 25, src/scss/_components/plans/_pricing.scss */
+/* line 47, src/scss/_components/plans/_pricing.scss */
 .pricing__tabs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1087,7 +1114,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 38, src/scss/_components/plans/_pricing.scss */
+/* line 60, src/scss/_components/plans/_pricing.scss */
 .pricing__tabs:hover {
   background-color: rgba(0, 142, 255, 0.05);
   color: #4f81e2;
@@ -1096,7 +1123,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 44, src/scss/_components/plans/_pricing.scss */
+/* line 66, src/scss/_components/plans/_pricing.scss */
 .pricing__tabs.is-active {
   background-color: rgba(0, 142, 255, 0.1);
   color: #4f81e2;
@@ -1105,7 +1132,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 50, src/scss/_components/plans/_pricing.scss */
+/* line 72, src/scss/_components/plans/_pricing.scss */
 .pricing__tabs-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1121,14 +1148,14 @@ picture {
           justify-content: center;
 }
 
-/* line 57, src/scss/_components/plans/_pricing.scss */
+/* line 79, src/scss/_components/plans/_pricing.scss */
 .pricing__box {
   cursor: pointer;
   position: relative;
   width: 100%;
 }
 
-/* line 62, src/scss/_components/plans/_pricing.scss */
+/* line 84, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1144,7 +1171,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 70, src/scss/_components/plans/_pricing.scss */
+/* line 92, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div {
   z-index: 1;
   position: relative;
@@ -1158,7 +1185,7 @@ picture {
           box-shadow: 0 3px 44px rgba(0, 0, 0, 0.16);
 }
 
-/* line 80, src/scss/_components/plans/_pricing.scss */
+/* line 102, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:before {
   opacity: 0;
   content: '';
@@ -1178,12 +1205,12 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 94, src/scss/_components/plans/_pricing.scss */
+/* line 116, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover {
   z-index: 2;
 }
 
-/* line 97, src/scss/_components/plans/_pricing.scss */
+/* line 119, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover:before {
   opacity: 1;
   z-index: 3;
@@ -1192,12 +1219,12 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 103, src/scss/_components/plans/_pricing.scss */
+/* line 125, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box {
   z-index: 5;
 }
 
-/* line 106, src/scss/_components/plans/_pricing.scss */
+/* line 128, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-title, .pricing__box-wrapper > div:hover .pricing__box-price, .pricing__box-wrapper > div:hover .pricing__box-free {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1205,7 +1232,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 113, src/scss/_components/plans/_pricing.scss */
+/* line 135, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-btn {
   opacity: 0.99;
   border-color: #ffffff;
@@ -1219,7 +1246,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 121, src/scss/_components/plans/_pricing.scss */
+/* line 143, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-line {
   width: -webkit-calc(100% + 40px);
   width: calc(100% + 40px);
@@ -1230,7 +1257,7 @@ picture {
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 129, src/scss/_components/plans/_pricing.scss */
+/* line 151, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-detail span,
 .pricing__box-wrapper > div:hover .pricing__box-detail p {
   color: #ffffff;
@@ -1239,7 +1266,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 139, src/scss/_components/plans/_pricing.scss */
+/* line 161, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-desc li i:before, .pricing__box-wrapper > div:hover .pricing__box-desc li i:after {
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -1247,7 +1274,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 145, src/scss/_components/plans/_pricing.scss */
+/* line 167, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-desc li p {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1255,7 +1282,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 156, src/scss/_components/plans/_pricing.scss */
+/* line 178, src/scss/_components/plans/_pricing.scss */
 .pricing__box-title, .pricing__box-free {
   text-align: center;
   color: #000;
@@ -1264,13 +1291,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 163, src/scss/_components/plans/_pricing.scss */
+/* line 185, src/scss/_components/plans/_pricing.scss */
 .pricing__box-title {
   padding-bottom: 50px;
   font-size: 57px;
 }
 
-/* line 168, src/scss/_components/plans/_pricing.scss */
+/* line 190, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1287,7 +1314,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 175, src/scss/_components/plans/_pricing.scss */
+/* line 197, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price span {
   position: relative;
   top: 15px;
@@ -1295,27 +1322,27 @@ picture {
   font-size: 24px;
 }
 
-/* line 182, src/scss/_components/plans/_pricing.scss */
+/* line 204, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price h3 {
   font-size: 93px;
   line-height: 1.21505;
 }
 
-/* line 187, src/scss/_components/plans/_pricing.scss */
+/* line 209, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price p {
   position: relative;
   top: 55px;
   font-size: 24px;
 }
 
-/* line 194, src/scss/_components/plans/_pricing.scss */
+/* line 216, src/scss/_components/plans/_pricing.scss */
 .pricing__box-free {
   padding-bottom: 42px;
   text-transform: uppercase;
   font-size: 24px;
 }
 
-/* line 200, src/scss/_components/plans/_pricing.scss */
+/* line 222, src/scss/_components/plans/_pricing.scss */
 .pricing__box-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1345,7 +1372,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 217, src/scss/_components/plans/_pricing.scss */
+/* line 239, src/scss/_components/plans/_pricing.scss */
 .pricing__box-line {
   width: 100%;
   height: 1px;
@@ -1355,25 +1382,25 @@ picture {
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 223, src/scss/_components/plans/_pricing.scss */
+/* line 245, src/scss/_components/plans/_pricing.scss */
 .pricing__box-line-0 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* line 228, src/scss/_components/plans/_pricing.scss */
+/* line 250, src/scss/_components/plans/_pricing.scss */
 .pricing__box-line-1 {
   margin-top: 28px;
   margin-bottom: 63px;
 }
 
-/* line 234, src/scss/_components/plans/_pricing.scss */
+/* line 256, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail {
   padding-left: 50px;
   padding-right: 50px;
 }
 
-/* line 238, src/scss/_components/plans/_pricing.scss */
+/* line 260, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1386,12 +1413,12 @@ picture {
   padding-bottom: 14px;
 }
 
-/* line 243, src/scss/_components/plans/_pricing.scss */
+/* line 265, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 247, src/scss/_components/plans/_pricing.scss */
+/* line 269, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li span,
 .pricing__box-detail li p {
   white-space: nowrap;
@@ -1407,18 +1434,18 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 258, src/scss/_components/plans/_pricing.scss */
+/* line 280, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li p {
   text-align: right;
 }
 
-/* line 264, src/scss/_components/plans/_pricing.scss */
+/* line 286, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc {
   padding-left: 50px;
   padding-right: 50px;
 }
 
-/* line 268, src/scss/_components/plans/_pricing.scss */
+/* line 290, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1431,19 +1458,19 @@ picture {
   padding-bottom: 8px;
 }
 
-/* line 273, src/scss/_components/plans/_pricing.scss */
+/* line 295, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 277, src/scss/_components/plans/_pricing.scss */
+/* line 299, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i {
   position: relative;
   width: 16px;
   height: 16px;
 }
 
-/* line 282, src/scss/_components/plans/_pricing.scss */
+/* line 304, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:before, .pricing__box-desc li i:after {
   content: '';
   position: absolute;
@@ -1455,7 +1482,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 291, src/scss/_components/plans/_pricing.scss */
+/* line 313, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:before {
   top: 0;
   left: 50%;
@@ -1466,7 +1493,7 @@ picture {
   height: 16px;
 }
 
-/* line 299, src/scss/_components/plans/_pricing.scss */
+/* line 321, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:after {
   top: 50%;
   left: 0;
@@ -1477,7 +1504,7 @@ picture {
   height: 3px;
 }
 
-/* line 308, src/scss/_components/plans/_pricing.scss */
+/* line 330, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li p {
   padding-left: 39px;
   font-weight: 600;
@@ -1488,7 +1515,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 320, src/scss/_components/plans/_pricing.scss */
+/* line 342, src/scss/_components/plans/_pricing.scss */
 .pricing__question {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1505,18 +1532,18 @@ picture {
   font-size: 48px;
 }
 
-/* line 326, src/scss/_components/plans/_pricing.scss */
+/* line 348, src/scss/_components/plans/_pricing.scss */
 .pricing__question p {
   color: #f32194;
 }
 
-/* line 330, src/scss/_components/plans/_pricing.scss */
+/* line 352, src/scss/_components/plans/_pricing.scss */
 .pricing__question a {
   position: relative;
   color: #2196F3;
 }
 
-/* line 334, src/scss/_components/plans/_pricing.scss */
+/* line 356, src/scss/_components/plans/_pricing.scss */
 .pricing__question a:after {
   content: '';
   position: absolute;
@@ -1533,7 +1560,7 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 349, src/scss/_components/plans/_pricing.scss */
+/* line 371, src/scss/_components/plans/_pricing.scss */
 .pricing__question img {
   position: absolute;
   top: -6px;
