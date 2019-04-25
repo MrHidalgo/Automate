@@ -1,0 +1,119 @@
+// SECTION pricing :: START
+
+-
+	var pricingData = [
+		{
+			id: '0',
+			title: 'Free',
+			price: '0',
+			actions: '250',
+			bots: '5',
+			advanced: [
+				'Multi step Bots'
+			],
+		},
+		{
+			id: '1',
+			title: 'Startup',
+			price: '25',
+			actions: '3,000',
+			bots: '20',
+			advanced: [
+				'Multi step Bots',
+				'Premium Apps',
+			],
+		},
+		{
+			id: '2',
+			title: 'Growth',
+			price: '49',
+			actions: '3,000',
+			bots: '20',
+			advanced: [
+				'Multi step Bots',
+				'Premium Apps',
+				'Auto-Retry'
+			],
+		},
+		{
+			id: '3',
+			title: 'Business',
+			price: '99',
+			actions: '3,000',
+			bots: '20',
+			advanced: [
+				'Multi step Bots',
+				'Premium Apps',
+				'Auto-Retry',
+				'Excess Actions'
+			],
+		},
+		{
+			id: '4',
+			title: 'Enterprise',
+			price: '199',
+			actions: '3,000',
+			bots: '20',
+			advanced: [
+				'Multi step Bots',
+				'Premium Apps',
+				'Auto-Retry',
+				'Team Account'
+			],
+		},
+	];
+
+section#pricing.pricing
+	.c-grid-fluid
+
+		.pricing__wrapper.pricing__wrapper-0
+
+			h2.pricing__title!= "Choose a plan that's right for you"
+
+			.pricing__tabs-wrapper
+				a.pricing__tabs.pricing__tabs-0(href="#" class="" title="")!= "Monthly"
+				a.pricing__tabs.pricing__tabs-1.is-active(href="#" class="" title="")!= "Yearly"
+
+		.pricing__wrapper.pricing__wrapper-1
+			.pricing__box-wrapper
+				each val, idx in pricingData
+					div
+						.pricing__box(class!= "pricing__box-" + pricingData[idx].id)
+							p.pricing__box-title!= pricingData[idx].title
+
+							.pricing__box-price
+								span!= "$"
+								h3!= pricingData[idx].price
+								p!= "/month"
+
+							p.pricing__box-free!= "FREE FOREVER"
+
+							a.pricing__box-btn(href="#" class="" title="")!= "Start Free Trial"
+							.pricing__box-line.pricing__box-line-0
+
+							ul.pricing__box-detail
+								li
+									span!= "Actions / mo"
+									p!= pricingData[idx].actions
+								li
+									span!= "Bots"
+									p!= pricingData[idx].bots
+								li
+									span!= "Data Check"
+									p!= "5 min"
+
+							.pricing__box-line.pricing__box-line-1
+
+							ul.pricing__box-desc
+								each _val, _idx in pricingData[idx].advanced
+									li
+										i
+										p!= _val
+
+		.pricing__wrapper.pricing__wrapper-2
+			.pricing__question
+				p!= "Have any Qustions?&nbsp;"
+				a(href="#" class="" title="")!= "Get in touch"
+					img(src="img/img-question-corner.svg" alt="" title="")
+
+// SECTION pricing :: END

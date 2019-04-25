@@ -1,0 +1,357 @@
+// SECTION pricing :: START
+
+.pricing {
+	position: relative;
+	padding-top: 176px;
+	padding-bottom: 180px;
+
+	&__wrapper {
+		&-0 {
+			padding-bottom: 102px;
+		}
+		&-1 {
+			padding-bottom: 145px;
+		}
+		&-2 {}
+	}
+
+	&__title {
+		padding-bottom: 48px;
+		font-size: 76px;
+		text-align: center;
+		color: #000;
+	}
+
+	&__tabs {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 221px;
+		height: 86px;
+		border-radius: 43px;
+		@extend %fontOpenSans;
+		font-size: 37px;
+		color: #000;
+		@include transition(background-color, color);
+
+		&:hover {
+			background-color: rgba(#008eff, 0.05);
+			color: #4f81e2;
+			@include transition(background-color, color);
+		}
+
+		&.is-active {
+			background-color: rgba(#008eff, 0.1);
+			color: #4f81e2;
+			@include transition(background-color, color);
+		}
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	&__box {
+		cursor: pointer;
+		position: relative;
+		width: 100%;
+
+		&-wrapper {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 1740px;
+			margin-left: auto;
+			margin-right: auto;
+
+			> div {
+				z-index: 1;
+				position: relative;
+				width: 100%;
+				max-width: calc((100% - (18px * 4)) / 5);
+				min-height: 100%;
+				padding: 83px 11px 94px;
+				background-color: #fff;
+				box-shadow: 0 3px 44px rgba(0, 0, 0, 0.16);
+
+				&:before {
+					opacity: 0;
+					content: '';
+					z-index: 5;
+					position: absolute;
+					top: -20px;
+					left: -20px;
+					width: calc(100% + 40px);
+					height: calc(100% + 40px);
+					background-color: #79A0EB;
+					box-shadow: 0 3px 81px rgba(0, 0, 0, 0.31);
+					@include transition(opacity);
+				}
+
+				&:hover {
+					z-index: 2;
+
+					&:before {
+						opacity: 1;
+						z-index: 3;
+						@include transition(opacity);
+					}
+
+					.pricing__box {
+						z-index: 5;
+
+						&-title,
+						&-price,
+						&-free {
+							color: #ffffff;
+							@include transition(color);
+						}
+
+						&-btn {
+							opacity: 0.99;
+							border-color: #ffffff;
+							background-color: #fff;
+							box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
+							@include transition(border-color, background-color, box-shadow);
+						}
+
+						&-line {
+							width: calc(100% + 40px);
+							margin-left: -20px;
+							background-color: rgba(#fff, 0.59);
+							@include transition(width, background-color);
+						}
+
+						&-detail {
+							span,
+							p {
+								color: #ffffff;
+								@include transition(color);
+							}
+						}
+
+						&-desc {
+							li {
+								i {
+									&:before,
+									&:after {
+										background-color: #ffffff;
+										@include transition(background-color);
+									}
+								}
+								p {
+									color: #ffffff;
+									@include transition(color);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&-title,
+		&-free {
+			text-align: center;
+			color: #000;
+			@include transition(color);
+		}
+
+		&-title {
+			padding-bottom: 50px;
+			font-size: 57px;
+		}
+
+		&-price {
+			display: flex;
+			justify-content: center;
+			position: relative;
+			color: #000;
+			@include transition(color);
+
+			span {
+				position: relative;
+				top: 15px;
+				left: -5px;
+				font-size: 24px;
+			}
+
+			h3 {
+				font-size: 93px;
+				line-height: line-height-convert(113,93);
+			}
+
+			p {
+				position: relative;
+				top: 55px;
+				font-size: 24px;
+			}
+		}
+
+		&-free {
+			padding-bottom: 42px;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+
+		&-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			max-width: 193px;
+			height: 65px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: transparent;
+			border: 2px solid rgba(#2196f3, 0.99);
+			@extend %fontOpenSans;
+			font-size: 21px;
+			color: #2397f3;
+			@include transition(border-color, background-color, box-shadow);
+		}
+
+		&-line {
+			width: 100%;
+			height: 1px;
+			background-color: rgba(#707070, 0.13);
+			@include transition(width, background-color);
+
+			&-0 {
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
+
+			&-1 {
+				margin-top: 28px;
+				margin-bottom: 63px;
+			}
+		}
+
+		&-detail {
+			padding-left: 50px;
+			padding-right: 50px;
+
+			li {
+				display: flex;
+				align-items: center;
+				padding-bottom: 14px;
+
+				&:last-of-type {
+					padding-bottom: 0;
+				}
+
+				span,
+				p {
+					white-space: nowrap;
+					flex: 1;
+					@extend %fontOpenSans;
+					font-weight: 600;
+					font-size: 21px;
+					color: #000;
+					@include transition(color);
+				}
+
+				p {
+					text-align: right;
+				}
+			}
+		}
+
+		&-desc {
+			padding-left: 50px;
+			padding-right: 50px;
+
+			li {
+				display: flex;
+				align-items: center;
+				padding-bottom: 8px;
+
+				&:last-of-type {
+					padding-bottom: 0;
+				}
+
+				i {
+					position: relative;
+					width: 16px;
+					height: 16px;
+
+					&:before,
+					&:after {
+						content: '';
+						position: absolute;
+						border-radius: 2em;
+						background-color: #4f81e2;
+						@include transition(background-color);
+					}
+
+					&:before {
+						top: 0;
+						left: 50%;
+						transform: translateX(-50%);
+						width: 3px;
+						height: 16px;
+					}
+
+					&:after {
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+						width: 16px;
+						height: 3px;
+					}
+				}
+
+				p {
+					padding-left: 39px;
+					@extend %fontOpenSans;
+					font-weight: 600;
+					font-size: 21px;
+					color: #000;
+					@include transition(color);
+				}
+			}
+		}
+	}
+
+	&__question {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 48px;
+
+		p {
+			color: #f32194;
+		}
+
+		a {
+			position: relative;
+			color: #2196F3;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 90%;
+				left: 0;
+				right: 0;
+				width: 95%;
+				height: 2px;
+				margin-left: auto;
+				margin-right: auto;
+				background-color: #2196f3;
+				@include transition(width);
+			}
+		}
+
+		img {
+			position: absolute;
+			top: -6px;
+			right: -15px;
+		}
+	}
+}
+
+// SECTION pricing :: END

@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,600,700,800");
 /* line 6, src/scss/_utilities/_extend.scss */
-.nav__list-link, .copyright__text, .header__btn-link, .header__btn-btn, .footer__title, .fun__subtitle, .fun__btn, .frequently__block, .frequently__btn {
+.nav__list-link, .copyright__text, .header__btn-link, .header__btn-btn, .footer__title, .fun__subtitle, .fun__btn, .pricing__tabs, .pricing__box-btn, .pricing__box-detail li span,
+.pricing__box-detail li p, .pricing__box-desc li p, .frequently__block, .frequently__btn {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -919,7 +920,7 @@ picture {
 }
 
 /* line 18, src/scss/_components/common/_fun.scss */
-.fun__bg-circle {
+.fun__bg #img-fun-circle {
   position: absolute;
   bottom: 0;
   left: 153px;
@@ -1033,6 +1034,510 @@ picture {
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 3, src/scss/_components/plans/_pricing.scss */
+.pricing {
+  position: relative;
+  padding-top: 176px;
+  padding-bottom: 180px;
+}
+
+/* line 9, src/scss/_components/plans/_pricing.scss */
+.pricing__wrapper-0 {
+  padding-bottom: 102px;
+}
+
+/* line 12, src/scss/_components/plans/_pricing.scss */
+.pricing__wrapper-1 {
+  padding-bottom: 145px;
+}
+
+/* line 18, src/scss/_components/plans/_pricing.scss */
+.pricing__title {
+  padding-bottom: 48px;
+  font-size: 76px;
+  text-align: center;
+  color: #000;
+}
+
+/* line 25, src/scss/_components/plans/_pricing.scss */
+.pricing__tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 221px;
+  height: 86px;
+  -webkit-border-radius: 43px;
+          border-radius: 43px;
+  font-size: 37px;
+  color: #000;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 38, src/scss/_components/plans/_pricing.scss */
+.pricing__tabs:hover {
+  background-color: rgba(0, 142, 255, 0.05);
+  color: #4f81e2;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 44, src/scss/_components/plans/_pricing.scss */
+.pricing__tabs.is-active {
+  background-color: rgba(0, 142, 255, 0.1);
+  color: #4f81e2;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 50, src/scss/_components/plans/_pricing.scss */
+.pricing__tabs-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 57, src/scss/_components/plans/_pricing.scss */
+.pricing__box {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+
+/* line 62, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 1740px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 70, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  max-width: -webkit-calc((100% - (18px * 4)) / 5);
+  max-width: calc((100% - (18px * 4)) / 5);
+  min-height: 100%;
+  padding: 83px 11px 94px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 44px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 44px rgba(0, 0, 0, 0.16);
+}
+
+/* line 80, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:before {
+  opacity: 0;
+  content: '';
+  z-index: 5;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: -webkit-calc(100% + 40px);
+  width: calc(100% + 40px);
+  height: -webkit-calc(100% + 40px);
+  height: calc(100% + 40px);
+  background-color: #79A0EB;
+  -webkit-box-shadow: 0 3px 81px rgba(0, 0, 0, 0.31);
+          box-shadow: 0 3px 81px rgba(0, 0, 0, 0.31);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 94, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:hover {
+  z-index: 2;
+}
+
+/* line 97, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:hover:before {
+  opacity: 1;
+  z-index: 3;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 103, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:hover .pricing__box {
+  z-index: 5;
+}
+
+/* line 106, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:hover .pricing__box-title, .pricing__box-wrapper > div:hover .pricing__box-price, .pricing__box-wrapper > div:hover .pricing__box-free {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 113, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:hover .pricing__box-btn {
+  opacity: 0.99;
+  border-color: #ffffff;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
+          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 121, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:hover .pricing__box-line {
+  width: -webkit-calc(100% + 40px);
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  background-color: rgba(255, 255, 255, 0.59);
+  -webkit-transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 129, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:hover .pricing__box-detail span,
+.pricing__box-wrapper > div:hover .pricing__box-detail p {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 139, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:hover .pricing__box-desc li i:before, .pricing__box-wrapper > div:hover .pricing__box-desc li i:after {
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 145, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div:hover .pricing__box-desc li p {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 156, src/scss/_components/plans/_pricing.scss */
+.pricing__box-title, .pricing__box-free {
+  text-align: center;
+  color: #000;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 163, src/scss/_components/plans/_pricing.scss */
+.pricing__box-title {
+  padding-bottom: 50px;
+  font-size: 57px;
+}
+
+/* line 168, src/scss/_components/plans/_pricing.scss */
+.pricing__box-price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  color: #000;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 175, src/scss/_components/plans/_pricing.scss */
+.pricing__box-price span {
+  position: relative;
+  top: 15px;
+  left: -5px;
+  font-size: 24px;
+}
+
+/* line 182, src/scss/_components/plans/_pricing.scss */
+.pricing__box-price h3 {
+  font-size: 93px;
+  line-height: 1.21505;
+}
+
+/* line 187, src/scss/_components/plans/_pricing.scss */
+.pricing__box-price p {
+  position: relative;
+  top: 55px;
+  font-size: 24px;
+}
+
+/* line 194, src/scss/_components/plans/_pricing.scss */
+.pricing__box-free {
+  padding-bottom: 42px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+/* line 200, src/scss/_components/plans/_pricing.scss */
+.pricing__box-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 193px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  border: 2px solid rgba(33, 150, 243, 0.99);
+  font-size: 21px;
+  color: #2397f3;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 217, src/scss/_components/plans/_pricing.scss */
+.pricing__box-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(112, 112, 112, 0.13);
+  -webkit-transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 223, src/scss/_components/plans/_pricing.scss */
+.pricing__box-line-0 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 228, src/scss/_components/plans/_pricing.scss */
+.pricing__box-line-1 {
+  margin-top: 28px;
+  margin-bottom: 63px;
+}
+
+/* line 234, src/scss/_components/plans/_pricing.scss */
+.pricing__box-detail {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* line 238, src/scss/_components/plans/_pricing.scss */
+.pricing__box-detail li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 14px;
+}
+
+/* line 243, src/scss/_components/plans/_pricing.scss */
+.pricing__box-detail li:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 247, src/scss/_components/plans/_pricing.scss */
+.pricing__box-detail li span,
+.pricing__box-detail li p {
+  white-space: nowrap;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: 600;
+  font-size: 21px;
+  color: #000;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 258, src/scss/_components/plans/_pricing.scss */
+.pricing__box-detail li p {
+  text-align: right;
+}
+
+/* line 264, src/scss/_components/plans/_pricing.scss */
+.pricing__box-desc {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* line 268, src/scss/_components/plans/_pricing.scss */
+.pricing__box-desc li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 8px;
+}
+
+/* line 273, src/scss/_components/plans/_pricing.scss */
+.pricing__box-desc li:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 277, src/scss/_components/plans/_pricing.scss */
+.pricing__box-desc li i {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 282, src/scss/_components/plans/_pricing.scss */
+.pricing__box-desc li i:before, .pricing__box-desc li i:after {
+  content: '';
+  position: absolute;
+  -webkit-border-radius: 2em;
+          border-radius: 2em;
+  background-color: #4f81e2;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 291, src/scss/_components/plans/_pricing.scss */
+.pricing__box-desc li i:before {
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 3px;
+  height: 16px;
+}
+
+/* line 299, src/scss/_components/plans/_pricing.scss */
+.pricing__box-desc li i:after {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 3px;
+}
+
+/* line 308, src/scss/_components/plans/_pricing.scss */
+.pricing__box-desc li p {
+  padding-left: 39px;
+  font-weight: 600;
+  font-size: 21px;
+  color: #000;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 320, src/scss/_components/plans/_pricing.scss */
+.pricing__question {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 48px;
+}
+
+/* line 326, src/scss/_components/plans/_pricing.scss */
+.pricing__question p {
+  color: #f32194;
+}
+
+/* line 330, src/scss/_components/plans/_pricing.scss */
+.pricing__question a {
+  position: relative;
+  color: #2196F3;
+}
+
+/* line 334, src/scss/_components/plans/_pricing.scss */
+.pricing__question a:after {
+  content: '';
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  width: 95%;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2196f3;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 349, src/scss/_components/plans/_pricing.scss */
+.pricing__question img {
+  position: absolute;
+  top: -6px;
+  right: -15px;
 }
 
 /* line 3, src/scss/_components/plans/_welcome.scss */
