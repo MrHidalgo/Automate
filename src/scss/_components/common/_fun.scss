@@ -1,0 +1,108 @@
+// SECTION fun :: START
+
+.fun {
+	overflow: hidden;
+	position: relative;
+	padding-top: 160px;
+	padding-bottom: 153px;
+	background-color: #ffffff;
+
+	&__bg {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&-circle {
+			position: absolute;
+			bottom: 0;
+			left: 153px;
+		}
+
+		&-sheet {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			svg {
+				position: absolute;
+
+				&:nth-of-type(1) {
+					top: 87px;
+					left: 62px;
+				}
+				&:nth-of-type(2) {
+					top: 50%;
+					left: 25%;
+				}
+				&:nth-of-type(3) {
+					top: 50%;
+					right: 25%;
+				}
+				&:nth-of-type(4) {
+					top: 55%;
+					right: 122px;
+				}
+
+				#sheet-0 {
+					fill: rgba(#2196F3, 0.09);
+				}
+				#sheet-1 {
+					stroke: #99B7F1;
+				}
+			}
+		}
+	}
+
+	&__wrapper {
+		z-index: 2;
+		position: relative;
+	}
+
+	&__title,
+	&__subtitle {
+		text-align: center;
+		color: #000000;
+	}
+
+	&__title {
+		font-size: 99px;
+	}
+
+	&__subtitle {
+		padding-bottom: 61px;
+		@extend %fontOpenSans;
+		font-weight: 300;
+		font-size: 45px;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 567px;
+		height: 120px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: transparent;
+		border: 2px solid #4f81e2;
+		@extend %fontOpenSans;
+		font-size: 32px;
+		line-height: 48px;
+		color: #4f81e2;
+		@include transition(background-color, color);
+
+		&:hover {
+			background-color: #4f81e2;
+			color: #ffffff;
+			@include transition(background-color, color);
+		}
+	}
+}
+
+// SECTION fun :: END
