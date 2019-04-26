@@ -82,7 +82,7 @@ section#pricing.pricing
 			.pricing__box-wrapper
 				each val, idx in pricingData
 					div
-						.pricing__box(class!= "pricing__box-" + pricingData[idx].id)
+						a.pricing__box(href="#" class!= "pricing__box-" + pricingData[idx].id)
 							p.pricing__box-title!= pricingData[idx].title
 
 							.pricing__box-price
@@ -92,7 +92,7 @@ section#pricing.pricing
 
 							p.pricing__box-free!= "FREE FOREVER"
 
-							a.pricing__box-btn(href="#" class="" title="")!= "Start Free Trial"
+							.pricing__box-btn!= "Start Free Trial"
 							.pricing__box-line.pricing__box-line-0
 
 							ul.pricing__box-detail

@@ -146,7 +146,7 @@
 	&--footer {}
 
 	&__title {
-		margin-right: 81px;
+		margin-right: 91px;
 		font-size: 36px;
 		color: #000;
 	}
@@ -154,6 +154,8 @@
 	&__list {
 		display: flex;
 		align-items: center;
+		position: relative;
+		top: 4px;
 
 		&-item {
 			margin-right: 60px;

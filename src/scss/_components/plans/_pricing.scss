@@ -3,8 +3,8 @@
 .pricing {
 	overflow: hidden;
 	position: relative;
-	padding-top: 176px;
-	padding-bottom: 180px;
+	padding-top: 167px;
+	padding-bottom: 175px;
 
 	&__bg {
 		z-index: 0;
@@ -13,9 +13,11 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		padding-top: 70px;
+		padding-top: 90px;
 
 		img {
+			position: relative;
+			left: -7px;
 			display: block;
 			max-width: 100%;
 			height: auto;
@@ -29,16 +31,16 @@
 		position: relative;
 
 		&-0 {
-			padding-bottom: 102px;
+			padding-bottom: 122px;
 		}
 		&-1 {
-			padding-bottom: 145px;
+			padding-bottom: 176px;
 		}
 		&-2 {}
 	}
 
 	&__title {
-		padding-bottom: 48px;
+		padding-bottom: 41px;
 		font-size: 76px;
 		text-align: center;
 		color: #000;
@@ -91,11 +93,12 @@
 
 			> div {
 				z-index: 1;
+				cursor: pointer;
 				position: relative;
 				width: 100%;
 				max-width: calc((100% - (18px * 4)) / 5);
 				min-height: 100%;
-				padding: 83px 11px 94px;
+				padding: 77px 11px 133px;
 				background-color: #fff;
 				box-shadow: 0 3px 44px rgba(0, 0, 0, 0.16);
 
@@ -110,7 +113,7 @@
 					height: calc(100% + 40px);
 					background-color: #79A0EB;
 					box-shadow: 0 3px 81px rgba(0, 0, 0, 0.31);
-					@include transition(opacity);
+					@include transition(opacity 0.5s);
 				}
 
 				&:hover {
@@ -118,8 +121,8 @@
 
 					&:before {
 						opacity: 1;
-						z-index: 3;
-						@include transition(opacity);
+						z-index: 0;
+						@include transition(opacity 0.5s);
 					}
 
 					.pricing__box {
@@ -183,7 +186,7 @@
 		}
 
 		&-title {
-			padding-bottom: 50px;
+			padding-bottom: 45px;
 			font-size: 57px;
 		}
 
@@ -194,27 +197,34 @@
 			color: #000;
 			@include transition(color);
 
+			span,
+			p {
+				line-height: 1;
+			}
+
 			span {
 				position: relative;
-				top: 15px;
-				left: -5px;
+				top: 20px;
+				left: 3px;
 				font-size: 24px;
 			}
 
 			h3 {
+				position: relative;
+				left: 6px;
 				font-size: 93px;
 				line-height: line-height-convert(113,93);
 			}
 
 			p {
 				position: relative;
-				top: 55px;
+				top: 59px;
 				font-size: 24px;
 			}
 		}
 
 		&-free {
-			padding-bottom: 42px;
+			padding-bottom: 35px;
 			text-transform: uppercase;
 			font-size: 24px;
 		}
@@ -243,24 +253,24 @@
 			@include transition(width, background-color);
 
 			&-0 {
-				margin-top: 40px;
-				margin-bottom: 40px;
+				margin-top: 39px;
+				margin-bottom: 39px;
 			}
 
 			&-1 {
-				margin-top: 28px;
-				margin-bottom: 63px;
+				margin-top: 25px;
+				margin-bottom: 61px;
 			}
 		}
 
 		&-detail {
-			padding-left: 50px;
+			padding-left: 52px;
 			padding-right: 50px;
 
 			li {
 				display: flex;
 				align-items: center;
-				padding-bottom: 14px;
+				padding-bottom: 12px;
 
 				&:last-of-type {
 					padding-bottom: 0;
@@ -271,6 +281,7 @@
 					white-space: nowrap;
 					flex: 1;
 					@extend %fontOpenSans;
+					letter-spacing: -0.2px;
 					font-weight: 600;
 					font-size: 21px;
 					color: #000;
@@ -284,8 +295,8 @@
 		}
 
 		&-desc {
-			padding-left: 50px;
-			padding-right: 50px;
+			padding-left: 56px;
+			padding-right: 48px;
 
 			li {
 				display: flex;
@@ -298,8 +309,8 @@
 
 				i {
 					position: relative;
-					width: 16px;
-					height: 16px;
+					width: 18px;
+					height: 18px;
 
 					&:before,
 					&:after {
@@ -314,21 +325,22 @@
 						top: 0;
 						left: 50%;
 						transform: translateX(-50%);
-						width: 3px;
-						height: 16px;
+						width: 4px;
+						height: 18px;
 					}
 
 					&:after {
 						top: 50%;
 						left: 0;
 						transform: translateY(-50%);
-						width: 16px;
-						height: 3px;
+						width: 18px;
+						height: 4px;
 					}
 				}
 
 				p {
-					padding-left: 39px;
+					padding-left: 33px;
+					letter-spacing: -0.4px;
 					@extend %fontOpenSans;
 					font-weight: 600;
 					font-size: 21px;

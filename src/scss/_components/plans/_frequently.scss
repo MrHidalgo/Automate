@@ -1,15 +1,15 @@
 // SECTION frequently :: START
 
 .frequently {
-	padding-top: 135px;
+	padding-top: 127px;
 	padding-bottom: 59px;
 
 	.c-grid {
-		max-width: 1520px;
+		max-width: 1502px;
 	}
 
 	&__title {
-		padding-bottom: 146px;
+		padding-bottom: 137px;
 		font-size: 80px;
 		text-align: center;
 		color: #000;
@@ -18,13 +18,13 @@
 	&__block {
 		width: 100%;
 		max-width: 50%;
-		padding-bottom: 44px;
+		padding-bottom: 39px;
 		@extend %fontOpenSans;
 
 		&-wrapper {
 			display: flex;
 			flex-wrap: wrap;
-			padding-bottom: 65px;
+			padding-bottom: 66px;
 		}
 
 		&-title {
