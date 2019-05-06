@@ -25,7 +25,7 @@ body {
   line-height: 1.42857143;
   font-size: 16px;
   font-weight: normal;
-	font-family: 'Lora', serif;
+	@extend %fontOpenSans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,16 +40,7 @@ body {
     flex-direction: column;
     justify-content: center;
     flex: 1 0 auto;
-		padding-top: 157px;
-		@include adaptive(1535) {
-			padding-top: 130px;
-		}
-		@include adaptive(1439) {
-			padding-top: 100px;
-		}
-		@include adaptive(1199) {
-			padding-top: 80px;
-		}
+		padding-top: 80px;
 
     &--start {
       justify-content: flex-start;
