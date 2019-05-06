@@ -1,9 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,600,700,800");
 /* line 6, src/scss/_utilities/_extend.scss */
-body, .copyright__text, .c-btn, .footer__title, .fun__subtitle, .fun__btn, .pricing__tabs, .pricing__box-btn, .pricing__box-detail li span,
+body, .c-btn, .fun__subtitle, .fun__btn, .pricing__tabs, .pricing__box-btn, .pricing__box-detail li span,
 .pricing__box-detail li p, .pricing__box-desc li p, .frequently__block, .frequently__btn {
   font-family: 'Open Sans', sans-serif;
+}
+
+/* line 9, src/scss/_utilities/_extend.scss */
+.social__title {
+  font-family: 'Lora', sans-serif;
 }
 
 @font-face {
@@ -238,7 +243,7 @@ picture {
 
 /* line 20, src/scss/_shared/_grid.scss */
 .c-grid {
-  max-width: 1270px;
+  max-width: 1210px;
 }
 
 /* line 27, src/scss/_shared/_grid.scss */
@@ -249,45 +254,45 @@ picture {
 @media screen and (min-width: 576px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1270px;
+    max-width: 1210px;
   }
 }
 
 @media screen and (min-width: 992px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1270px;
+    max-width: 1210px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1270px;
+    max-width: 1210px;
   }
 }
 
 @media screen and (min-width: 768px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1270px;
+    max-width: 1210px;
   }
 }
 
 @media screen and (min-width: 1366px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1270px;
+    max-width: 1210px;
   }
 }
 
-/* line 133, src/scss/_shared/_common.scss */
+/* line 5, src/scss/_shared/_common.scss */
 .copyright__text {
-  font-size: 22px;
+  font-size: 14px;
   color: rgba(41, 41, 41, 0.7);
 }
 
-/* line 142, src/scss/_shared/_common.scss */
+/* line 13, src/scss/_shared/_common.scss */
 .social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -299,14 +304,14 @@ picture {
           align-items: center;
 }
 
-/* line 148, src/scss/_shared/_common.scss */
+/* line 19, src/scss/_shared/_common.scss */
 .social__title {
-  margin-right: 91px;
-  font-size: 36px;
+  margin-right: 60px;
+  font-size: 24px;
   color: #000;
 }
 
-/* line 154, src/scss/_shared/_common.scss */
+/* line 26, src/scss/_shared/_common.scss */
 .social__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -318,12 +323,17 @@ picture {
           align-items: center;
 }
 
-/* line 158, src/scss/_shared/_common.scss */
+/* line 30, src/scss/_shared/_common.scss */
 .social__list-item {
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
-/* line 162, src/scss/_shared/_common.scss */
+/* line 33, src/scss/_shared/_common.scss */
+.social__list-item:last-of-type {
+  margin-right: 0;
+}
+
+/* line 38, src/scss/_shared/_common.scss */
 .social__list a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -331,7 +341,7 @@ picture {
   display: flex;
 }
 
-/* line 165, src/scss/_shared/_common.scss */
+/* line 41, src/scss/_shared/_common.scss */
 .social__list a .icon-font {
   color: #000000;
   -webkit-transition: color 0.3s ease-in-out;
@@ -339,59 +349,59 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 169, src/scss/_shared/_common.scss */
+/* line 45, src/scss/_shared/_common.scss */
 .social__list a .icon-font:hover {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 174, src/scss/_shared/_common.scss */
+/* line 57, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-facebook {
-  font-size: 33px;
+  font-size: 26px;
 }
 
-/* line 177, src/scss/_shared/_common.scss */
+/* line 60, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-facebook:hover {
   color: #3b5999;
 }
 
-/* line 181, src/scss/_shared/_common.scss */
+/* line 57, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-instagram {
-  font-size: 36px;
+  font-size: 28px;
 }
 
-/* line 184, src/scss/_shared/_common.scss */
+/* line 60, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-instagram:hover {
   color: #e4405f;
 }
 
-/* line 188, src/scss/_shared/_common.scss */
+/* line 57, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-twitter {
-  font-size: 40px;
+  font-size: 30px;
 }
 
-/* line 191, src/scss/_shared/_common.scss */
+/* line 60, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-twitter:hover {
   color: #55acee;
 }
 
-/* line 195, src/scss/_shared/_common.scss */
+/* line 57, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-linkedin {
-  font-size: 37px;
+  font-size: 26px;
 }
 
-/* line 198, src/scss/_shared/_common.scss */
+/* line 60, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-linkedin:hover {
   color: #0077B5;
 }
 
-/* line 202, src/scss/_shared/_common.scss */
+/* line 57, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-youtube {
-  font-size: 46px;
+  font-size: 36px;
 }
 
-/* line 205, src/scss/_shared/_common.scss */
+/* line 60, src/scss/_shared/_common.scss */
 .social__list a .icon-font.icon-youtube:hover {
   color: #cd201f;
 }
@@ -425,7 +435,7 @@ picture {
   height: auto;
 }
 
-/* line 13, src/scss/_macros/_nav.scss */
+/* line 7, src/scss/_macros/_nav.scss */
 .nav--footer .nav__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -442,21 +452,21 @@ picture {
           align-items: flex-start;
 }
 
-/* line 20, src/scss/_macros/_nav.scss */
+/* line 14, src/scss/_macros/_nav.scss */
 .nav--footer .nav__list-item:last-of-type .nav__list-link {
   margin-bottom: 0;
 }
 
-/* line 26, src/scss/_macros/_nav.scss */
+/* line 20, src/scss/_macros/_nav.scss */
 .nav--footer .nav__list-link {
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 25px;
-  font-size: 22px;
+  margin-bottom: 20px;
+  font-size: 14px;
   color: rgba(41, 41, 41, 0.7);
 }
 
-/* line 36, src/scss/_macros/_nav.scss */
+/* line 30, src/scss/_macros/_nav.scss */
 .nav--footer-row .nav__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -473,17 +483,17 @@ picture {
           align-items: center;
 }
 
-/* line 41, src/scss/_macros/_nav.scss */
+/* line 35, src/scss/_macros/_nav.scss */
 .nav--footer-row .nav__list-item {
-  margin-right: 71px;
+  margin-right: 30px;
 }
 
-/* line 45, src/scss/_macros/_nav.scss */
+/* line 39, src/scss/_macros/_nav.scss */
 .nav--footer-row .nav__list-link {
   margin-bottom: 0;
 }
 
-/* line 52, src/scss/_macros/_nav.scss */
+/* line 46, src/scss/_macros/_nav.scss */
 .nav__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -495,7 +505,7 @@ picture {
           align-items: center;
 }
 
-/* line 56, src/scss/_macros/_nav.scss */
+/* line 50, src/scss/_macros/_nav.scss */
 .nav__list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -503,7 +513,7 @@ picture {
   display: flex;
 }
 
-/* line 60, src/scss/_macros/_nav.scss */
+/* line 54, src/scss/_macros/_nav.scss */
 .nav__list-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -522,17 +532,17 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 69, src/scss/_macros/_nav.scss */
+/* line 63, src/scss/_macros/_nav.scss */
 .nav__list-link:hover {
   color: #2196f3;
 }
 
-/* line 73, src/scss/_macros/_nav.scss */
+/* line 67, src/scss/_macros/_nav.scss */
 .nav__list-link.is-active {
   color: #2196f3;
 }
 
-/* line 77, src/scss/_macros/_nav.scss */
+/* line 71, src/scss/_macros/_nav.scss */
 .nav__list-link:hover, .nav__list-link.is-active {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
@@ -702,18 +712,12 @@ picture {
   margin-left: 15px;
 }
 
-/* line 3, src/scss/_components/_footer.scss */
-.footer {
-  padding-top: 121px;
-  padding-bottom: 90px;
-}
-
-/* line 7, src/scss/_components/_footer.scss */
+/* line 5, src/scss/_components/_footer.scss */
 .footer--small {
   padding: 0;
 }
 
-/* line 11, src/scss/_components/_footer.scss */
+/* line 9, src/scss/_components/_footer.scss */
 .footer--small .footer__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -727,14 +731,12 @@ picture {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 214px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding: 0;
+  min-height: 150px;
+  padding: 0 0 20px;
   border-bottom: none;
 }
 
-/* line 21, src/scss/_components/_footer.scss */
+/* line 17, src/scss/_components/_footer.scss */
 .footer--small .footer__wrapper > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -746,28 +748,36 @@ picture {
           align-items: center;
 }
 
-/* line 29, src/scss/_components/_footer.scss */
-.footer .c-grid {
-  max-width: 1720px;
-}
-
-/* line 34, src/scss/_components/_footer.scss */
+/* line 26, src/scss/_components/_footer.scss */
 .footer__wrapper-0, .footer__wrapper-1 {
   border-bottom: 1px solid rgba(112, 112, 112, 0.16);
 }
 
-/* line 39, src/scss/_components/_footer.scss */
+/* line 31, src/scss/_components/_footer.scss */
+.footer__wrapper-0, .footer__wrapper-2 {
+  height: 120px;
+}
+
+/* line 36, src/scss/_components/_footer.scss */
 .footer__wrapper-0 {
-  padding-bottom: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
 }
 
-/* line 43, src/scss/_components/_footer.scss */
+/* line 42, src/scss/_components/_footer.scss */
 .footer__wrapper-1 {
-  padding-top: 78px;
-  padding-bottom: 218px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
-/* line 48, src/scss/_components/_footer.scss */
+/* line 47, src/scss/_components/_footer.scss */
 .footer__wrapper-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -781,10 +791,10 @@ picture {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 58px;
+  padding-bottom: 20px;
 }
 
-/* line 56, src/scss/_components/_footer.scss */
+/* line 55, src/scss/_components/_footer.scss */
 .footer__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -796,7 +806,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 61, src/scss/_components/_footer.scss */
+/* line 60, src/scss/_components/_footer.scss */
 .footer__col {
   width: 100%;
   max-width: 100%;
@@ -807,10 +817,10 @@ picture {
   padding-right: 15px;
 }
 
-/* line 73, src/scss/_components/_footer.scss */
+/* line 72, src/scss/_components/_footer.scss */
 .footer__title {
-  padding-bottom: 39px;
-  font-size: 26px;
+  padding-bottom: 30px;
+  font-size: 20px;
   color: #292929;
 }
 
