@@ -3,8 +3,8 @@
 .fun {
 	overflow: hidden;
 	position: relative;
-	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-top: 125px;
+	padding-bottom: 125px;
 	background-color: #ffffff;
 	@include adaptive(767) {
 		padding-top: 100px;
@@ -57,6 +57,10 @@
 						top: 75px;
 						left: 50px;
 					}
+					@include adaptive(424) {
+						top: 15px;
+						left: 15px;
+					}
 				}
 				&:nth-of-type(2) {
 					top: 50.9%;
@@ -70,6 +74,9 @@
 					top: 44.8%;
 					right: 22.2%;
 					transform: rotate3D(0, 0, 1, -101deg) scale(0.8);
+					@include adaptive(424) {
+						display: none;
+					}
 				}
 				&:nth-of-type(4) {
 					top: 54.4%;
@@ -78,6 +85,10 @@
 					@include adaptive(1023) {
 						top: 70%;
 						right: 50px;
+					}
+					@include adaptive(424) {
+						top: 80%;
+						right: 0;
 					}
 				}
 
@@ -102,45 +113,14 @@
 		color: #000000;
 	}
 
-	&__title {
-		//font-size: 99px;
-	}
-
 	&__subtitle {
 		padding-bottom: 50px;
-		//position: relative;
-		//top: -10px;
-		//padding-bottom: 49px;
-		//@extend %fontOpenSans;
-		//font-weight: 300;
-		//font-size: 45px;
 	}
 
 	&__btn {
 		max-width: 250px;
 		margin-left: auto;
 		margin-right: auto;
-		//display: flex;
-		//align-items: center;
-		//justify-content: center;
-		//width: 100%;
-		//max-width: 567px;
-		//height: 120px;
-		//margin-left: auto;
-		//margin-right: auto;
-		//background-color: transparent;
-		//border: 2px solid #4f81e2;
-		//@extend %fontOpenSans;
-		//font-size: 32px;
-		//line-height: 48px;
-		//color: #4f81e2;
-		//@include transition(background-color, color);
-
-		&:hover {
-			//background-color: #4f81e2;
-			//color: #ffffff;
-			//@include transition(background-color, color);
-		}
 	}
 }
 

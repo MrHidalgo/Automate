@@ -1,6 +1,7 @@
 // TITLE :: START
 
 .c-title {
+	text-align: center;
 	font-size: 48px;
 	@extend %fontLora;
 	@include adaptive(1439) {

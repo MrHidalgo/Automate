@@ -1,44 +1,58 @@
 // SECTION frequently :: START
 
 .frequently {
-	padding-top: 127px;
-	padding-bottom: 59px;
-
-	.c-grid {
-		max-width: 1502px;
+	padding-top: 125px;
+	padding-bottom: 125px;
+	@include adaptive(767) {
+		padding-top: 75px;
+		padding-bottom: 75px;
 	}
 
 	&__title {
-		padding-bottom: 137px;
-		font-size: 80px;
-		text-align: center;
-		color: #000;
+		padding-bottom: 50px;
 	}
 
 	&__block {
 		width: 100%;
 		max-width: 50%;
-		padding-bottom: 39px;
+		padding-bottom: 45px;
 		@extend %fontOpenSans;
+		@include adaptive(767) {
+			max-width: 100%;
+		}
 
 		&-wrapper {
 			display: flex;
 			flex-wrap: wrap;
-			padding-bottom: 66px;
+			padding-bottom: 25px;
+			@include adaptive(767) {
+			flex-wrap: wrap;
+			}
+		}
+
+		&-title,
+		&-desc {
+			@include adaptive(767) {
+				text-align: center;
+			}
 		}
 
 		&-title {
-			padding-bottom: 16px;
-			font-size: 34px;
+			padding-bottom: 15px;
+			font-size: 22px;
 			color: #000;
 		}
 
 		&-desc {
 			width: 100%;
-			max-width: 569px;
+			max-width: 500px;
+			padding-right: 15px;
 			font-weight: 300;
-			font-size: 26px;
+			font-size: 18px;
 			color: #000;
+			@include adaptive(767) {
+				padding-right: 0;
+			}
 		}
 	}
 
@@ -47,20 +61,19 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		max-width: 195px;
-		height: 71px;
+		max-width: 150px;
+		min-height: 45px;
 		margin-left: auto;
 		margin-right: auto;
 		border-radius: 4px;
 		background: #fff;
-		box-shadow: 0 24px 16px rgba(0, 0, 0, 0.1);
-		@extend %fontOpenSans;
-		font-size: 26px;
+		box-shadow: 0 12px 8px rgba(0, 0, 0, 0.1);
 		color: #000;
 		@include transition(box-shadow);
 
 		&:hover {
-			box-shadow: 0 12px 8px rgba(0, 0, 0, 0.05);
+			box-shadow: 0 6px 4px rgba(0, 0, 0, 0.05);
+			color: #000;
 			@include transition(box-shadow);
 		}
 	}
