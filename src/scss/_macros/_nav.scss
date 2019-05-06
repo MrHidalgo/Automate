@@ -1,7 +1,22 @@
 // NAV :: START
 
 .nav {
-	&--header {}
+	&--header {
+		.nav {
+			&__list {
+				@include adaptive(1023) {
+					flex-direction: column;
+					margin-bottom: 30px;
+				}
+
+				&-link {
+					@include adaptive(1023) {
+						min-height: 45px;
+					}
+				}
+			}
+		}
+	}
 
 	&--footer {
 		.nav__list {
@@ -49,6 +64,7 @@
 
 		&-item {
 			display: flex;
+			align-items: center;
 		}
 
 		&-link {

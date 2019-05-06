@@ -10,22 +10,25 @@ header#header.header
 					a.logo__btn(href="/" class="" title="")
 						img.logo__img(src="img/img-logo.png" srcset="img/img-logo@2x.png 2x" alt="" title="")
 
-			//.header__mobile
-			.header__wrapper-middle
+				.header__hamburger
+					+hamburger()
 
-				.nav.nav--header
-					ul.nav__list
-						li.nav__list-item
-							a.nav__list-link.is-active(href="#" class="" title="")!= "App Integrations"
-						li.nav__list-item
-							a.nav__list-link(href="#" class="" title="")!= "Pricing"
-						li.nav__list-item
-							a.nav__list-link(href="#" class="" title="")!= "Blog"
+			.header__wrapper-mobile(mobile-block-js)
+				.header__wrapper-middle
 
-			.header__wrapper-right
+					.nav.nav--header
+						ul.nav__list
+							li.nav__list-item
+								a.nav__list-link.is-active(href="#" class="" title="")!= "App Integrations"
+							li.nav__list-item
+								a.nav__list-link(href="#" class="" title="")!= "Pricing"
+							li.nav__list-item
+								a.nav__list-link(href="#" class="" title="")!= "Blog"
 
-				.header__btn
-					a.c-btn.c-btn--border(href="#" class="" title="")!= "Login"
-					a.c-btn.c-btn--bg(href="#" class="" title="")!= "Sign Up"
+				.header__wrapper-right
+
+					.header__btn
+						a.c-btn.c-btn--border(href="#" class="" title="")!= "Login"
+						a.c-btn.c-btn--bg(href="#" class="" title="")!= "Sign Up"
 
 // HEADER :: END

@@ -15,25 +15,70 @@
 		justify-content: space-between;
 		min-height: 80px;
 
-
 		&-left,
 		&-right {
 			width: 100%;
 			max-width: 250px;
 		}
 
-		&-left {}
+		&-left {
+			@include adaptive(1023) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				max-width: 100%;
+			}
+		}
 
 		&-middle {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			flex: 1;
+			@include adaptive(1023) {
+				flex: 0;
+			}
 		}
 
 		&-right {
 			display: flex;
 			align-items: center;
+		}
+
+		&-mobile {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex: 1;
+			max-width: 100%;
+			@include adaptive(1023) {
+				z-index: 1001;
+				display: none;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				position: fixed;
+				top: 80px;
+				left: 0;
+				width: 100%;
+				height: calc(100% - 80px);
+				padding: 50px 15px;
+				background-color: rgba(#fff, 0.98);
+
+				&.is-open {
+					display: flex;
+					animation-fill-mode: both;
+					animation-duration: 0.5s;
+					animation-name: fadeIn;
+				}
+			}
+		}
+	}
+
+	&__hamburger {
+		display: none;
+		@include adaptive(1023) {
+			display: flex;
 		}
 	}
 
@@ -42,6 +87,10 @@
 		align-items: center;
 		justify-content: flex-end;
 		width: 100%;
+		@include adaptive(1023) {
+			flex-direction: column;
+			justify-content: center;
+		}
 
 		.c-btn--border {
 			border: none;
@@ -56,6 +105,10 @@
 
 		.c-btn--bg {
 			margin-left: 15px;
+			@include adaptive(1023) {
+				margin-top: 15px;
+				margin-left: 0;
+			}
 		}
 	}
 }
