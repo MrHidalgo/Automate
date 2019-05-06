@@ -4,8 +4,12 @@
 	overflow: hidden;
 	position: relative;
 	padding-top: 150px;
-	padding-bottom: 153px;
+	padding-bottom: 150px;
 	background-color: #ffffff;
+	@include adaptive(767) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -19,6 +23,18 @@
 			position: absolute;
 			bottom: 0;
 			left: 154px;
+			width: 150px;
+			height: 250px;
+			@include adaptive(1439) {
+				left: 120px;
+			}
+			@include adaptive(1023) {
+				left: 30px;
+			}
+			@include adaptive(767) {
+				left: 0;
+				opacity: 0.05;
+			}
 		}
 
 		&-sheet {
@@ -30,15 +46,25 @@
 
 			svg {
 				position: absolute;
+				@include adaptive(1023) {
+					opacity: 0.65;
+				}
 
 				&:nth-of-type(1) {
 					top: 110px;
 					left: 62px;
+					@include adaptive(1023) {
+						top: 75px;
+						left: 50px;
+					}
 				}
 				&:nth-of-type(2) {
 					top: 50.9%;
 					left: 21.5%;
 					transform: rotate3D(0, 0, 1, 69deg) scale(0.75);
+					@include adaptive(1023) {
+						left: 130px;
+					}
 				}
 				&:nth-of-type(3) {
 					top: 44.8%;
@@ -49,6 +75,10 @@
 					top: 54.4%;
 					right: 110px;
 					transform: rotate3D(0, 0, 1, 35deg) scale(0.55);
+					@include adaptive(1023) {
+						top: 70%;
+						right: 50px;
+					}
 				}
 
 				#sheet-0 {
@@ -73,39 +103,43 @@
 	}
 
 	&__title {
-		font-size: 99px;
+		//font-size: 99px;
 	}
 
 	&__subtitle {
-		position: relative;
-		top: -10px;
-		padding-bottom: 49px;
-		@extend %fontOpenSans;
-		font-weight: 300;
-		font-size: 45px;
+		padding-bottom: 50px;
+		//position: relative;
+		//top: -10px;
+		//padding-bottom: 49px;
+		//@extend %fontOpenSans;
+		//font-weight: 300;
+		//font-size: 45px;
 	}
 
 	&__btn {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		max-width: 567px;
-		height: 120px;
+		max-width: 250px;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: transparent;
-		border: 2px solid #4f81e2;
-		@extend %fontOpenSans;
-		font-size: 32px;
-		line-height: 48px;
-		color: #4f81e2;
-		@include transition(background-color, color);
+		//display: flex;
+		//align-items: center;
+		//justify-content: center;
+		//width: 100%;
+		//max-width: 567px;
+		//height: 120px;
+		//margin-left: auto;
+		//margin-right: auto;
+		//background-color: transparent;
+		//border: 2px solid #4f81e2;
+		//@extend %fontOpenSans;
+		//font-size: 32px;
+		//line-height: 48px;
+		//color: #4f81e2;
+		//@include transition(background-color, color);
 
 		&:hover {
-			background-color: #4f81e2;
-			color: #ffffff;
-			@include transition(background-color, color);
+			//background-color: #4f81e2;
+			//color: #ffffff;
+			//@include transition(background-color, color);
 		}
 	}
 }

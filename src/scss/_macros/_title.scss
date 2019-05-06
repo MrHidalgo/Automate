@@ -1,13 +1,17 @@
 // TITLE :: START
 
 .c-title {
-  &__text {
-    &-wrap {}
-  }
-
-  &__icon {
-    &-wrap {}
-  }
+	font-size: 48px;
+	@extend %fontLora;
+	@include adaptive(1439) {
+		font-size: 45px;
+	}
+	@include adaptive(1023) {
+		font-size: 40px;
+	}
+	@include adaptive(767) {
+		font-size: 35px;
+	}
 }
 
 // TITLE :: END

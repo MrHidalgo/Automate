@@ -1,9 +1,17 @@
 // SUBTITLE :: START
 
 .c-subtitle {
-  &__text {
-    &-wrap {}
-  }
+	font-size: 28px;
+	font-weight: 300;
+	@include adaptive(1439) {
+		font-size: 26px;
+	}
+	@include adaptive(1023) {
+		font-size: 24px;
+	}
+	@include adaptive(767) {
+		font-size: 22px;
+	}
 }
 
 // SUBTITLE :: END

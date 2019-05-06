@@ -99,6 +99,8 @@
 
 			&:hover {
 				color: #2196f3;
+				background-color: transparent;
+				border: none;
 				@include transition(color);
 			}
 		}
