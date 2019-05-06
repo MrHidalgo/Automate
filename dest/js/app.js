@@ -82,7 +82,7 @@ var initWebFontLoader = function initWebFontLoader() {
    */
   WebFont.load({
     google: {
-      families: ['Lora:400,700', 'Open+Sans:300,400,600,700,800']
+      families: ['Lora:400,700', 'Open+Sans:300,400,500,600,700,800']
     }
   });
 

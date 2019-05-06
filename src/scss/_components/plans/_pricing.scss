@@ -3,8 +3,12 @@
 .pricing {
 	overflow: hidden;
 	position: relative;
-	padding-top: 167px;
-	padding-bottom: 175px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	@include adaptive(767) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -16,8 +20,6 @@
 		padding-top: 90px;
 
 		img {
-			position: relative;
-			left: -7px;
 			display: block;
 			max-width: 100%;
 			height: auto;
@@ -31,19 +33,16 @@
 		position: relative;
 
 		&-0 {
-			padding-bottom: 122px;
+			padding-bottom: 75px;
 		}
 		&-1 {
-			padding-bottom: 176px;
+			padding-bottom: 75px;
 		}
 		&-2 {}
 	}
 
 	&__title {
-		padding-bottom: 41px;
-		font-size: 76px;
-		text-align: center;
-		color: #000;
+		padding-bottom: 50px;
 	}
 
 	&__tabs {
@@ -51,11 +50,13 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		max-width: 221px;
-		height: 86px;
-		border-radius: 43px;
+		max-width: 150px;
+		height: 55px;
+		margin-left: 10px;
+		margin-right: 10px;
+		border-radius: 2em;
 		@extend %fontOpenSans;
-		font-size: 37px;
+		font-size: 20px;
 		color: #000;
 		@include transition(background-color, color);
 
@@ -86,33 +87,40 @@
 		&-wrapper {
 			display: flex;
 			justify-content: space-between;
-			width: 100%;
-			max-width: 1740px;
-			margin-left: auto;
-			margin-right: auto;
+			@include adaptive(1023) {
+				flex-wrap: wrap;
+			}
 
 			> div {
 				z-index: 1;
 				cursor: pointer;
 				position: relative;
 				width: 100%;
-				max-width: calc((100% - (18px * 4)) / 5);
+				max-width: calc((100% - (15px * 4)) / 5);
 				min-height: 100%;
-				padding: 77px 11px 133px;
+				padding: 45px 5px 80px;
 				background-color: #fff;
-				box-shadow: 0 3px 44px rgba(0, 0, 0, 0.16);
+				box-shadow: 0 2px 22px rgba(0, 0, 0, 0.16);
+				@include adaptive(1023) {
+					max-width: calc((100% - 15px) / 2);
+					padding-bottom: 45px;
+					margin-bottom: 15px;
+				}
+				@include adaptive(575) {
+					max-width: 100%;
+				}
 
 				&:before {
 					opacity: 0;
 					content: '';
 					z-index: 5;
 					position: absolute;
-					top: -20px;
-					left: -20px;
-					width: calc(100% + 40px);
-					height: calc(100% + 40px);
+					top: -15px;
+					left: -15px;
+					width: calc(100% + 30px);
+					height: calc(100% + 30px);
 					background-color: #79A0EB;
-					box-shadow: 0 3px 81px rgba(0, 0, 0, 0.31);
+					box-shadow: 0 2px 40px rgba(0, 0, 0, 0.31);
 					@include transition(opacity 0.5s);
 				}
 
@@ -136,7 +144,6 @@
 						}
 
 						&-btn {
-							opacity: 0.99;
 							border-color: #ffffff;
 							background-color: #fff;
 							box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
@@ -144,8 +151,8 @@
 						}
 
 						&-line {
-							width: calc(100% + 40px);
-							margin-left: -20px;
+							width: calc(100% + 30px);
+							margin-left: -15px;
 							background-color: rgba(#fff, 0.59);
 							@include transition(width, background-color);
 						}
@@ -186,8 +193,9 @@
 		}
 
 		&-title {
-			padding-bottom: 45px;
-			font-size: 57px;
+			padding-bottom: 30px;
+			font-size: 33px;
+			@extend %fontLora;
 		}
 
 		&-price {
@@ -195,6 +203,7 @@
 			justify-content: center;
 			position: relative;
 			color: #000;
+			@extend %fontLora;
 			@include transition(color);
 
 			span,
@@ -204,29 +213,31 @@
 
 			span {
 				position: relative;
-				top: 20px;
+				top: 5px;
 				left: 3px;
-				font-size: 24px;
+				font-size: 22px;
 			}
 
 			h3 {
 				position: relative;
 				left: 6px;
-				font-size: 93px;
-				line-height: line-height-convert(113,93);
+				font-size: 55px;
+				line-height: 1;
 			}
 
 			p {
 				position: relative;
-				top: 59px;
-				font-size: 24px;
+				top: 22px;
+				padding-left: 5px;
+				font-size: 22px;
 			}
 		}
 
 		&-free {
-			padding-bottom: 35px;
+			padding-top: 10px;
+			padding-bottom: 30px;
 			text-transform: uppercase;
-			font-size: 24px;
+			font-size: 18px;
 		}
 
 		&-btn {
@@ -234,14 +245,14 @@
 			align-items: center;
 			justify-content: center;
 			width: 100%;
-			max-width: 193px;
-			height: 65px;
+			max-width: 80%;
+			height: 55px;
 			margin-left: auto;
 			margin-right: auto;
 			background-color: transparent;
-			border: 2px solid rgba(#2196f3, 0.99);
+			border: 1px solid rgba(#2196f3, 0.99);
 			@extend %fontOpenSans;
-			font-size: 21px;
+			font-size: 18px;
 			color: #2397f3;
 			@include transition(border-color, background-color, box-shadow);
 		}
@@ -249,28 +260,20 @@
 		&-line {
 			width: 100%;
 			height: 1px;
+			margin-top: 30px;
+			margin-bottom: 30px;
 			background-color: rgba(#707070, 0.13);
 			@include transition(width, background-color);
-
-			&-0 {
-				margin-top: 39px;
-				margin-bottom: 39px;
-			}
-
-			&-1 {
-				margin-top: 25px;
-				margin-bottom: 61px;
-			}
 		}
 
 		&-detail {
-			padding-left: 52px;
-			padding-right: 50px;
+			padding-left: 25px;
+			padding-right: 10px;
 
 			li {
 				display: flex;
 				align-items: center;
-				padding-bottom: 12px;
+				padding-bottom: 10px;
 
 				&:last-of-type {
 					padding-bottom: 0;
@@ -280,10 +283,8 @@
 				p {
 					white-space: nowrap;
 					flex: 1;
-					@extend %fontOpenSans;
 					letter-spacing: -0.2px;
-					font-weight: 600;
-					font-size: 21px;
+					font-weight: 500;
 					color: #000;
 					@include transition(color);
 				}
@@ -295,13 +296,13 @@
 		}
 
 		&-desc {
-			padding-left: 56px;
-			padding-right: 48px;
+			padding-left: 25px;
+			padding-right: 10px;
 
 			li {
 				display: flex;
 				align-items: center;
-				padding-bottom: 8px;
+				padding-bottom: 10px;
 
 				&:last-of-type {
 					padding-bottom: 0;
@@ -309,8 +310,8 @@
 
 				i {
 					position: relative;
-					width: 18px;
-					height: 18px;
+					width: 14px;
+					height: 14px;
 
 					&:before,
 					&:after {
@@ -325,25 +326,23 @@
 						top: 0;
 						left: 50%;
 						transform: translateX(-50%);
-						width: 4px;
-						height: 18px;
+						width: 3px;
+						height: 100%;
 					}
 
 					&:after {
 						top: 50%;
 						left: 0;
 						transform: translateY(-50%);
-						width: 18px;
-						height: 4px;
+						width: 100%;
+						height: 3px;
 					}
 				}
 
 				p {
-					padding-left: 33px;
+					padding-left: 15px;
 					letter-spacing: -0.4px;
-					@extend %fontOpenSans;
-					font-weight: 600;
-					font-size: 21px;
+					font-weight: 500;
 					color: #000;
 					@include transition(color);
 				}
@@ -355,7 +354,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 48px;
+
+		p,
+		a {
+			font-weight: 400;
+			@include adaptive(575) {
+				font-size: 18px;
+			}
+		}
 
 		p {
 			color: #f32194;
@@ -376,13 +382,12 @@
 				margin-left: auto;
 				margin-right: auto;
 				background-color: #2196f3;
-				@include transition(width);
 			}
 		}
 
 		img {
 			position: absolute;
-			top: -6px;
+			top: 0;
 			right: -15px;
 		}
 	}

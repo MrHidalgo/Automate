@@ -68,11 +68,11 @@ section#pricing.pricing
 	.pricing__bg
 		img(src="img/img-pricing-bg.svg" alt="" title="")
 
-	.c-grid-fluid
+	.c-grid
 
 		.pricing__wrapper.pricing__wrapper-0
 
-			h2.pricing__title!= "Choose a plan that's right for you"
+			h2.pricing__title.c-title!= "Choose a plan that's right for you"
 
 			.pricing__tabs-wrapper
 				a.pricing__tabs.pricing__tabs-0(href="#" class="" title="")!= "Monthly"
@@ -116,8 +116,8 @@ section#pricing.pricing
 
 		.pricing__wrapper.pricing__wrapper-2
 			.pricing__question
-				p!= "Have any Qustions?&nbsp;"
-				a(href="#" class="" title="")!= "Get in touch"
-					img(src="img/img-question-corner.svg" alt="" title="")
+				p.c-subtitle!= "Have any Qustions?&nbsp;"
+				a.c-subtitle(href="#" class="" title="")!= "Get in touch"
+					img(src="img/img-question-corner.svg" alt="" title="" width="18")
 
 // SECTION pricing :: END
