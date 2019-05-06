@@ -14,13 +14,23 @@
 	display: flex;
 	align-items: center;
 
-	&--footer {}
+	&--footer {
+		@include adaptive(424) {
+			flex-direction: column;
+			width: 100%;
+		}
+	}
 
 	&__title {
 		margin-right: 60px;
 		@extend %fontLora;
 		font-size: 24px;
 		color: #000;
+		@include adaptive(424) {
+			margin-right: 0;
+			margin-bottom: 20px;
+			text-align: center;
+		}
 	}
 
 	&__list {

@@ -13,10 +13,43 @@
 				min-height: 150px;
 				padding: 0 0 20px;
 				border-bottom: none;
+				@include adaptive(1023) {
+					flex-wrap: wrap;
+					padding-top: 20px;
+				}
 
 				> div {
 					display: flex;
 					align-items: center;
+					@include adaptive(1023) {
+						width: 100%;
+
+						&:first-of-type {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+
+							.nav__list {
+								padding-bottom: 20px;
+
+								&-item {
+									&:last-of-type {
+										margin-right: 0;
+									}
+								}
+							}
+
+							.social {
+								padding-bottom: 20px;
+							}
+						}
+
+						&:last-of-type {
+							display: flex;
+							justify-content: center;
+						}
+					}
 				}
 			}
 		}
@@ -37,11 +70,17 @@
 			display: flex;
 			align-items: center;
 			padding-top: 20px;
+			@include adaptive(424) {
+				padding-bottom: 20px;
+			}
 		}
 
 		&-1 {
 			padding-top: 40px;
 			padding-bottom: 80px;
+			@include adaptive(767) {
+				padding-bottom: 50px;
+			}
 		}
 
 		&-2 {
@@ -49,12 +88,19 @@
 			align-items: center;
 			justify-content: space-between;
 			padding-bottom: 20px;
+			@include adaptive(767) {
+				flex-direction: column;
+				padding-top: 20px;
+			}
 		}
 	}
 
 	&__row {
 		display: flex;
 		align-items: flex-start;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__col {
@@ -62,6 +108,13 @@
 		max-width: 100%;
 		flex: 1;
 		padding-right: 15px;
+		@include adaptive(767) {
+			flex: 50%;
+			padding-bottom: 30px;
+		}
+		@include adaptive(424) {
+			flex: 100%;
+		}
 
 		&-0 {}
 		&-1 {}
@@ -73,6 +126,9 @@
 		padding-bottom: 30px;
 		font-size: 20px;
 		color: #292929;
+		@include adaptive(424) {
+			text-align: center;
+		}
 	}
 }
 
