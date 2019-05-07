@@ -13,8 +13,6 @@
 	}
 
 	&__block {
-		width: 100%;
-		max-width: 50%;
 		padding-bottom: 45px;
 		@extend %fontOpenSans;
 		@include adaptive(767) {
@@ -22,8 +20,6 @@
 		}
 
 		&-wrapper {
-			display: flex;
-			flex-wrap: wrap;
 			padding-bottom: 25px;
 			@include adaptive(767) {
 			flex-wrap: wrap;

@@ -12,9 +12,9 @@ section#welcome.welcome
 
 					h2.welcome__title.c-title!= "Welcome to the family"
 
-					.welcome__img-wrapper
+					.d-flex.align-items-center.justify-content-center.flex-wrap.flex-md-nowrap
 						each val, idx in [1,2,3,4]
-							.welcome__img(class!= "welcome__img-" + idx)
+							.col-12.col-sm-6.col-md-3.pb-3.pb-sm-0
 								img(src="img/img-welcome-" + idx + ".png" srcset="img/img-welcome-" + idx + "@2x.png 2x" alt="" title="")
 
 // SECTION welcome :: END
