@@ -56,7 +56,9 @@
 
 				&-item {
 					margin-right: 30px;
-					@include adaptive(767) {
+					@include adaptive(991) {
+						padding-bottom: 15px;
+
 						&:last-of-type {
 							margin-right: 0;
 						}

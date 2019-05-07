@@ -34,30 +34,34 @@
   <body>
     <!-- HEADER :: START-->
     <header class="header" id="header">
-      <div class="c-grid">
-        <div class="header__wrapper">
-          <div class="header__wrapper-left">
-            <div class="logo logo--header"><a class="logo__btn" href="/" title=""><img class="logo__img" src="img/img-logo.png" srcset="img/img-logo@2x.png 2x" alt="" title=""></a></div>
-            <div class="header__hamburger">
-              <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header__wrapper">
+              <div class="header__wrapper-left">
+                <div class="logo logo--header"><a class="logo__btn" href="/" title=""><img class="logo__img" src="img/img-logo.png" srcset="img/img-logo@2x.png 2x" alt="" title=""></a></div>
+                <div class="header__hamburger">
+                  <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="header__wrapper-mobile" mobile-block-js>
-            <div class="header__wrapper-middle">
-              <div class="nav nav--header">
-                <ul class="nav__list">
-                  <li class="nav__list-item"><a class="nav__list-link is-active" href="#" title="">App Integrations</a></li>
-                  <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Pricing</a></li>
-                  <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Blog</a></li>
-                </ul>
+              <div class="header__wrapper-mobile" mobile-block-js>
+                <div class="header__wrapper-middle">
+                  <div class="nav nav--header">
+                    <ul class="nav__list">
+                      <li class="nav__list-item"><a class="nav__list-link is-active" href="#" title="">App Integrations</a></li>
+                      <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Pricing</a></li>
+                      <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Blog</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__wrapper-right">
+                  <div class="header__btn"><a class="c-btn c-btn--border" href="#" title="">Login</a><a class="c-btn c-btn--bg" href="#" title="">Sign Up</a></div>
+                </div>
               </div>
-            </div>
-            <div class="header__wrapper-right">
-              <div class="header__btn"><a class="c-btn c-btn--border" href="#" title="">Login</a><a class="c-btn c-btn--bg" href="#" title="">Sign Up</a></div>
             </div>
           </div>
         </div>
@@ -65,308 +69,33 @@
     </header>
     <!-- HEADER :: END-->
     <div class="body body--start p-plans">
-      <!-- SECTION pricing :: START-->
-      <section class="pricing" id="pricing">
-        <div class="pricing__bg"><img src="img/img-pricing-bg.svg" alt="" title=""></div>
-        <div class="c-grid">
-          <div class="pricing__wrapper pricing__wrapper-0">
-            <h2 class="pricing__title c-title">Choose a plan that's right for you</h2>
-            <div class="pricing__tabs-wrapper"><a class="pricing__tabs pricing__tabs-0" href="#" title="">Monthly</a><a class="pricing__tabs pricing__tabs-1 is-active" href="#" title="">Yearly</a></div>
-          </div>
-          <div class="pricing__wrapper pricing__wrapper-1">
-            <div class="pricing__box-wrapper">
-              <div><a class="pricing__box pricing__box-0" href="#">
-                  <p class="pricing__box-title">Free</p>
-                  <div class="pricing__box-price"><span>$</span>
-                    <h3>0</h3>
-                    <p>/month</p>
-                  </div>
-                  <p class="pricing__box-free">FREE FOREVER</p>
-                  <div class="pricing__box-btn">Start Free Trial</div>
-                  <div class="pricing__box-line pricing__box-line-0"></div>
-                  <ul class="pricing__box-detail">
-                    <li><span>Actions / mo</span>
-                      <p>250</p>
-                    </li>
-                    <li><span>Bots</span>
-                      <p>5</p>
-                    </li>
-                    <li><span>Data Check</span>
-                      <p>5 min</p>
-                    </li>
-                  </ul>
-                  <div class="pricing__box-line pricing__box-line-1"></div>
-                  <ul class="pricing__box-desc">
-                    <li><i></i>
-                      <p>Multi step Bots</p>
-                    </li>
-                  </ul></a></div>
-              <div><a class="pricing__box pricing__box-1" href="#">
-                  <p class="pricing__box-title">Startup</p>
-                  <div class="pricing__box-price"><span>$</span>
-                    <h3>25</h3>
-                    <p>/month</p>
-                  </div>
-                  <p class="pricing__box-free">FREE FOREVER</p>
-                  <div class="pricing__box-btn">Start Free Trial</div>
-                  <div class="pricing__box-line pricing__box-line-0"></div>
-                  <ul class="pricing__box-detail">
-                    <li><span>Actions / mo</span>
-                      <p>3,000</p>
-                    </li>
-                    <li><span>Bots</span>
-                      <p>20</p>
-                    </li>
-                    <li><span>Data Check</span>
-                      <p>5 min</p>
-                    </li>
-                  </ul>
-                  <div class="pricing__box-line pricing__box-line-1"></div>
-                  <ul class="pricing__box-desc">
-                    <li><i></i>
-                      <p>Multi step Bots</p>
-                    </li>
-                    <li><i></i>
-                      <p>Premium Apps</p>
-                    </li>
-                  </ul></a></div>
-              <div><a class="pricing__box pricing__box-2" href="#">
-                  <p class="pricing__box-title">Growth</p>
-                  <div class="pricing__box-price"><span>$</span>
-                    <h3>49</h3>
-                    <p>/month</p>
-                  </div>
-                  <p class="pricing__box-free">FREE FOREVER</p>
-                  <div class="pricing__box-btn">Start Free Trial</div>
-                  <div class="pricing__box-line pricing__box-line-0"></div>
-                  <ul class="pricing__box-detail">
-                    <li><span>Actions / mo</span>
-                      <p>3,000</p>
-                    </li>
-                    <li><span>Bots</span>
-                      <p>20</p>
-                    </li>
-                    <li><span>Data Check</span>
-                      <p>5 min</p>
-                    </li>
-                  </ul>
-                  <div class="pricing__box-line pricing__box-line-1"></div>
-                  <ul class="pricing__box-desc">
-                    <li><i></i>
-                      <p>Multi step Bots</p>
-                    </li>
-                    <li><i></i>
-                      <p>Premium Apps</p>
-                    </li>
-                    <li><i></i>
-                      <p>Auto-Retry</p>
-                    </li>
-                  </ul></a></div>
-              <div><a class="pricing__box pricing__box-3" href="#">
-                  <p class="pricing__box-title">Business</p>
-                  <div class="pricing__box-price"><span>$</span>
-                    <h3>99</h3>
-                    <p>/month</p>
-                  </div>
-                  <p class="pricing__box-free">FREE FOREVER</p>
-                  <div class="pricing__box-btn">Start Free Trial</div>
-                  <div class="pricing__box-line pricing__box-line-0"></div>
-                  <ul class="pricing__box-detail">
-                    <li><span>Actions / mo</span>
-                      <p>3,000</p>
-                    </li>
-                    <li><span>Bots</span>
-                      <p>20</p>
-                    </li>
-                    <li><span>Data Check</span>
-                      <p>5 min</p>
-                    </li>
-                  </ul>
-                  <div class="pricing__box-line pricing__box-line-1"></div>
-                  <ul class="pricing__box-desc">
-                    <li><i></i>
-                      <p>Multi step Bots</p>
-                    </li>
-                    <li><i></i>
-                      <p>Premium Apps</p>
-                    </li>
-                    <li><i></i>
-                      <p>Auto-Retry</p>
-                    </li>
-                    <li><i></i>
-                      <p>Excess Actions</p>
-                    </li>
-                  </ul></a></div>
-              <div><a class="pricing__box pricing__box-4" href="#">
-                  <p class="pricing__box-title">Enterprise</p>
-                  <div class="pricing__box-price"><span>$</span>
-                    <h3>199</h3>
-                    <p>/month</p>
-                  </div>
-                  <p class="pricing__box-free">FREE FOREVER</p>
-                  <div class="pricing__box-btn">Start Free Trial</div>
-                  <div class="pricing__box-line pricing__box-line-0"></div>
-                  <ul class="pricing__box-detail">
-                    <li><span>Actions / mo</span>
-                      <p>3,000</p>
-                    </li>
-                    <li><span>Bots</span>
-                      <p>20</p>
-                    </li>
-                    <li><span>Data Check</span>
-                      <p>5 min</p>
-                    </li>
-                  </ul>
-                  <div class="pricing__box-line pricing__box-line-1"></div>
-                  <ul class="pricing__box-desc">
-                    <li><i></i>
-                      <p>Multi step Bots</p>
-                    </li>
-                    <li><i></i>
-                      <p>Premium Apps</p>
-                    </li>
-                    <li><i></i>
-                      <p>Auto-Retry</p>
-                    </li>
-                    <li><i></i>
-                      <p>Team Account</p>
-                    </li>
-                  </ul></a></div>
-            </div>
-          </div>
-          <div class="pricing__wrapper pricing__wrapper-2">
-            <div class="pricing__question">
-              <p class="c-subtitle">Have any Qustions?&nbsp;</p><a class="c-subtitle" href="#" title="">Get in touch<img src="img/img-question-corner.svg" alt="" title="" width="18"></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION pricing :: END-->
-      <!-- SECTION welcome :: START-->
-      <section class="welcome" id="welcome">
-        <div class="welcome__wrapper">
-          <div class="welcome__sheet">
-            <svg id="img-sheet" xmlns="http://www.w3.org/2000/svg" width="126.122" height="107.879" viewBox="0 0 126.122 107.879">
-              <g transform="translate(-5733.685 -1494.76) rotate(-70)">
-                <path id="sheet-0" d="M49.477,0C76.8,0,98.954,25.678,98.954,25.678S76.8,51.356,49.477,51.356,0,25.678,0,25.678,22.152,0,49.477,0Z" transform="matrix(0.809, 0.588, -0.588, 0.809, 509.681, 5932.505)" fill="#fff"></path>
-                <path id="sheet-1" d="M81.694,76.822S49.25,62.093,29.208,43.93,0,0,0,0" transform="translate(481.381 5927.816)" fill="none" stroke="#99b7f1" stroke-linecap="round" stroke-width="2"></path>
-              </g>
-            </svg>
-          </div>
-          <h2 class="welcome__title c-title">Welcome to the family</h2>
-          <div class="welcome__img-wrapper">
-            <div class="welcome__img welcome__img-0"><img src="img/img-welcome-0.png" srcset="img/img-welcome-0@2x.png 2x" alt="" title=""></div>
-            <div class="welcome__img welcome__img-1"><img src="img/img-welcome-1.png" srcset="img/img-welcome-1@2x.png 2x" alt="" title=""></div>
-            <div class="welcome__img welcome__img-2"><img src="img/img-welcome-2.png" srcset="img/img-welcome-2@2x.png 2x" alt="" title=""></div>
-            <div class="welcome__img welcome__img-3"><img src="img/img-welcome-3.png" srcset="img/img-welcome-3@2x.png 2x" alt="" title=""></div>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION welcome :: END-->
-      <!-- SECTION frequently :: START-->
-      <section class="frequently" id="frequently">
-        <div class="c-grid">
-          <div class="frequently__wrapper">
-            <h2 class="frequently__title c-title">Frequently Asked Questions</h2>
-            <div class="frequently__block-wrapper">
-              <div class="frequently__block frequently__block-0">
-                <p class="frequently__block-title">What are Bots?</p>
-                <p class="frequently__block-desc">Bot is an automation. It can be a one to one app integration or a multi-app workflow. Know more about how to create a bot.</p>
-              </div>
-              <div class="frequently__block frequently__block-1">
-                <p class="frequently__block-title">What are Bots?</p>
-                <p class="frequently__block-desc">Bot is an automation. It can be a one to one app integration or a multi-app workflow. Know more about how to create a bot.</p>
-              </div>
-              <div class="frequently__block frequently__block-2">
-                <p class="frequently__block-title">What are Premium Apps?</p>
-                <p class="frequently__block-desc">Premium apps require a Paid plan. You can't use them in the Free plan. You can checkthe full list of free and premium apps here.</p>
-              </div>
-              <div class="frequently__block frequently__block-3">
-                <p class="frequently__block-title">What are Premium Apps?</p>
-                <p class="frequently__block-desc">Premium apps require a Paid plan. You can't use them in the Free plan. You can checkthe full list of free and premium apps here.</p>
-              </div>
-              <div class="frequently__block frequently__block-4">
-                <p class="frequently__block-title">What are Premium Apps?</p>
-                <p class="frequently__block-desc">Premium apps require a Paid plan. You can't use them in the Free plan. You can checkthe full list of free and premium apps here.</p>
-              </div>
-              <div class="frequently__block frequently__block-5">
-                <p class="frequently__block-title">What are Premium Apps?</p>
-                <p class="frequently__block-desc">Premium apps require a Paid plan. You can't use them in the Free plan. You can checkthe full list of free and premium apps here.</p>
-              </div>
-            </div><a class="frequently__btn" href="#" title="">Load more</a>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION frequently :: END-->
-      <!-- SECTION fun :: START-->
-      <section class="fun" id="fun">
-        <div class="fun__bg">
-          <svg id="img-fun-circle" xmlns="http://www.w3.org/2000/svg" width="205.793" height="409.354" viewBox="0 0 205.793 409.354">
-            <g transform="translate(-1683 -4473.906)">
-              <g transform="translate(1683 4473.906)">
-                <path id="spiral" d="M73.434,159.583A84.873,84.873,0,0,0,158.212,74.8,74.8,74.8,0,0,0,8.6,74.8a64.831,64.831,0,0,0,129.661,0,54.857,54.857,0,1,0-109.713,0,44.883,44.883,0,1,0,89.766,0,34.909,34.909,0,1,0-69.818,0,24.935,24.935,0,0,0,49.87,0,14.961,14.961,0,0,0-29.922,0v4.987h9.974V74.8a4.987,4.987,0,1,1,9.974,0,14.961,14.961,0,1,1-29.922,0,24.935,24.935,0,1,1,49.87,0,34.909,34.909,0,0,1-69.818,0,44.883,44.883,0,0,1,89.766,0,54.857,54.857,0,0,1-109.713,0,64.831,64.831,0,1,1,129.661,0,74.814,74.814,0,0,1-139.6,37.4L0,117.2a85.1,85.1,0,0,0,73.434,42.384Zm0,0" fill="#2196f3"></path>
-              </g>
-              <path d="M0,0,.5,245.409" transform="translate(1754.825 4637.846)" fill="#2196f3" stroke="#2196f3" stroke-width="6"></path>
-              <g transform="translate(1781.854 4632.869)">
-                <path id="spiral-2" d="M49.636,107.866a57.368,57.368,0,0,0,57.3-57.3,50.562,50.562,0,0,0-101.125,0,43.821,43.821,0,1,0,87.641,0,37.079,37.079,0,0,0-74.158,0,30.337,30.337,0,1,0,60.675,0,23.6,23.6,0,1,0-47.192,0,16.854,16.854,0,1,0,33.708,0,10.112,10.112,0,0,0-20.225,0v3.371h6.742V50.562a3.371,3.371,0,0,1,6.742,0,10.112,10.112,0,1,1-20.225,0,16.854,16.854,0,0,1,33.708,0,23.6,23.6,0,0,1-47.192,0,30.337,30.337,0,0,1,60.675,0,37.079,37.079,0,1,1-74.158,0,43.821,43.821,0,0,1,87.641,0A50.569,50.569,0,0,1,5.836,75.84L0,79.218a57.524,57.524,0,0,0,49.636,28.649Zm0,0" fill="#2196f3"></path>
-              </g>
-              <path d="M0,0V132.425" transform="translate(1835.396 4750.83)" fill="#2196f3" stroke="#2196f3" stroke-width="6"></path>
-            </g>
-          </svg>
-          <div class="fun__bg-sheet">
-            <svg id="img-sheet" xmlns="http://www.w3.org/2000/svg" width="126.122" height="107.879" viewBox="0 0 126.122 107.879">
-              <g transform="translate(-5733.685 -1494.76) rotate(-70)">
-                <path id="sheet-0" d="M49.477,0C76.8,0,98.954,25.678,98.954,25.678S76.8,51.356,49.477,51.356,0,25.678,0,25.678,22.152,0,49.477,0Z" transform="matrix(0.809, 0.588, -0.588, 0.809, 509.681, 5932.505)" fill="#fff"></path>
-                <path id="sheet-1" d="M81.694,76.822S49.25,62.093,29.208,43.93,0,0,0,0" transform="translate(481.381 5927.816)" fill="none" stroke="#99b7f1" stroke-linecap="round" stroke-width="2"></path>
-              </g>
-            </svg>
-            <svg id="img-sheet" xmlns="http://www.w3.org/2000/svg" width="126.122" height="107.879" viewBox="0 0 126.122 107.879">
-              <g transform="translate(-5733.685 -1494.76) rotate(-70)">
-                <path id="sheet-0" d="M49.477,0C76.8,0,98.954,25.678,98.954,25.678S76.8,51.356,49.477,51.356,0,25.678,0,25.678,22.152,0,49.477,0Z" transform="matrix(0.809, 0.588, -0.588, 0.809, 509.681, 5932.505)" fill="#fff"></path>
-                <path id="sheet-1" d="M81.694,76.822S49.25,62.093,29.208,43.93,0,0,0,0" transform="translate(481.381 5927.816)" fill="none" stroke="#99b7f1" stroke-linecap="round" stroke-width="2"></path>
-              </g>
-            </svg>
-            <svg id="img-sheet" xmlns="http://www.w3.org/2000/svg" width="126.122" height="107.879" viewBox="0 0 126.122 107.879">
-              <g transform="translate(-5733.685 -1494.76) rotate(-70)">
-                <path id="sheet-0" d="M49.477,0C76.8,0,98.954,25.678,98.954,25.678S76.8,51.356,49.477,51.356,0,25.678,0,25.678,22.152,0,49.477,0Z" transform="matrix(0.809, 0.588, -0.588, 0.809, 509.681, 5932.505)" fill="#fff"></path>
-                <path id="sheet-1" d="M81.694,76.822S49.25,62.093,29.208,43.93,0,0,0,0" transform="translate(481.381 5927.816)" fill="none" stroke="#99b7f1" stroke-linecap="round" stroke-width="2"></path>
-              </g>
-            </svg>
-            <svg id="img-sheet" xmlns="http://www.w3.org/2000/svg" width="126.122" height="107.879" viewBox="0 0 126.122 107.879">
-              <g transform="translate(-5733.685 -1494.76) rotate(-70)">
-                <path id="sheet-0" d="M49.477,0C76.8,0,98.954,25.678,98.954,25.678S76.8,51.356,49.477,51.356,0,25.678,0,25.678,22.152,0,49.477,0Z" transform="matrix(0.809, 0.588, -0.588, 0.809, 509.681, 5932.505)" fill="#fff"></path>
-                <path id="sheet-1" d="M81.694,76.822S49.25,62.093,29.208,43.93,0,0,0,0" transform="translate(481.381 5927.816)" fill="none" stroke="#99b7f1" stroke-linecap="round" stroke-width="2"></path>
-              </g>
-            </svg>
-          </div>
-        </div>
-        <div class="c-grid-fluid">
-          <div class="fun__wrapper">
-            <h2 class="fun__title c-title">Automate Work. Have Fun!</h2>
-            <p class="fun__subtitle c-subtitle">Say Goodbye to those busy days</p><a class="fun__btn c-btn c-btn--border" href="#" title="">TRY NOW FOR FREE</a>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION fun :: END-->
+      <!--include components/plans/_pricing-->
+      <!--include components/plans/_welcome-->
+      <!--include components/plans/_frequently-->
+      <!--include components/common/_fun-->
     </div>
     <!-- FOOTER :: START-->
     <footer class="footer" id="footer">
-      <div class="c-grid">
-        <div class="footer__wrapper footer__wrapper-0">
-          <div class="social social--footer">
-            <p class="social__title">Connect us on </p>
-            <ul class="social__list">
-              <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-facebook"></i></a></li>
-              <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-instagram"></i></a></li>
-              <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-twitter"></i></a></li>
-              <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-linkedin"></i></a></li>
-              <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-youtube"></i></a></li>
-            </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__wrapper footer__wrapper-0">
+              <div class="social social--footer">
+                <p class="social__title">Connect us on </p>
+                <ul class="social__list">
+                  <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-facebook"></i></a></li>
+                  <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-instagram"></i></a></li>
+                  <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-twitter"></i></a></li>
+                  <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-linkedin"></i></a></li>
+                  <li class="social__list-item"><a href="#" title=""><i class="icon-font icon-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="footer__wrapper footer__wrapper-1">
-          <div class="footer__row">
-            <div class="footer__col footer__col-0">
+          <div class="row flex-sm-wrap">
+            <div class="col-12 col-sm-6 col-md-3 mb-4 mb-sm-4">
               <p class="footer__title">Product</p>
               <div class="nav nav--footer">
                 <ul class="nav__list">
@@ -378,7 +107,7 @@
                 </ul>
               </div>
             </div>
-            <div class="footer__col footer__col-1">
+            <div class="col-12 col-sm-6 col-md-3 mb-4 mb-sm-4">
               <p class="footer__title">Popular Apps</p>
               <div class="nav nav--footer">
                 <ul class="nav__list">
@@ -390,7 +119,7 @@
                 </ul>
               </div>
             </div>
-            <div class="footer__col footer__col-2">
+            <div class="col-12 col-sm-6 col-md-3 mb-4 mb-sm-4">
               <p class="footer__title">Top Integrations</p>
               <div class="nav nav--footer">
                 <ul class="nav__list">
@@ -402,7 +131,7 @@
                 </ul>
               </div>
             </div>
-            <div class="footer__col footer__col-3">
+            <div class="col-12 col-sm-6 col-md-3 mb-4 mb-sm-4">
               <p class="footer__title">Top Use Cases</p>
               <div class="nav nav--footer">
                 <ul class="nav__list">
@@ -417,15 +146,21 @@
           </div>
         </div>
         <div class="footer__wrapper footer__wrapper-2">
-          <div class="nav nav--footer nav--footer-row">
-            <ul class="nav__list">
-              <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Status</a></li>
-              <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Privacy and terms</a></li>
-              <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="copyright">
-            <p class="copyright__text">© 2016-18 Automate.io All Rights Rreserved</p>
+          <div class="row flex-sm-wrap h-100 align-items-center">
+            <div class="col-12 col-md-6">
+              <div class="nav nav--footer nav--footer-row">
+                <ul class="nav__list">
+                  <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Status</a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Privacy and terms</a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#" title="">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-end">
+              <div class="copyright">
+                <p class="copyright__text">© 2016-18 Automate.io All Rights Rreserved</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
