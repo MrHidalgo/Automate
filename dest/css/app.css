@@ -6,7 +6,7 @@ body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
 }
 
 /* line 9, src/scss/_utilities/_extend.scss */
-.social__title, .c-title, .pricing__box-title, .pricing__box-price {
+.social__title, .c-title, .everything__pr p, .pricing__box-title, .pricing__box-price {
   font-family: 'Lora', sans-serif;
 }
 
@@ -1430,14 +1430,26 @@ picture {
 .main {
   overflow: hidden;
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   background-color: #ffffff;
 }
 
 /* line 10, src/scss/_components/home/_main.scss */
 .main__bg {
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   top: 0;
   left: 0;
   right: 0;
@@ -1446,35 +1458,137 @@ picture {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../img/img-main-bg.jpg");
-  -webkit-background-size: contain;
-          background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center right;
 }
 
-/* line 26, src/scss/_components/home/_main.scss */
+/* line 24, src/scss/_components/home/_main.scss */
+.main__bg-content {
+  width: 100%;
+  max-width: 60%;
+}
+
+/* line 28, src/scss/_components/home/_main.scss */
+.main__bg-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 36, src/scss/_components/home/_main.scss */
 .main__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 31, src/scss/_components/home/_main.scss */
+/* line 41, src/scss/_components/home/_main.scss */
 .main__title {
   padding-bottom: 30px;
   text-align: left;
 }
 
-/* line 36, src/scss/_components/home/_main.scss */
+/* line 46, src/scss/_components/home/_main.scss */
 .main__subtitle {
   padding-bottom: 30px;
   color: rgba(0, 0, 0, 0.7);
   font-size: 20px;
 }
 
-/* line 42, src/scss/_components/home/_main.scss */
+/* line 52, src/scss/_components/home/_main.scss */
 .main__btn {
   max-width: 250px;
+}
+
+/* line 3, src/scss/_components/home/_everything.scss */
+.everything {
+  overflow: hidden;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+/* line 9, src/scss/_components/home/_everything.scss */
+.everything__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 125px;
+}
+
+/* line 18, src/scss/_components/home/_everything.scss */
+.everything__bg img {
+  position: relative;
+  left: -50px;
+  height: 130px;
+}
+
+/* line 25, src/scss/_components/home/_everything.scss */
+.everything__title {
+  padding-bottom: 30px;
+}
+
+/* line 30, src/scss/_components/home/_everything.scss */
+.everything__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 39, src/scss/_components/home/_everything.scss */
+.everything__subtitle {
+  padding-bottom: 30px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 39, src/scss/_components/home/_everything.scss */
+  .everything__subtitle {
+    font-size: 30px;
+  }
+}
+
+/* line 49, src/scss/_components/home/_everything.scss */
+.everything__text {
+  font-size: 20px;
+}
+
+/* line 53, src/scss/_components/home/_everything.scss */
+.everything__pr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 56, src/scss/_components/home/_everything.scss */
+.everything__pr img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 62, src/scss/_components/home/_everything.scss */
+.everything__pr p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  font-size: 20px;
+}
+
+/* line 69, src/scss/_components/home/_everything.scss */
+.everything__pr p:nth-of-type(2) {
+  padding-bottom: 40px;
 }
 
 /* line 3, src/scss/_components/plans/_pricing.scss */
