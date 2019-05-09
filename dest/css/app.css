@@ -1426,6 +1426,57 @@ picture {
   margin-right: auto;
 }
 
+/* line 3, src/scss/_components/home/_main.scss */
+.main {
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+/* line 10, src/scss/_components/home/_main.scss */
+.main__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1366px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/img-main-bg.jpg");
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+/* line 26, src/scss/_components/home/_main.scss */
+.main__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 31, src/scss/_components/home/_main.scss */
+.main__title {
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+/* line 36, src/scss/_components/home/_main.scss */
+.main__subtitle {
+  padding-bottom: 30px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+}
+
+/* line 42, src/scss/_components/home/_main.scss */
+.main__btn {
+  max-width: 250px;
+}
+
 /* line 3, src/scss/_components/plans/_pricing.scss */
 .pricing {
   overflow: hidden;
