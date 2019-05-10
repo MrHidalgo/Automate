@@ -1633,11 +1633,10 @@ picture {
 
 /* line 26, src/scss/_components/home/_complex.scss */
 .complex__desc {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
 }
 
-/* line 31, src/scss/_components/home/_complex.scss */
+/* line 30, src/scss/_components/home/_complex.scss */
 .complex__pazzle {
   display: block;
   width: 250px;
@@ -1646,7 +1645,7 @@ picture {
   margin-left: auto;
 }
 
-/* line 39, src/scss/_components/home/_complex.scss */
+/* line 38, src/scss/_components/home/_complex.scss */
 .complex__pr {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1654,17 +1653,17 @@ picture {
   display: flex;
 }
 
-/* line 42, src/scss/_components/home/_complex.scss */
+/* line 41, src/scss/_components/home/_complex.scss */
 .complex__pr-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
-/* line 47, src/scss/_components/home/_complex.scss */
+/* line 46, src/scss/_components/home/_complex.scss */
 .complex__pr-left p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1756,35 +1755,20 @@ picture {
 .everyone .icon-quotes {
   padding-bottom: 15px;
   color: #ffffff;
-  font-size: 45px;
+  font-size: 35px;
 }
 
-@media screen and (max-width: 1023px) {
-  /* line 57, src/scss/_components/home/_everyone.scss */
-  .everyone .icon-quotes {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 57, src/scss/_components/home/_everyone.scss */
-  .everyone .icon-quotes {
-    font-size: 35px;
-  }
-}
-
-/* line 69, src/scss/_components/home/_everyone.scss */
+/* line 63, src/scss/_components/home/_everyone.scss */
 .everyone__title {
   padding-bottom: 30px;
   text-align: left;
   color: #ffffff;
 }
 
-/* line 75, src/scss/_components/home/_everyone.scss */
+/* line 69, src/scss/_components/home/_everyone.scss */
 .everyone__desc {
   color: #ffffff;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
 }
 
 /* line 3, src/scss/_components/plans/_pricing.scss */

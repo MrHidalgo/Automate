@@ -57,13 +57,7 @@
 	.icon-quotes {
 		padding-bottom: 15px;
 		color: #ffffff;
-		font-size: 45px;
-		@include adaptive(1023) {
-			font-size: 40px;
-		}
-		@include adaptive(767) {
-			font-size: 35px;
-		}
+		font-size: 35px;
 	}
 
 	&__title {
@@ -74,8 +68,7 @@
 
 	&__desc {
 		color: #ffffff;
-		font-size: 18px;
-		font-weight: 300;
+		font-size: 20px;
 	}
 }
 
