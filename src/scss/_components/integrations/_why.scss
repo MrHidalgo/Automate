@@ -1,0 +1,52 @@
+// SECTION why :: START
+
+.why {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background-color: #ffffff;
+
+	&__title {
+		padding-bottom: 50px;
+	}
+
+	&__box {
+		&-0 {
+			img {
+				max-width: calc(130px / 1.5);
+			}
+		}
+		&-1 {
+			img {
+				max-width: calc(118px / 1.5);
+			}
+		}
+		&-2 {
+			img {
+				max-width: calc(113px / 1.5);
+			}
+		}
+
+		&-icon {
+			height: 120px;
+
+			img {
+				display: block;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		&-title {
+			padding-bottom: 30px;
+		}
+
+		&-desc {
+			max-width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+// SECTION why :: END

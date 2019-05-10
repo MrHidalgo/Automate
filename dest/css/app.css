@@ -2075,6 +2075,61 @@ picture {
   height: calc(375px / 1.5);
 }
 
+/* line 3, src/scss/_components/integrations/_why.scss */
+.why {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #ffffff;
+}
+
+/* line 8, src/scss/_components/integrations/_why.scss */
+.why__title {
+  padding-bottom: 50px;
+}
+
+/* line 14, src/scss/_components/integrations/_why.scss */
+.why__box-0 img {
+  max-width: -webkit-calc(130px / 1.5);
+  max-width: calc(130px / 1.5);
+}
+
+/* line 19, src/scss/_components/integrations/_why.scss */
+.why__box-1 img {
+  max-width: -webkit-calc(118px / 1.5);
+  max-width: calc(118px / 1.5);
+}
+
+/* line 24, src/scss/_components/integrations/_why.scss */
+.why__box-2 img {
+  max-width: -webkit-calc(113px / 1.5);
+  max-width: calc(113px / 1.5);
+}
+
+/* line 29, src/scss/_components/integrations/_why.scss */
+.why__box-icon {
+  height: 120px;
+}
+
+/* line 32, src/scss/_components/integrations/_why.scss */
+.why__box-icon img {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 40, src/scss/_components/integrations/_why.scss */
+.why__box-title {
+  padding-bottom: 30px;
+}
+
+/* line 44, src/scss/_components/integrations/_why.scss */
+.why__box-desc {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* line 3, src/scss/_components/plans/_pricing.scss */
 .pricing {
   overflow: hidden;
