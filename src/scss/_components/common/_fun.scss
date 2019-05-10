@@ -11,6 +11,35 @@
 		padding-bottom: 100px;
 	}
 
+	&--dark {
+		background-color: #cedcf7;
+
+		.fun {
+			&__bg {
+				svg {
+					#sheet-0 {
+						fill: #fff;
+					}
+				}
+			}
+
+			&__title,
+			&__subtitle {
+				color: #4f81e2;
+			}
+
+			&__btn {
+				background-color: #2196f3;
+				color: #ffffff;
+
+				&:hover {
+					background-color: transparent;
+					color: #2196f3;
+				}
+			}
+		}
+	}
+
 	&__bg {
 		z-index: 0;
 		position: absolute;

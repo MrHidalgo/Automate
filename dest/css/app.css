@@ -1291,6 +1291,33 @@ picture {
 }
 
 /* line 14, src/scss/_components/common/_fun.scss */
+.fun--dark {
+  background-color: #cedcf7;
+}
+
+/* line 20, src/scss/_components/common/_fun.scss */
+.fun--dark .fun__bg svg #sheet-0 {
+  fill: #fff;
+}
+
+/* line 26, src/scss/_components/common/_fun.scss */
+.fun--dark .fun__title, .fun--dark .fun__subtitle {
+  color: #4f81e2;
+}
+
+/* line 31, src/scss/_components/common/_fun.scss */
+.fun--dark .fun__btn {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+/* line 35, src/scss/_components/common/_fun.scss */
+.fun--dark .fun__btn:hover {
+  background-color: transparent;
+  color: #2196f3;
+}
+
+/* line 43, src/scss/_components/common/_fun.scss */
 .fun__bg {
   z-index: 0;
   position: absolute;
@@ -1300,7 +1327,7 @@ picture {
   height: 100%;
 }
 
-/* line 22, src/scss/_components/common/_fun.scss */
+/* line 51, src/scss/_components/common/_fun.scss */
 .fun__bg #img-fun-circle {
   position: absolute;
   bottom: 0;
@@ -1310,28 +1337,28 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 22, src/scss/_components/common/_fun.scss */
+  /* line 51, src/scss/_components/common/_fun.scss */
   .fun__bg #img-fun-circle {
     left: 120px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 22, src/scss/_components/common/_fun.scss */
+  /* line 51, src/scss/_components/common/_fun.scss */
   .fun__bg #img-fun-circle {
     left: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 22, src/scss/_components/common/_fun.scss */
+  /* line 51, src/scss/_components/common/_fun.scss */
   .fun__bg #img-fun-circle {
     left: 0;
     opacity: 0.05;
   }
 }
 
-/* line 40, src/scss/_components/common/_fun.scss */
+/* line 69, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet {
   position: absolute;
   top: 0;
@@ -1340,26 +1367,26 @@ picture {
   height: 100%;
 }
 
-/* line 47, src/scss/_components/common/_fun.scss */
+/* line 76, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg {
   position: absolute;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 47, src/scss/_components/common/_fun.scss */
+  /* line 76, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg {
     opacity: 0.65;
   }
 }
 
-/* line 53, src/scss/_components/common/_fun.scss */
+/* line 82, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg:nth-of-type(1) {
   top: 110px;
   left: 62px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 53, src/scss/_components/common/_fun.scss */
+  /* line 82, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(1) {
     top: 75px;
     left: 50px;
@@ -1367,14 +1394,14 @@ picture {
 }
 
 @media screen and (max-width: 424px) {
-  /* line 53, src/scss/_components/common/_fun.scss */
+  /* line 82, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(1) {
     top: 15px;
     left: 15px;
   }
 }
 
-/* line 65, src/scss/_components/common/_fun.scss */
+/* line 94, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg:nth-of-type(2) {
   top: 50.9%;
   left: 21.5%;
@@ -1384,13 +1411,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 65, src/scss/_components/common/_fun.scss */
+  /* line 94, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(2) {
     left: 130px;
   }
 }
 
-/* line 73, src/scss/_components/common/_fun.scss */
+/* line 102, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg:nth-of-type(3) {
   top: 44.8%;
   right: 22.2%;
@@ -1400,13 +1427,13 @@ picture {
 }
 
 @media screen and (max-width: 424px) {
-  /* line 73, src/scss/_components/common/_fun.scss */
+  /* line 102, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(3) {
     display: none;
   }
 }
 
-/* line 81, src/scss/_components/common/_fun.scss */
+/* line 110, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg:nth-of-type(4) {
   top: 54.4%;
   right: 110px;
@@ -1416,7 +1443,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 81, src/scss/_components/common/_fun.scss */
+  /* line 110, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(4) {
     top: 70%;
     right: 50px;
@@ -1424,41 +1451,41 @@ picture {
 }
 
 @media screen and (max-width: 424px) {
-  /* line 81, src/scss/_components/common/_fun.scss */
+  /* line 110, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(4) {
     top: 80%;
     right: 0;
   }
 }
 
-/* line 95, src/scss/_components/common/_fun.scss */
+/* line 124, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg #sheet-0 {
   fill: rgba(33, 150, 243, 0.09);
 }
 
-/* line 98, src/scss/_components/common/_fun.scss */
+/* line 127, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg #sheet-1 {
   stroke: #99B7F1;
 }
 
-/* line 105, src/scss/_components/common/_fun.scss */
+/* line 134, src/scss/_components/common/_fun.scss */
 .fun__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 110, src/scss/_components/common/_fun.scss */
+/* line 139, src/scss/_components/common/_fun.scss */
 .fun__title, .fun__subtitle {
   text-align: center;
   color: #000000;
 }
 
-/* line 116, src/scss/_components/common/_fun.scss */
+/* line 145, src/scss/_components/common/_fun.scss */
 .fun__subtitle {
   padding-bottom: 50px;
 }
 
-/* line 120, src/scss/_components/common/_fun.scss */
+/* line 149, src/scss/_components/common/_fun.scss */
 .fun__btn {
   max-width: 250px;
   margin-left: auto;
