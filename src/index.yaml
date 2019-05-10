@@ -6,10 +6,10 @@ PageList:
   ready: 55
 - file: single-app.html
   titleName: Single app
-  ready: 5
+  ready: 10
 - file: integrations.html
   titleName: Integrations
-  ready: 5
+  ready: 15
 - file: dual-app.html
   titleName: Dual app
   ready: 55

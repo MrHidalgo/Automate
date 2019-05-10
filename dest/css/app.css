@@ -6,7 +6,7 @@ body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
 }
 
 /* line 9, src/scss/_utilities/_extend.scss */
-.social__title, .c-title, .everything__pr p, .complex__pr-left p, .pricing__box-title, .pricing__box-price {
+.social__title, .c-title, .everything__pr p, .complex__pr-left p, .ads__box-title, .pricing__box-title, .pricing__box-price {
   font-family: 'Lora', sans-serif;
 }
 
@@ -2075,6 +2075,59 @@ picture {
   height: calc(375px / 1.5);
 }
 
+/* line 3, src/scss/_components/integrations/_ads.scss */
+.ads {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+/* line 11, src/scss/_components/integrations/_ads.scss */
+.ads__box-0 .ads__box-line {
+  background-color: #8021f3;
+}
+
+/* line 18, src/scss/_components/integrations/_ads.scss */
+.ads__box-1 .ads__box-line {
+  background-color: #F32194;
+}
+
+/* line 24, src/scss/_components/integrations/_ads.scss */
+.ads__box-wrapper {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* line 29, src/scss/_components/integrations/_ads.scss */
+.ads__box-img {
+  height: 180px;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+/* line 36, src/scss/_components/integrations/_ads.scss */
+.ads__box-img img {
+  max-width: -webkit-calc(330px / 1.5);
+  max-width: calc(330px / 1.5);
+}
+
+/* line 41, src/scss/_components/integrations/_ads.scss */
+.ads__box-title {
+  padding-bottom: 5px;
+  font-size: 30px;
+}
+
+/* line 47, src/scss/_components/integrations/_ads.scss */
+.ads__box-line {
+  width: 40px;
+  height: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 /* line 3, src/scss/_components/integrations/_why.scss */
 .why {
   padding-top: 150px;
@@ -2084,7 +2137,7 @@ picture {
 
 /* line 8, src/scss/_components/integrations/_why.scss */
 .why__title {
-  padding-bottom: 50px;
+  padding-bottom: 75px;
 }
 
 /* line 14, src/scss/_components/integrations/_why.scss */
@@ -2120,10 +2173,11 @@ picture {
 
 /* line 40, src/scss/_components/integrations/_why.scss */
 .why__box-title {
+  padding-top: 15px;
   padding-bottom: 30px;
 }
 
-/* line 44, src/scss/_components/integrations/_why.scss */
+/* line 45, src/scss/_components/integrations/_why.scss */
 .why__box-desc {
   max-width: 300px;
   margin-left: auto;
