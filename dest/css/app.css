@@ -6,7 +6,7 @@ body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
 }
 
 /* line 9, src/scss/_utilities/_extend.scss */
-.social__title, .c-title, .everything__pr p, .pricing__box-title, .pricing__box-price {
+.social__title, .c-title, .everything__pr p, .complex__pr-left p, .pricing__box-title, .pricing__box-price {
   font-family: 'Lora', sans-serif;
 }
 
@@ -173,7 +173,7 @@ body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before, .icon-instagram:before, .icon-linkedin:before, .icon-twitter:before, .icon-youtube:before {
+.icon-facebook:before, .icon-instagram:before, .icon-linkedin:before, .icon-quotes:before, .icon-twitter:before, .icon-youtube:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -184,29 +184,34 @@ body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
   text-transform: none;
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
+/* line 53, src/scss/_generated/_spriteFont.scss */
 .icon-facebook:before {
   content: "";
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
+/* line 53, src/scss/_generated/_spriteFont.scss */
 .icon-instagram:before {
   content: "";
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
+/* line 53, src/scss/_generated/_spriteFont.scss */
 .icon-linkedin:before {
   content: "";
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 53, src/scss/_generated/_spriteFont.scss */
+.icon-quotes:before {
   content: "";
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
-.icon-youtube:before {
+/* line 53, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
   content: "";
+}
+
+/* line 53, src/scss/_generated/_spriteFont.scss */
+.icon-youtube:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -797,6 +802,7 @@ picture {
 
 /* line 3, src/scss/_macros/_title.scss */
 .c-title {
+  line-height: 1.2;
   text-align: center;
   font-size: 48px;
 }
@@ -1502,10 +1508,9 @@ picture {
   overflow: hidden;
   position: relative;
   padding-top: 75px;
-  padding-bottom: 75px;
 }
 
-/* line 9, src/scss/_components/home/_everything.scss */
+/* line 8, src/scss/_components/home/_everything.scss */
 .everything__bg {
   z-index: 0;
   position: absolute;
@@ -1516,19 +1521,25 @@ picture {
   padding-top: 125px;
 }
 
-/* line 18, src/scss/_components/home/_everything.scss */
+/* line 17, src/scss/_components/home/_everything.scss */
 .everything__bg img {
   position: relative;
   left: -50px;
   height: 130px;
 }
 
-/* line 25, src/scss/_components/home/_everything.scss */
+/* line 24, src/scss/_components/home/_everything.scss */
+.everything__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 29, src/scss/_components/home/_everything.scss */
 .everything__title {
   padding-bottom: 30px;
 }
 
-/* line 30, src/scss/_components/home/_everything.scss */
+/* line 34, src/scss/_components/home/_everything.scss */
 .everything__img img {
   display: block;
   max-width: 100%;
@@ -1537,7 +1548,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 39, src/scss/_components/home/_everything.scss */
+/* line 43, src/scss/_components/home/_everything.scss */
 .everything__subtitle {
   padding-bottom: 30px;
   text-align: left;
@@ -1546,18 +1557,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 39, src/scss/_components/home/_everything.scss */
+  /* line 43, src/scss/_components/home/_everything.scss */
   .everything__subtitle {
     font-size: 30px;
   }
 }
 
-/* line 49, src/scss/_components/home/_everything.scss */
+/* line 53, src/scss/_components/home/_everything.scss */
 .everything__text {
+  padding-bottom: 30px;
   font-size: 20px;
 }
 
-/* line 53, src/scss/_components/home/_everything.scss */
+/* line 58, src/scss/_components/home/_everything.scss */
 .everything__pr {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1565,14 +1577,14 @@ picture {
   display: flex;
 }
 
-/* line 56, src/scss/_components/home/_everything.scss */
+/* line 61, src/scss/_components/home/_everything.scss */
 .everything__pr img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 62, src/scss/_components/home/_everything.scss */
+/* line 67, src/scss/_components/home/_everything.scss */
 .everything__pr p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1583,12 +1595,196 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   height: 50%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-/* line 69, src/scss/_components/home/_everything.scss */
+/* line 74, src/scss/_components/home/_everything.scss */
 .everything__pr p:nth-of-type(2) {
   padding-bottom: 40px;
+}
+
+/* line 3, src/scss/_components/home/_complex.scss */
+.complex {
+  overflow: hidden;
+  position: relative;
+  padding-top: 50px;
+}
+
+/* line 8, src/scss/_components/home/_complex.scss */
+.complex__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 13, src/scss/_components/home/_complex.scss */
+.complex__path {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+}
+
+/* line 21, src/scss/_components/home/_complex.scss */
+.complex__title {
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+/* line 26, src/scss/_components/home/_complex.scss */
+.complex__desc {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* line 31, src/scss/_components/home/_complex.scss */
+.complex__pazzle {
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+}
+
+/* line 39, src/scss/_components/home/_complex.scss */
+.complex__pr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 42, src/scss/_components/home/_complex.scss */
+.complex__pr-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 47, src/scss/_components/home/_complex.scss */
+.complex__pr-left p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-calc(100% / 5);
+  height: calc(100% / 5);
+  font-size: 18px;
+}
+
+/* line 3, src/scss/_components/home/_everyone.scss */
+.everyone {
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #4f81e2;
+}
+
+/* line 10, src/scss/_components/home/_everyone.scss */
+.everyone__bg {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 22, src/scss/_components/home/_everyone.scss */
+.everyone__bg #img-fun-circle {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 150px;
+  height: 250px;
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 22, src/scss/_components/home/_everyone.scss */
+  .everyone__bg #img-fun-circle {
+    left: 120px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 22, src/scss/_components/home/_everyone.scss */
+  .everyone__bg #img-fun-circle {
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 22, src/scss/_components/home/_everyone.scss */
+  .everyone__bg #img-fun-circle {
+    left: 0;
+    opacity: 0.05;
+  }
+}
+
+/* line 39, src/scss/_components/home/_everyone.scss */
+.everyone__bg #img-fun-circle path {
+  stroke: #FEE01A;
+  fill: #FEE01A;
+}
+
+/* line 46, src/scss/_components/home/_everyone.scss */
+.everyone__wrapper {
+  z-index: 1;
+  position: relative;
+}
+
+/* line 51, src/scss/_components/home/_everyone.scss */
+.everyone img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 57, src/scss/_components/home/_everyone.scss */
+.everyone .icon-quotes {
+  padding-bottom: 15px;
+  color: #ffffff;
+  font-size: 45px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 57, src/scss/_components/home/_everyone.scss */
+  .everyone .icon-quotes {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 57, src/scss/_components/home/_everyone.scss */
+  .everyone .icon-quotes {
+    font-size: 35px;
+  }
+}
+
+/* line 69, src/scss/_components/home/_everyone.scss */
+.everyone__title {
+  padding-bottom: 30px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* line 75, src/scss/_components/home/_everyone.scss */
+.everyone__desc {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 /* line 3, src/scss/_components/plans/_pricing.scss */

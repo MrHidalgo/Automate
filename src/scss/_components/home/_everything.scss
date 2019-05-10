@@ -4,7 +4,6 @@
 	overflow: hidden;
 	position: relative;
 	padding-top: 75px;
-	padding-bottom: 75px;
 
 	&__bg {
 		z-index: 0;
@@ -20,6 +19,11 @@
 			left: -50px;
 			height: 130px;
 		}
+	}
+
+	&__wrapper {
+		z-index: 2;
+		position: relative;
 	}
 
 	&__title {
@@ -47,6 +51,7 @@
 	}
 
 	&__text {
+		padding-bottom: 30px;
 		font-size: 20px;
 	}
 
@@ -64,7 +69,7 @@
 			align-items: center;
 			height: 50%;
 			@extend %fontLora;
-			font-size: 20px;
+			font-size: 18px;
 
 			&:nth-of-type(2) {
 				padding-bottom: 40px;

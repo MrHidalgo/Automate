@@ -1,0 +1,59 @@
+// SECTION complex :: START
+
+.complex {
+	overflow: hidden;
+	position: relative;
+	padding-top: 50px;
+
+	&__wrapper {
+		z-index: 2;
+		position: relative;
+	}
+
+	&__path {
+		display: block;
+		width: 200px;
+		max-width: 100%;
+		height: auto;
+		margin-left: auto;
+	}
+
+	&__title {
+		padding-bottom: 30px;
+		text-align: left;
+	}
+
+	&__desc {
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+	&__pazzle {
+		display: block;
+		width: 250px;
+		max-width: 100%;
+		height: auto;
+		margin-left: auto;
+	}
+
+	&__pr {
+		display: flex;
+
+		&-left {
+			flex: 1;
+			padding-top: 30px;
+			padding-bottom: 30px;
+
+			p {
+				display: flex;
+				align-items: center;
+				height: calc(100% / 5);
+				@extend %fontLora;
+				font-size: 18px;
+
+			}
+		}
+	}
+}
+
+// SECTION complex :: END
