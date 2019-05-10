@@ -1,0 +1,34 @@
+// SECTION good :: START
+
+.good {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #f2f6ff;
+
+	&__title {
+		padding-bottom: 50px;
+		color: #4f81e2;
+	}
+
+	&__btn {
+		&-wrapper {
+			position: relative;
+			max-width: 250px;
+			padding-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+
+			img {
+				position: absolute;
+				top: 0;
+				left: calc((317px / 2.5) * 2);
+				display: block;
+				max-width: 100%;
+				width: calc(317px / 1.5);
+				height: calc(375px / 1.5);
+			}
+		}
+	}
+}
+
+// SECTION good :: END

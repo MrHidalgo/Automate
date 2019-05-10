@@ -1771,6 +1771,42 @@ picture {
   font-size: 20px;
 }
 
+/* line 3, src/scss/_components/home/_good.scss */
+.good {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f2f6ff;
+}
+
+/* line 8, src/scss/_components/home/_good.scss */
+.good__title {
+  padding-bottom: 50px;
+  color: #4f81e2;
+}
+
+/* line 14, src/scss/_components/home/_good.scss */
+.good__btn-wrapper {
+  position: relative;
+  max-width: 250px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 21, src/scss/_components/home/_good.scss */
+.good__btn-wrapper img {
+  position: absolute;
+  top: 0;
+  left: -webkit-calc((317px / 2.5) * 2);
+  left: calc((317px / 2.5) * 2);
+  display: block;
+  max-width: 100%;
+  width: -webkit-calc(317px / 1.5);
+  width: calc(317px / 1.5);
+  height: -webkit-calc(375px / 1.5);
+  height: calc(375px / 1.5);
+}
+
 /* line 3, src/scss/_components/plans/_pricing.scss */
 .pricing {
   overflow: hidden;
