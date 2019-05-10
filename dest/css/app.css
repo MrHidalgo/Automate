@@ -10,6 +10,19 @@ body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
   font-family: 'Lora', sans-serif;
 }
 
+/* line 22, src/scss/_utilities/_extend.scss */
+.supported__block--facebook img, .supported__block--w img, .supported__block--stripe img, .supported__block--q img, .supported__block--mailchimp img, .supported__block--salesforce img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -1769,6 +1782,214 @@ picture {
 .everyone__desc {
   color: #ffffff;
   font-size: 20px;
+}
+
+/* line 3, src/scss/_components/home/_supported.scss */
+.supported {
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+/* line 10, src/scss/_components/home/_supported.scss */
+.supported__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-right: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 21, src/scss/_components/home/_supported.scss */
+.supported__bg img {
+  position: relative;
+  top: -100px;
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 31, src/scss/_components/home/_supported.scss */
+.supported__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 36, src/scss/_components/home/_supported.scss */
+.supported__title {
+  padding-bottom: 30px;
+}
+
+/* line 40, src/scss/_components/home/_supported.scss */
+.supported__subtitle {
+  width: 100%;
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+/* line 49, src/scss/_components/home/_supported.scss */
+.supported__block {
+  overflow: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* line 61, src/scss/_components/home/_supported.scss */
+.supported__block--paypal {
+  top: 44px;
+  left: 0;
+  width: 113px;
+  height: 113px;
+}
+
+/* line 67, src/scss/_components/home/_supported.scss */
+.supported__block--paypal img {
+  width: -webkit-calc(98px / 1.5);
+  width: calc(98px / 1.5);
+}
+
+/* line 71, src/scss/_components/home/_supported.scss */
+.supported__block--facebook {
+  top: 0;
+  left: 25%;
+  width: 99px;
+  height: 99px;
+}
+
+/* line 81, src/scss/_components/home/_supported.scss */
+.supported__block--slack {
+  top: 0;
+  left: 50%;
+  width: 113px;
+  height: 113px;
+}
+
+/* line 87, src/scss/_components/home/_supported.scss */
+.supported__block--slack img {
+  width: -webkit-calc(95px / 1.5);
+  width: calc(95px / 1.5);
+}
+
+/* line 91, src/scss/_components/home/_supported.scss */
+.supported__block--w {
+  top: 44px;
+  right: 20%;
+  width: 85px;
+  height: 85px;
+}
+
+/* line 101, src/scss/_components/home/_supported.scss */
+.supported__block--stripe {
+  top: 88px;
+  right: 0;
+  width: 77px;
+  height: 77px;
+}
+
+/* line 112, src/scss/_components/home/_supported.scss */
+.supported__block--q {
+  top: 175px;
+  left: 10%;
+  width: 77px;
+  height: 77px;
+}
+
+/* line 122, src/scss/_components/home/_supported.scss */
+.supported__block--social {
+  top: 150px;
+  left: 22%;
+  width: 120px;
+  height: 120px;
+}
+
+/* line 128, src/scss/_components/home/_supported.scss */
+.supported__block--social img {
+  width: 140px;
+}
+
+/* line 132, src/scss/_components/home/_supported.scss */
+.supported__block--mailchimp {
+  top: 75px;
+  left: 35%;
+  width: 145px;
+  height: 145px;
+}
+
+/* line 142, src/scss/_components/home/_supported.scss */
+.supported__block--trello {
+  top: 150px;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #1e88e5;
+}
+
+/* line 149, src/scss/_components/home/_supported.scss */
+.supported__block--trello img {
+  width: -webkit-calc(132px / 1.5);
+  width: calc(132px / 1.5);
+}
+
+/* line 153, src/scss/_components/home/_supported.scss */
+.supported__block--salesforce {
+  top: 125px;
+  right: 28%;
+  width: 98px;
+  height: 98px;
+}
+
+/* line 163, src/scss/_components/home/_supported.scss */
+.supported__block--podio {
+  top: 150px;
+  right: 10%;
+  width: 113px;
+  height: 113px;
+}
+
+/* line 169, src/scss/_components/home/_supported.scss */
+.supported__block--podio img {
+  width: -webkit-calc(94px / 1.5);
+  width: calc(94px / 1.5);
+}
+
+/* line 180, src/scss/_components/home/_supported.scss */
+.supported__block-wrapper {
+  position: relative;
+  min-height: 300px;
 }
 
 /* line 3, src/scss/_components/home/_good.scss */
