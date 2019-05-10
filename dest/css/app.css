@@ -186,7 +186,7 @@ body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before, .icon-instagram:before, .icon-linkedin:before, .icon-quotes:before, .icon-twitter:before, .icon-youtube:before {
+.icon-arrow:before, .icon-corner:before, .icon-facebook:before, .icon-filter:before, .icon-instagram:before, .icon-linkedin:before, .icon-quotes:before, .icon-search:before, .icon-twitter:before, .icon-youtube:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -197,34 +197,54 @@ body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
   text-transform: none;
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-arrow:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-instagram:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-corner:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-quotes:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-filter:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-instagram:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-youtube:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin:before {
   content: "";
+}
+
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-quotes:before {
+  content: "";
+}
+
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-search:before {
+  content: "";
+}
+
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
+  content: "";
+}
+
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-youtube:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -937,7 +957,7 @@ picture {
 /* line 3, src/scss/_components/_header.scss */
 .header {
   z-index: 1001;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -2032,7 +2052,7 @@ picture {
 .pricing {
   overflow: hidden;
   position: relative;
-  padding-top: 150px;
+  padding-top: 125px;
   padding-bottom: 150px;
 }
 
@@ -2758,6 +2778,257 @@ picture {
   -o-transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 3, src/scss/_components/dual-app/_pick.scss */
+.pick {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+/* line 7, src/scss/_components/dual-app/_pick.scss */
+.pick__img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* line 17, src/scss/_components/dual-app/_pick.scss */
+.pick__title {
+  padding-bottom: 15px;
+}
+
+/* line 21, src/scss/_components/dual-app/_pick.scss */
+.pick__subtitle {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* line 26, src/scss/_components/dual-app/_pick.scss */
+.pick__form {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+/* line 30, src/scss/_components/dual-app/_pick.scss */
+.pick__form-field {
+  position: relative;
+}
+
+/* line 34, src/scss/_components/dual-app/_pick.scss */
+.pick__form-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 41, src/scss/_components/dual-app/_pick.scss */
+.pick__form-icon .icon-search {
+  font-size: 20px;
+}
+
+/* line 46, src/scss/_components/dual-app/_pick.scss */
+.pick__form-input {
+  outline: none;
+  width: -webkit-calc(100% - 25px);
+  width: calc(100% - 25px);
+  height: 50px;
+  padding: 0 50px;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+  font-size: 16px;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.pick__form-input.placeholder {
+  font-size: 16px;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.pick__form-input:-moz-placeholder {
+  font-size: 16px;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.pick__form-input::-moz-placeholder {
+  font-size: 16px;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.pick__form-input:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.pick__form-input::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+/* line 61, src/scss/_components/dual-app/_pick.scss */
+.pick__form-btn {
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #4f81e2;
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+  color: #ffffff;
+  font-size: 20px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 77, src/scss/_components/dual-app/_pick.scss */
+.pick__form-btn:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 84, src/scss/_components/dual-app/_pick.scss */
+.pick__box {
+  width: 150px;
+  height: 150px;
+  margin-right: 30px;
+  padding: 15px 10px;
+  -webkit-border-radius: 14px;
+          border-radius: 14px;
+  background-color: #fefefe;
+  -webkit-box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 94, src/scss/_components/dual-app/_pick.scss */
+.pick__box:hover {
+  -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 101, src/scss/_components/dual-app/_pick.scss */
+.pick__box-0 .pick__box-icon img {
+  width: -webkit-calc(76px / 1.25);
+  width: calc(76px / 1.25);
+}
+
+/* line 108, src/scss/_components/dual-app/_pick.scss */
+.pick__box-1 .pick__box-icon img {
+  width: -webkit-calc(85px / 1.25);
+  width: calc(85px / 1.25);
+}
+
+/* line 115, src/scss/_components/dual-app/_pick.scss */
+.pick__box-2 .pick__box-icon img {
+  width: -webkit-calc(83px / 1.25);
+  width: calc(83px / 1.25);
+}
+
+/* line 121, src/scss/_components/dual-app/_pick.scss */
+.pick__box-icon {
+  height: 70px;
+}
+
+/* line 124, src/scss/_components/dual-app/_pick.scss */
+.pick__box-icon img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 132, src/scss/_components/dual-app/_pick.scss */
+.pick__box-title p {
+  color: #000;
+}
+
+/* line 138, src/scss/_components/dual-app/_pick.scss */
+.pick .dropdown {
+  width: 100%;
+}
+
+/* line 141, src/scss/_components/dual-app/_pick.scss */
+.pick .dropdown .btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* line 149, src/scss/_components/dual-app/_pick.scss */
+.pick .dropdown .btn .icon-font {
+  margin-right: 10px;
+  font-size: 10px;
+}
+
+/* line 154, src/scss/_components/dual-app/_pick.scss */
+.pick .dropdown .btn:after {
+  display: none;
+}
+
+/* line 159, src/scss/_components/dual-app/_pick.scss */
+.pick .dropdown-menu {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 167, src/scss/_components/dual-app/_pick.scss */
+.pick .dropdown-item {
+  height: 50px;
+}
+
+/* line 170, src/scss/_components/dual-app/_pick.scss */
+.pick .dropdown-item.is-active {
+  background-color: #4f81e2;
+  color: #ffffff;
+}
+
+/* line 176, src/scss/_components/dual-app/_pick.scss */
+.pick .dropdown-divider {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: -webkit-calc(100% - 10px);
+  width: calc(100% - 10px);
 }
 
 /*# sourceMappingURL=maps/app.css.map */

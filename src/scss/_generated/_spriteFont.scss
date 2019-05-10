@@ -27,23 +27,35 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == facebook {
+	@if $filename == arrow {
 		$char: "\E001";
 	}
-	@if $filename == instagram {
+	@if $filename == corner {
 		$char: "\E002";
 	}
-	@if $filename == linkedin {
+	@if $filename == facebook {
 		$char: "\E003";
 	}
-	@if $filename == quotes {
+	@if $filename == filter {
 		$char: "\E004";
 	}
-	@if $filename == twitter {
+	@if $filename == instagram {
 		$char: "\E005";
 	}
-	@if $filename == youtube {
+	@if $filename == linkedin {
 		$char: "\E006";
+	}
+	@if $filename == quotes {
+		$char: "\E007";
+	}
+	@if $filename == search {
+		$char: "\E008";
+	}
+	@if $filename == twitter {
+		$char: "\E009";
+	}
+	@if $filename == youtube {
+		$char: "\E00A";
 	}
 
 	@return $char;
@@ -60,8 +72,20 @@
 	}
 }
 
+.icon-arrow {
+	@include icon(arrow);
+
+}
+.icon-corner {
+	@include icon(corner);
+
+}
 .icon-facebook {
 	@include icon(facebook);
+
+}
+.icon-filter {
+	@include icon(filter);
 
 }
 .icon-instagram {
@@ -74,6 +98,10 @@
 }
 .icon-quotes {
 	@include icon(quotes);
+
+}
+.icon-search {
+	@include icon(search);
 
 }
 .icon-twitter {
