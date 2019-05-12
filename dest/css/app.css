@@ -1501,7 +1501,24 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 10, src/scss/_components/home/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/home/_main.scss */
+  .main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+/* line 16, src/scss/_components/home/_main.scss */
 .main__bg {
   position: absolute;
   display: -webkit-box;
@@ -1526,41 +1543,85 @@ picture {
   margin-right: auto;
 }
 
-/* line 24, src/scss/_components/home/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 16, src/scss/_components/home/_main.scss */
+  .main__bg {
+    position: static;
+  }
+}
+
+/* line 33, src/scss/_components/home/_main.scss */
 .main__bg-content {
   width: 100%;
   max-width: 60%;
 }
 
-/* line 28, src/scss/_components/home/_main.scss */
+@media screen and (max-width: 1023px) {
+  /* line 33, src/scss/_components/home/_main.scss */
+  .main__bg-content {
+    max-width: 55%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 33, src/scss/_components/home/_main.scss */
+  .main__bg-content {
+    max-width: 100%;
+  }
+}
+
+/* line 43, src/scss/_components/home/_main.scss */
 .main__bg-content img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 36, src/scss/_components/home/_main.scss */
+/* line 51, src/scss/_components/home/_main.scss */
 .main__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 41, src/scss/_components/home/_main.scss */
+/* line 56, src/scss/_components/home/_main.scss */
 .main__title {
   padding-bottom: 30px;
   text-align: left;
 }
 
-/* line 46, src/scss/_components/home/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 56, src/scss/_components/home/_main.scss */
+  .main__title {
+    text-align: center;
+  }
+}
+
+/* line 64, src/scss/_components/home/_main.scss */
 .main__subtitle {
   padding-bottom: 30px;
   color: rgba(0, 0, 0, 0.7);
   font-size: 20px;
 }
 
-/* line 52, src/scss/_components/home/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 64, src/scss/_components/home/_main.scss */
+  .main__subtitle {
+    text-align: center;
+  }
+}
+
+/* line 73, src/scss/_components/home/_main.scss */
 .main__btn {
   max-width: 250px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 73, src/scss/_components/home/_main.scss */
+  .main__btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
 }
 
 /* line 3, src/scss/_components/home/_everything.scss */

@@ -3,7 +3,7 @@ ProjectTitle: Automate
 PageList:
 - file: index.html
   titleName: Home
-  ready: 55
+  ready: 90
 - file: single-app.html
   titleName: Single app
   ready: 10
