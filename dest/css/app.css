@@ -1859,7 +1859,14 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 21, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1279px) {
+  /* line 10, src/scss/_components/home/_supported.scss */
+  .supported__bg {
+    padding-right: 15px;
+  }
+}
+
+/* line 24, src/scss/_components/home/_supported.scss */
 .supported__bg img {
   position: relative;
   top: -100px;
@@ -1869,18 +1876,35 @@ picture {
   height: auto;
 }
 
-/* line 31, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1279px) {
+  /* line 24, src/scss/_components/home/_supported.scss */
+  .supported__bg img {
+    top: 0;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 24, src/scss/_components/home/_supported.scss */
+  .supported__bg img {
+    top: -50px;
+    right: -30px;
+  }
+}
+
+/* line 43, src/scss/_components/home/_supported.scss */
 .supported__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 36, src/scss/_components/home/_supported.scss */
+/* line 48, src/scss/_components/home/_supported.scss */
 .supported__title {
   padding-bottom: 30px;
 }
 
-/* line 40, src/scss/_components/home/_supported.scss */
+/* line 52, src/scss/_components/home/_supported.scss */
 .supported__subtitle {
   width: 100%;
   max-width: 740px;
@@ -1890,7 +1914,14 @@ picture {
   text-align: center;
 }
 
-/* line 49, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 575px) {
+  /* line 52, src/scss/_components/home/_supported.scss */
+  .supported__subtitle {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 64, src/scss/_components/home/_supported.scss */
 .supported__block {
   overflow: hidden;
   position: absolute;
@@ -1915,7 +1946,25 @@ picture {
           box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.05);
 }
 
-/* line 61, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 767px) {
+  /* line 64, src/scss/_components/home/_supported.scss */
+  .supported__block {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 64, src/scss/_components/home/_supported.scss */
+  .supported__block {
+    margin: 15px;
+  }
+}
+
+/* line 86, src/scss/_components/home/_supported.scss */
 .supported__block--paypal {
   top: 44px;
   left: 0;
@@ -1923,13 +1972,13 @@ picture {
   height: 113px;
 }
 
-/* line 67, src/scss/_components/home/_supported.scss */
+/* line 92, src/scss/_components/home/_supported.scss */
 .supported__block--paypal img {
   width: -webkit-calc(98px / 1.5);
   width: calc(98px / 1.5);
 }
 
-/* line 71, src/scss/_components/home/_supported.scss */
+/* line 96, src/scss/_components/home/_supported.scss */
 .supported__block--facebook {
   top: 0;
   left: 25%;
@@ -1937,7 +1986,14 @@ picture {
   height: 99px;
 }
 
-/* line 81, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1023px) {
+  /* line 96, src/scss/_components/home/_supported.scss */
+  .supported__block--facebook {
+    left: 20%;
+  }
+}
+
+/* line 109, src/scss/_components/home/_supported.scss */
 .supported__block--slack {
   top: 0;
   left: 50%;
@@ -1945,13 +2001,13 @@ picture {
   height: 113px;
 }
 
-/* line 87, src/scss/_components/home/_supported.scss */
+/* line 115, src/scss/_components/home/_supported.scss */
 .supported__block--slack img {
   width: -webkit-calc(95px / 1.5);
   width: calc(95px / 1.5);
 }
 
-/* line 91, src/scss/_components/home/_supported.scss */
+/* line 119, src/scss/_components/home/_supported.scss */
 .supported__block--w {
   top: 44px;
   right: 20%;
@@ -1959,7 +2015,7 @@ picture {
   height: 85px;
 }
 
-/* line 101, src/scss/_components/home/_supported.scss */
+/* line 129, src/scss/_components/home/_supported.scss */
 .supported__block--stripe {
   top: 88px;
   right: 0;
@@ -1967,7 +2023,14 @@ picture {
   height: 77px;
 }
 
-/* line 112, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1023px) {
+  /* line 129, src/scss/_components/home/_supported.scss */
+  .supported__block--stripe {
+    top: 58px;
+  }
+}
+
+/* line 143, src/scss/_components/home/_supported.scss */
 .supported__block--q {
   top: 175px;
   left: 10%;
@@ -1975,7 +2038,14 @@ picture {
   height: 77px;
 }
 
-/* line 122, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1023px) {
+  /* line 143, src/scss/_components/home/_supported.scss */
+  .supported__block--q {
+    left: 4%;
+  }
+}
+
+/* line 156, src/scss/_components/home/_supported.scss */
 .supported__block--social {
   top: 150px;
   left: 22%;
@@ -1983,12 +2053,19 @@ picture {
   height: 120px;
 }
 
-/* line 128, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1023px) {
+  /* line 156, src/scss/_components/home/_supported.scss */
+  .supported__block--social {
+    left: 17%;
+  }
+}
+
+/* line 165, src/scss/_components/home/_supported.scss */
 .supported__block--social img {
   width: 140px;
 }
 
-/* line 132, src/scss/_components/home/_supported.scss */
+/* line 169, src/scss/_components/home/_supported.scss */
 .supported__block--mailchimp {
   top: 75px;
   left: 35%;
@@ -1996,7 +2073,14 @@ picture {
   height: 145px;
 }
 
-/* line 142, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1023px) {
+  /* line 169, src/scss/_components/home/_supported.scss */
+  .supported__block--mailchimp {
+    left: 33%;
+  }
+}
+
+/* line 182, src/scss/_components/home/_supported.scss */
 .supported__block--trello {
   top: 150px;
   left: 50%;
@@ -2005,21 +2089,37 @@ picture {
   background-color: #1e88e5;
 }
 
-/* line 149, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1023px) {
+  /* line 182, src/scss/_components/home/_supported.scss */
+  .supported__block--trello {
+    top: 190px;
+    left: 52%;
+  }
+}
+
+/* line 193, src/scss/_components/home/_supported.scss */
 .supported__block--trello img {
   width: -webkit-calc(132px / 1.5);
   width: calc(132px / 1.5);
 }
 
-/* line 153, src/scss/_components/home/_supported.scss */
+/* line 197, src/scss/_components/home/_supported.scss */
 .supported__block--salesforce {
   top: 125px;
-  right: 28%;
+  right: 25%;
   width: 98px;
   height: 98px;
 }
 
-/* line 163, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1023px) {
+  /* line 197, src/scss/_components/home/_supported.scss */
+  .supported__block--salesforce {
+    top: 135px;
+    right: 18%;
+  }
+}
+
+/* line 211, src/scss/_components/home/_supported.scss */
 .supported__block--podio {
   top: 150px;
   right: 10%;
@@ -2027,16 +2127,44 @@ picture {
   height: 113px;
 }
 
-/* line 169, src/scss/_components/home/_supported.scss */
+@media screen and (max-width: 1023px) {
+  /* line 211, src/scss/_components/home/_supported.scss */
+  .supported__block--podio {
+    right: 1%;
+  }
+}
+
+/* line 220, src/scss/_components/home/_supported.scss */
 .supported__block--podio img {
   width: -webkit-calc(94px / 1.5);
   width: calc(94px / 1.5);
 }
 
-/* line 180, src/scss/_components/home/_supported.scss */
+/* line 233, src/scss/_components/home/_supported.scss */
 .supported__block-wrapper {
   position: relative;
   min-height: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 233, src/scss/_components/home/_supported.scss */
+  .supported__block-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* line 3, src/scss/_components/home/_good.scss */
