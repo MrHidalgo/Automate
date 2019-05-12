@@ -12,7 +12,7 @@ PageList:
   ready: 15
 - file: dual-app.html
   titleName: Dual app
-  ready: 55
+  ready: 90
 - file: plans.html
   titleName: Plans
   ready: 90
