@@ -1747,7 +1747,15 @@ picture {
   background-color: #4f81e2;
 }
 
-/* line 10, src/scss/_components/home/_everyone.scss */
+@media screen and (max-width: 575px) {
+  /* line 3, src/scss/_components/home/_everyone.scss */
+  .everyone {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+/* line 15, src/scss/_components/home/_everyone.scss */
 .everyone__bg {
   z-index: 2;
   position: absolute;
@@ -1761,7 +1769,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 22, src/scss/_components/home/_everyone.scss */
+/* line 27, src/scss/_components/home/_everyone.scss */
 .everyone__bg #img-fun-circle {
   position: absolute;
   bottom: 0;
@@ -1771,61 +1779,61 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 22, src/scss/_components/home/_everyone.scss */
+  /* line 27, src/scss/_components/home/_everyone.scss */
   .everyone__bg #img-fun-circle {
-    left: 120px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  /* line 22, src/scss/_components/home/_everyone.scss */
-  .everyone__bg #img-fun-circle {
-    left: 30px;
+    left: 0px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 22, src/scss/_components/home/_everyone.scss */
+  /* line 27, src/scss/_components/home/_everyone.scss */
   .everyone__bg #img-fun-circle {
     left: 0;
     opacity: 0.05;
   }
 }
 
-/* line 39, src/scss/_components/home/_everyone.scss */
+/* line 41, src/scss/_components/home/_everyone.scss */
 .everyone__bg #img-fun-circle path {
   stroke: #FEE01A;
   fill: #FEE01A;
 }
 
-/* line 46, src/scss/_components/home/_everyone.scss */
+/* line 48, src/scss/_components/home/_everyone.scss */
 .everyone__wrapper {
   z-index: 1;
   position: relative;
 }
 
-/* line 51, src/scss/_components/home/_everyone.scss */
+/* line 53, src/scss/_components/home/_everyone.scss */
 .everyone img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 57, src/scss/_components/home/_everyone.scss */
+/* line 59, src/scss/_components/home/_everyone.scss */
 .everyone .icon-quotes {
   padding-bottom: 15px;
   color: #ffffff;
   font-size: 35px;
 }
 
-/* line 63, src/scss/_components/home/_everyone.scss */
+@media screen and (max-width: 575px) {
+  /* line 59, src/scss/_components/home/_everyone.scss */
+  .everyone .icon-quotes {
+    font-size: 30px;
+  }
+}
+
+/* line 68, src/scss/_components/home/_everyone.scss */
 .everyone__title {
   padding-bottom: 30px;
   text-align: left;
   color: #ffffff;
 }
 
-/* line 69, src/scss/_components/home/_everyone.scss */
+/* line 74, src/scss/_components/home/_everyone.scss */
 .everyone__desc {
   color: #ffffff;
   font-size: 20px;
