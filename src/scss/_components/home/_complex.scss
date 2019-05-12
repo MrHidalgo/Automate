@@ -21,10 +21,16 @@
 	&__title {
 		padding-bottom: 30px;
 		text-align: left;
+		@include adaptive(575) {
+			text-align: center;
+		}
 	}
 
 	&__desc {
 		font-size: 20px;
+		@include adaptive(575) {
+			font-size: 18px;
+		}
 	}
 
 	&__pazzle {
@@ -33,15 +39,24 @@
 		max-width: 100%;
 		height: auto;
 		margin-left: auto;
+		@include adaptive(575) {
+			width: 200px;
+		}
 	}
 
 	&__pr {
 		display: flex;
+		@include adaptive(575) {
+			align-items: center;
+		}
 
 		&-left {
 			flex: 1;
 			padding-top: 30px;
 			padding-bottom: 50px;
+			@include adaptive(575) {
+				padding-top: 50px;
+			}
 
 			p {
 				display: flex;
@@ -49,7 +64,29 @@
 				height: calc(100% / 5);
 				@extend %fontLora;
 				font-size: 18px;
+				@include adaptive(575) {
+					height: auto;
+					margin-bottom: 30px;
+					font-size: 16px;
 
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		&-right {
+			@include adaptive(575) {
+				width: 40%;
+
+				img {
+					display: block;
+					max-width: 100%;
+					height: auto;
+					margin-left: auto;
+					margin-right: auto;
+				}
 			}
 		}
 	}

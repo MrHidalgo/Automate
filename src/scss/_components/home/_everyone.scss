@@ -74,6 +74,9 @@
 	&__desc {
 		color: #ffffff;
 		font-size: 20px;
+		@include adaptive(575) {
+			font-size: 18px;
+		}
 	}
 }
 

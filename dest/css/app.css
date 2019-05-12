@@ -1691,12 +1691,26 @@ picture {
   text-align: left;
 }
 
-/* line 26, src/scss/_components/home/_complex.scss */
+@media screen and (max-width: 575px) {
+  /* line 21, src/scss/_components/home/_complex.scss */
+  .complex__title {
+    text-align: center;
+  }
+}
+
+/* line 29, src/scss/_components/home/_complex.scss */
 .complex__desc {
   font-size: 20px;
 }
 
-/* line 30, src/scss/_components/home/_complex.scss */
+@media screen and (max-width: 575px) {
+  /* line 29, src/scss/_components/home/_complex.scss */
+  .complex__desc {
+    font-size: 18px;
+  }
+}
+
+/* line 36, src/scss/_components/home/_complex.scss */
 .complex__pazzle {
   display: block;
   width: 250px;
@@ -1705,7 +1719,14 @@ picture {
   margin-left: auto;
 }
 
-/* line 38, src/scss/_components/home/_complex.scss */
+@media screen and (max-width: 575px) {
+  /* line 36, src/scss/_components/home/_complex.scss */
+  .complex__pazzle {
+    width: 200px;
+  }
+}
+
+/* line 47, src/scss/_components/home/_complex.scss */
 .complex__pr {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1713,7 +1734,17 @@ picture {
   display: flex;
 }
 
-/* line 41, src/scss/_components/home/_complex.scss */
+@media screen and (max-width: 575px) {
+  /* line 47, src/scss/_components/home/_complex.scss */
+  .complex__pr {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* line 53, src/scss/_components/home/_complex.scss */
 .complex__pr-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1723,7 +1754,14 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 46, src/scss/_components/home/_complex.scss */
+@media screen and (max-width: 575px) {
+  /* line 53, src/scss/_components/home/_complex.scss */
+  .complex__pr-left {
+    padding-top: 50px;
+  }
+}
+
+/* line 61, src/scss/_components/home/_complex.scss */
 .complex__pr-left p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1736,6 +1774,34 @@ picture {
   height: -webkit-calc(100% / 5);
   height: calc(100% / 5);
   font-size: 18px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 61, src/scss/_components/home/_complex.scss */
+  .complex__pr-left p {
+    height: auto;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  /* line 72, src/scss/_components/home/_complex.scss */
+  .complex__pr-left p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 79, src/scss/_components/home/_complex.scss */
+  .complex__pr-right {
+    width: 40%;
+  }
+  /* line 83, src/scss/_components/home/_complex.scss */
+  .complex__pr-right img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* line 3, src/scss/_components/home/_everyone.scss */
@@ -1837,6 +1903,13 @@ picture {
 .everyone__desc {
   color: #ffffff;
   font-size: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 74, src/scss/_components/home/_everyone.scss */
+  .everyone__desc {
+    font-size: 18px;
+  }
 }
 
 /* line 3, src/scss/_components/home/_supported.scss */
