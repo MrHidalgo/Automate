@@ -1273,6 +1273,56 @@ picture {
   }
 }
 
+/* line 3, src/scss/_components/common/_breadcrumbs.scss */
+.breadcrumbs {
+  background-color: #4f81e2;
+}
+
+/* line 6, src/scss/_components/common/_breadcrumbs.scss */
+.breadcrumbs .breadcrumb {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs .breadcrumb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 15, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs .breadcrumb-item {
+    font-size: 14px;
+  }
+}
+
+/* line 21, src/scss/_components/common/_breadcrumbs.scss */
+.breadcrumbs .breadcrumb-item + .breadcrumb-item:before {
+  content: '>';
+  color: #ffffff;
+}
+
+/* line 27, src/scss/_components/common/_breadcrumbs.scss */
+.breadcrumbs .breadcrumb-item a {
+  color: #ffffff;
+}
+
+/* line 31, src/scss/_components/common/_breadcrumbs.scss */
+.breadcrumbs .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.36);
+}
+
 /* line 3, src/scss/_components/common/_run.scss */
 .run {
   overflow: hidden;
