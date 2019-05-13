@@ -3675,6 +3675,228 @@ picture {
   margin-bottom: 15px;
 }
 
+/* line 3, src/scss/_components/single-app/_do.scss */
+.do {
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 9, src/scss/_components/single-app/_do.scss */
+.do__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  background-color: #4F81E2;
+  background-image: url("../img/img-do-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 23, src/scss/_components/single-app/_do.scss */
+.do__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 28, src/scss/_components/single-app/_do.scss */
+.do__title {
+  padding-bottom: 75px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 34, src/scss/_components/single-app/_do.scss */
+.do__arrow {
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 55px;
+  height: 55px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #4f81e2;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 34, src/scss/_components/single-app/_do.scss */
+  .do__arrow {
+    position: static;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    margin: 15px auto;
+  }
+}
+
+/* line 51, src/scss/_components/single-app/_do.scss */
+.do__arrow .icon-font {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 51, src/scss/_components/single-app/_do.scss */
+  .do__arrow .icon-font {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+/* line 60, src/scss/_components/single-app/_do.scss */
+.do__box {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  -webkit-border-bottom-left-radius: 7px;
+          border-bottom-left-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 69, src/scss/_components/single-app/_do.scss */
+.do__box-0 {
+  -webkit-border-top-right-radius: 7px;
+          border-top-right-radius: 7px;
+}
+
+/* line 72, src/scss/_components/single-app/_do.scss */
+.do__box-0:before {
+  -webkit-transform: skewY(10deg);
+      -ms-transform: skewY(10deg);
+          transform: skewY(10deg);
+}
+
+/* line 77, src/scss/_components/single-app/_do.scss */
+.do__box-0 .do__box-header img {
+  max-width: 40px;
+}
+
+/* line 82, src/scss/_components/single-app/_do.scss */
+.do__box-1 {
+  -webkit-border-top-left-radius: 7px;
+          border-top-left-radius: 7px;
+}
+
+/* line 85, src/scss/_components/single-app/_do.scss */
+.do__box-1:before {
+  -webkit-transform: skewY(-10deg);
+      -ms-transform: skewY(-10deg);
+          transform: skewY(-10deg);
+}
+
+/* line 90, src/scss/_components/single-app/_do.scss */
+.do__box-1 .do__box-header img {
+  max-width: 50px;
+}
+
+/* line 96, src/scss/_components/single-app/_do.scss */
+.do__box:before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  -webkit-border-top-left-radius: 7px;
+          border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+          border-top-right-radius: 7px;
+  background-color: #ffffff;
+}
+
+/* line 109, src/scss/_components/single-app/_do.scss */
+.do__box-header {
+  z-index: 2;
+  position: relative;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+
+/* line 115, src/scss/_components/single-app/_do.scss */
+.do__box-header img {
+  display: block;
+  height: auto;
+}
+
+/* line 120, src/scss/_components/single-app/_do.scss */
+.do__box-header p {
+  padding-left: 50px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 120, src/scss/_components/single-app/_do.scss */
+  .do__box-header p {
+    font-size: 18px;
+  }
+}
+
+/* line 130, src/scss/_components/single-app/_do.scss */
+.do__box-body > div {
+  margin-bottom: 30px;
+}
+
+/* line 137, src/scss/_components/single-app/_do.scss */
+.do__box-info > div:nth-of-type(1) {
+  width: 50px;
+}
+
+/* line 140, src/scss/_components/single-app/_do.scss */
+.do__box-info > div:nth-of-type(2) {
+  width: 100%;
+  max-width: -webkit-calc(100% - 50px);
+  max-width: calc(100% - 50px);
+}
+
+/* line 145, src/scss/_components/single-app/_do.scss */
+.do__box-info > div i {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: rgba(33, 150, 243, 0.23);
+}
+
+/* line 152, src/scss/_components/single-app/_do.scss */
+.do__box-info > div i:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #2196f3;
+}
+
+/* line 162, src/scss/_components/single-app/_do.scss */
+.do__box-info > div p {
+  font-size: 18px;
+}
+
+/* line 166, src/scss/_components/single-app/_do.scss */
+.do__box-info > div span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
 /* line 3, src/scss/_components/plans/_pricing.scss */
 .pricing {
   overflow: hidden;

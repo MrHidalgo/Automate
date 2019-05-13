@@ -1,0 +1,58 @@
+// SECTION do :: START
+
+section#do.do
+
+	.do__bg
+
+	.do__wrapper
+
+		.container
+			.row
+				.col-12
+
+					h2.do__title.c-title!= "Things You can do"
+
+		.container
+			.row.position-relative
+				.col-md-6.col-12
+
+					.do__box.do__box-0
+						.do__box-header.d-flex.align-items-center.justify-content-center.px-4
+							div
+								img(src="img/img-do-finger.svg" alt="" title="")
+							div
+								p.c-subtitle!= "Triggers"
+
+						.do__box-body.p-5
+							each val, idx in [1,2,3]
+								div
+									.do__box-info.d-flex.align-items-center
+										div
+											i.d-flex.align-items-center.justify-content-center
+										div
+											p!= "New Lead"
+											span!= "Triggers when a new lead is added"
+
+				a.do__arrow.d-flex.align-items-center.justify-content-center(href="#" class="" title="")
+					i.icon-font.icon-arrow
+
+				.col-md-6.col-12
+
+					.do__box.do__box-1
+						.do__box-header.d-flex.align-items-center.justify-content-center.px-4
+							div
+								img(src="img/img-do-action.svg" alt="" title="")
+							div
+								p.c-subtitle!= "Actions"
+
+						.do__box-body.p-5
+							each val, idx in [1,2,3]
+								div
+									.do__box-info.d-flex.align-items-center
+										div
+											i.d-flex.align-items-center.justify-content-center
+										div
+											p!= "New Lead"
+											span!= "Triggers when a new lead is added"
+
+// SECTION do :: END

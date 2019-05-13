@@ -6,7 +6,7 @@ PageList:
   ready: 90
 - file: single-app.html
   titleName: Single app
-  ready: 50
+  ready: 90
 - file: integrations.html
   titleName: Integrations
   ready: 90
