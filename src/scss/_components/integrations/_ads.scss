@@ -3,9 +3,12 @@
 .ads {
 	padding-top: 150px;
 	padding-bottom: 150px;
+	@include adaptive(767) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
 
 	&__box {
-
 		&-0 {
 			.ads__box {
 				&-line {
@@ -42,6 +45,9 @@
 			padding-bottom: 5px;
 			font-size: 30px;
 			@extend %fontLora;
+			@include adaptive(575) {
+				text-align: center;
+			}
 		}
 
 		&-line {
@@ -49,6 +55,16 @@
 			height: 5px;
 			border-radius: 5px;
 			margin-bottom: 10px;
+			@include adaptive(575) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		&-desc {
+			@include adaptive(575) {
+				text-align: center;
+			}
 		}
 	}
 }

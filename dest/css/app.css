@@ -2429,23 +2429,31 @@ picture {
   padding-bottom: 150px;
 }
 
-/* line 11, src/scss/_components/integrations/_ads.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/integrations/_ads.scss */
+  .ads {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+/* line 14, src/scss/_components/integrations/_ads.scss */
 .ads__box-0 .ads__box-line {
   background-color: #8021f3;
 }
 
-/* line 18, src/scss/_components/integrations/_ads.scss */
+/* line 21, src/scss/_components/integrations/_ads.scss */
 .ads__box-1 .ads__box-line {
   background-color: #F32194;
 }
 
-/* line 24, src/scss/_components/integrations/_ads.scss */
+/* line 27, src/scss/_components/integrations/_ads.scss */
 .ads__box-wrapper {
   width: 100%;
   max-width: 350px;
 }
 
-/* line 29, src/scss/_components/integrations/_ads.scss */
+/* line 32, src/scss/_components/integrations/_ads.scss */
 .ads__box-img {
   height: 180px;
   padding: 15px;
@@ -2455,25 +2463,47 @@ picture {
           box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
-/* line 36, src/scss/_components/integrations/_ads.scss */
+/* line 39, src/scss/_components/integrations/_ads.scss */
 .ads__box-img img {
   max-width: -webkit-calc(330px / 1.5);
   max-width: calc(330px / 1.5);
 }
 
-/* line 41, src/scss/_components/integrations/_ads.scss */
+/* line 44, src/scss/_components/integrations/_ads.scss */
 .ads__box-title {
   padding-bottom: 5px;
   font-size: 30px;
 }
 
-/* line 47, src/scss/_components/integrations/_ads.scss */
+@media screen and (max-width: 575px) {
+  /* line 44, src/scss/_components/integrations/_ads.scss */
+  .ads__box-title {
+    text-align: center;
+  }
+}
+
+/* line 53, src/scss/_components/integrations/_ads.scss */
 .ads__box-line {
   width: 40px;
   height: 5px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 53, src/scss/_components/integrations/_ads.scss */
+  .ads__box-line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 64, src/scss/_components/integrations/_ads.scss */
+  .ads__box-desc {
+    text-align: center;
+  }
 }
 
 /* line 3, src/scss/_components/integrations/_why.scss */
@@ -2483,35 +2513,50 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 8, src/scss/_components/integrations/_why.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/integrations/_why.scss */
+  .why {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+/* line 12, src/scss/_components/integrations/_why.scss */
 .why__title {
   padding-bottom: 75px;
 }
 
-/* line 14, src/scss/_components/integrations/_why.scss */
+@media screen and (max-width: 767px) {
+  /* line 12, src/scss/_components/integrations/_why.scss */
+  .why__title {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 21, src/scss/_components/integrations/_why.scss */
 .why__box-0 img {
   max-width: -webkit-calc(130px / 1.5);
   max-width: calc(130px / 1.5);
 }
 
-/* line 19, src/scss/_components/integrations/_why.scss */
+/* line 26, src/scss/_components/integrations/_why.scss */
 .why__box-1 img {
   max-width: -webkit-calc(118px / 1.5);
   max-width: calc(118px / 1.5);
 }
 
-/* line 24, src/scss/_components/integrations/_why.scss */
+/* line 31, src/scss/_components/integrations/_why.scss */
 .why__box-2 img {
   max-width: -webkit-calc(113px / 1.5);
   max-width: calc(113px / 1.5);
 }
 
-/* line 29, src/scss/_components/integrations/_why.scss */
+/* line 36, src/scss/_components/integrations/_why.scss */
 .why__box-icon {
   height: 120px;
 }
 
-/* line 32, src/scss/_components/integrations/_why.scss */
+/* line 39, src/scss/_components/integrations/_why.scss */
 .why__box-icon img {
   display: block;
   height: auto;
@@ -2519,13 +2564,13 @@ picture {
   margin-right: auto;
 }
 
-/* line 40, src/scss/_components/integrations/_why.scss */
+/* line 47, src/scss/_components/integrations/_why.scss */
 .why__box-title {
   padding-top: 15px;
   padding-bottom: 30px;
 }
 
-/* line 45, src/scss/_components/integrations/_why.scss */
+/* line 52, src/scss/_components/integrations/_why.scss */
 .why__box-desc {
   max-width: 300px;
   margin-left: auto;
