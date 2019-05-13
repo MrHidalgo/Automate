@@ -2,7 +2,8 @@
 
 section#fun.fun(class!= (pageClassName === 'p-integrations') ? 'fun--dark':'')
 	.fun__bg
-		+circleLineSVG()
+		if(pageClassName !== 'p-single-app')
+			+circleLineSVG()
 
 		.fun__bg-sheet
 			+sheetSVG()
