@@ -1323,6 +1323,98 @@ picture {
   color: rgba(255, 255, 255, 0.36);
 }
 
+/* line 3, src/scss/_components/common/_integrate.scss */
+.integrate {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/common/_integrate.scss */
+  .integrate {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 12, src/scss/_components/common/_integrate.scss */
+.integrate__title {
+  padding-bottom: 50px;
+  color: #4f81e2;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 16, src/scss/_components/common/_integrate.scss */
+  .integrate__title br {
+    display: none;
+  }
+}
+
+/* line 23, src/scss/_components/common/_integrate.scss */
+.integrate__box-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 28, src/scss/_components/common/_integrate.scss */
+.integrate__box-img img {
+  display: block;
+  max-width: -webkit-calc(71px / 1.5);
+  max-width: calc(71px / 1.5);
+  height: auto;
+}
+
+/* line 34, src/scss/_components/common/_integrate.scss */
+.integrate__box-img .icon-font {
+  margin-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+/* line 41, src/scss/_components/common/_integrate.scss */
+.integrate__box-desc {
+  padding-top: 20px;
+}
+
+/* line 44, src/scss/_components/common/_integrate.scss */
+.integrate__box-desc p {
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+/* line 50, src/scss/_components/common/_integrate.scss */
+.integrate__box-btn {
+  padding-top: 20px;
+}
+
+/* line 53, src/scss/_components/common/_integrate.scss */
+.integrate__box-btn a {
+  max-width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 61, src/scss/_components/common/_integrate.scss */
+.integrate .card {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 25px 27px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 25px 27px 0 rgba(0, 0, 0, 0.1);
+}
+
 /* line 3, src/scss/_components/common/_run.scss */
 .run {
   overflow: hidden;
