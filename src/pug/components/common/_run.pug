@@ -1,10 +1,15 @@
 // SECTION run :: START
 
-section#run.run
+section#run.run(class!= (pageClassName === 'p-integrations') ?'run--white':'')
 
 	.run__bg
 
 		+circleLineSVG()
+
+		if(pageClassName === 'p-integrations')
+			.run__bg-img
+				img(src="img/img-run-bg-1.svg" alt="" title="")
+				img(src="img/img-run-bg-2.svg" alt="" title="")
 
 	.run__wrapper
 
