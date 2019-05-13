@@ -1,0 +1,88 @@
+// SECTION recipe :: START
+
+section#recipe.recipe
+
+	.recipe__bg
+
+	.recipe__wrapper
+
+		.container
+			.row
+				.col-12
+
+					h2.recipe__title.c-title!= "Make your own recipe"
+					p.recipe__desc!= "Did not found any templates that meet your need. Don't worry! start making your own integrations"
+
+
+		.container
+			.row
+				.col-12
+
+					.recipe__box-wrapper.d-flex
+						.recipe__box.recipe__box-0
+							.recipe__box-header
+								h3.recipe__box-title.recipe__box-title-0.c-subtitle
+									p!= "When This Happens"
+									span.badge!= "TRIGGERS"
+							.recipe__box-body
+								.recipe__box-content
+									each val, idx in [1,2,3,4,5,6,7]
+										div
+											label
+												input(type="checkbox" name="")
+												div
+													div
+														img(src="img/img-integrate-facebook.png" srcset="img/img-integrate-facebook@2x.png 2x" alt="" title="")
+													div
+														p!= "New Lead"
+														span!= "Triggers when a new lead is added"
+										div
+											label
+												input(type="checkbox" name="")
+												div
+													div
+														img(src="img/img-integrate-pipedrive.png" srcset="img/img-integrate-pipedrive@2x.png 2x" alt="" title="")
+													div
+														p!= "Won a deal!"
+														span!= "Triggers when a deal is won"
+
+						.recipe__box.recipe__box-1
+							.recipe__box-header
+								h3.recipe__box-title.recipe__box-title-1.c-subtitle
+									p!= "Do this"
+									span.badge!= "ACTIONS"
+
+							.recipe__box-body
+								.recipe__box-content
+									div
+										label
+											input(type="checkbox" name="")
+											div
+												div
+													img(src="img/img-integrate-facebook.png" srcset="img/img-integrate-facebook@2x.png 2x" alt="" title="")
+												div
+													p!= "New Lead"
+													span!= "Triggers when a new lead is added"
+									div
+										label
+											input(type="checkbox" name="")
+											div
+												div
+													img(src="img/img-integrate-pipedrive.png" srcset="img/img-integrate-pipedrive@2x.png 2x" alt="" title="")
+												div
+													p!= "Won a deal!"
+													span!= "Triggers when a deal is won"
+
+
+						.recipe__box.recipe__box-2
+							.recipe__box-header
+								h3.recipe__box-title.recipe__box-title-2.c-subtitle
+									p!= "Let's Integrate"
+
+							.recipe__box-body
+
+								a.recipe__box-btn.c-btn.c-btn--bg(href="#" class="" title="")!= "Try It Now"
+
+								img.recipe__box-img(src="img/img-good-robot.png" srcset="img/img-good-robot@2x.png 2x" alt="" title="")
+
+// SECTION recipe :: END

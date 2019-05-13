@@ -1,0 +1,61 @@
+// SECTION main :: START
+
+section#s-main.s-main
+
+	.s-main__wrapper
+
+		.container
+			.row
+				.col-12
+
+					img.s-main__img(src="img/img-s-main-pazzle.svg" alt="" title="")
+
+					h2.s-main__title.c-title!= "Integrate Facebook Lead Ads"
+					p.s-main__desc!= "with your favourite apps"
+
+		.container
+			.row.position-relative
+
+				.col-md-6.col-12
+
+					.s-main__box.p-4.h-100.d-flex.align-items-center
+
+						div
+							img.s-main__box-img.img-fluid(src="img/img-ads-facebook.png" srcset="img/img-ads-facebook@2x.png 2x" alt="" title="")
+
+							p.s-main__box-desc!= "Reach out to your prospects and get leads for your business with targeted ads using Facebook Lead Ads."
+
+				a.s-main__arrow.d-flex.align-items-center.justify-content-center(href="#" class="" title="")
+					i.icon-font.icon-arrow
+
+				.col-md-6.col-12
+
+					.s-main__box.p-4.h-100
+
+						div
+							form.pick__form(action='' autocomplete="off")
+								.pick__form-field
+									.pick__form-icon.d-flex.align-items-center.justify-content-center
+										i.icon-font.icon-search
+									input.pick__form-input(type='text' name="" placeholder="Search for 100+ Apps")
+
+							.pick__box-wrapper.d-flex.flex-wrap
+								a.pick__box.pick__box-0.d-flex.flex-column.align-items-center.justify-content-center(href="#" class="" title="")
+									.pick__box-icon
+										img(src="img/img-pick-gs.png" srcset="img/img-pick-gs@2x.png 2x" alt="" title="")
+									.pick__box-title
+										p!= "Google Sheets"
+
+								a.pick__box.pick__box-1.d-flex.flex-column.align-items-center.justify-content-center(href="#" class="" title="")
+									.pick__box-icon.d-flex.align-items-center.justify-content-center
+										img(src="img/img-pick-gmail.png" srcset="img/img-pick-gmail@2x.png 2x" alt="" title="")
+									.pick__box-title
+										p!= "Gmail"
+
+								a.pick__box.pick__box-2.d-flex.flex-column.align-items-center.justify-content-center(href="#" class="" title="")
+									.pick__box-icon
+										img(src="img/img-pick-twitter.png" srcset="img/img-pick-twitter@2x.png 2x" alt="" title="")
+									.pick__box-title
+										p!= "Twitter"
+
+// SECTION main :: END

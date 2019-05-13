@@ -1300,25 +1300,23 @@ picture {
   }
 }
 
-@media screen and (max-width: 767px) {
-  /* line 15, src/scss/_components/common/_breadcrumbs.scss */
-  .breadcrumbs .breadcrumb-item {
-    font-size: 14px;
-  }
+/* line 15, src/scss/_components/common/_breadcrumbs.scss */
+.breadcrumbs .breadcrumb-item {
+  font-size: 14px;
 }
 
-/* line 21, src/scss/_components/common/_breadcrumbs.scss */
+/* line 19, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs .breadcrumb-item + .breadcrumb-item:before {
   content: '>';
   color: #ffffff;
 }
 
-/* line 27, src/scss/_components/common/_breadcrumbs.scss */
+/* line 25, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs .breadcrumb-item a {
   color: #ffffff;
 }
 
-/* line 31, src/scss/_components/common/_breadcrumbs.scss */
+/* line 29, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs .breadcrumb-item.active {
   color: rgba(255, 255, 255, 0.36);
 }
@@ -1413,6 +1411,22 @@ picture {
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 25px 27px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 25px 27px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 68, src/scss/_components/common/_integrate.scss */
+.integrate .card:hover {
+  -webkit-box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/common/_run.scss */
@@ -2891,7 +2905,7 @@ picture {
 
 /* line 55, src/scss/_components/integrations/_main.scss */
 .i-main__desc {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   width: 100%;
   max-width: 720px;
   margin-left: auto;
@@ -2913,6 +2927,438 @@ picture {
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
+}
+
+/* line 3, src/scss/_components/integrations/_recipe.scss */
+.recipe {
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+
+/* line 10, src/scss/_components/integrations/_recipe.scss */
+.recipe__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, src/scss/_components/integrations/_recipe.scss */
+.recipe__bg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #f32194;
+}
+
+/* line 29, src/scss/_components/integrations/_recipe.scss */
+.recipe__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 34, src/scss/_components/integrations/_recipe.scss */
+.recipe__title, .recipe__desc {
+  color: #ffffff;
+}
+
+/* line 39, src/scss/_components/integrations/_recipe.scss */
+.recipe__title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* line 44, src/scss/_components/integrations/_recipe.scss */
+.recipe__desc {
+  width: 100%;
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* line 54, src/scss/_components/integrations/_recipe.scss */
+.recipe__box {
+  width: 100%;
+}
+
+/* line 57, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-0, .recipe__box-1 {
+  max-width: -webkit-calc((100% - 25%) / 2);
+  max-width: calc((100% - 25%) / 2);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 57, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-0, .recipe__box-1 {
+    max-width: -webkit-calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 57, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-0, .recipe__box-1 {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 68, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-0 .recipe__box-body, .recipe__box-1 .recipe__box-body {
+  position: relative;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 68, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-0 .recipe__box-body, .recipe__box-1 .recipe__box-body {
+    padding-right: 0;
+  }
+}
+
+/* line 75, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-0 .recipe__box-body:after, .recipe__box-1 .recipe__box-body:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: -webkit-calc(100% - 30px);
+  width: calc(100% - 30px);
+  height: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+}
+
+/* line 87, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-2 {
+  max-width: 25%;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 87, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-2 {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  /* line 95, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-2 .recipe__box-title {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 87, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-2 {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 87, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-2 {
+    margin-top: 0;
+  }
+}
+
+/* line 108, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-header {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.16);
+}
+
+@media screen and (max-width: 575px) {
+  /* line 108, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-header {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 118, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-wrapper {
+  padding: 30px 30px 0;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 118, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 118, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-wrapper {
+    padding: 15px 15px 0;
+  }
+}
+
+/* line 131, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+}
+
+/* line 137, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-title-0 .badge {
+  background-color: rgba(243, 33, 148, 0.12);
+  color: #F32194;
+}
+
+/* line 143, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-title-1 .badge {
+  background-color: rgba(128, 33, 243, 0.12);
+  color: #8021f3;
+}
+
+/* line 149, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-title p {
+  line-height: 1;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 149, src/scss/_components/integrations/_recipe.scss */
+  .recipe__box-title p {
+    font-size: 20px;
+  }
+}
+
+/* line 157, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-title .badge {
+  margin-left: 10px;
+  -webkit-border-radius: 2em;
+          border-radius: 2em;
+  font-size: 8px;
+  padding: 7px 12px;
+}
+
+/* line 165, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-btn {
+  margin-bottom: 30px;
+  border-color: #F32194;
+  background-color: #f32194;
+}
+
+/* line 170, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-btn:hover {
+  color: #f32194;
+}
+
+/* line 175, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-img {
+  position: relative;
+  left: 30px;
+  display: block;
+  width: 100%;
+  max-width: -webkit-calc(317px / 1.5);
+  max-width: calc(317px / 1.5);
+  height: -webkit-calc(375px / 1.5);
+  height: calc(375px / 1.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 186, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content {
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+  max-height: -webkit-calc(58px * 6);
+  max-height: calc(58px * 6);
+  padding-bottom: 30px;
+}
+
+/* line 193, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  margin-bottom: 5px;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #fbfbfb;
+}
+
+/* line 201, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label {
+  cursor: pointer;
+  width: 100%;
+}
+
+/* line 205, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* line 213, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label input:checked + div:before {
+  border-color: #4F81E2;
+  background-color: #4f81e2;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 218, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label input:checked + div:after {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) scale(1);
+      -ms-transform: rotate(45deg) scale(1);
+          transform: rotate(45deg) scale(1);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 227, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label img {
+  display: block;
+  max-width: -webkit-calc(71px / 1.5);
+  max-width: calc(71px / 1.5);
+  height: auto;
+}
+
+/* line 233, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+/* line 238, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label > div:before, .recipe__box-content > div label > div:after {
+  content: '';
+  position: absolute;
+}
+
+/* line 244, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label > div:before {
+  right: 13px;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #D2D2D2;
+  background-color: transparent;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 254, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label > div:after {
+  opacity: 0;
+  top: 14px;
+  right: 20px;
+  width: 9px;
+  height: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+  -webkit-transform: rotate(45deg) scale(0);
+      -ms-transform: rotate(45deg) scale(0);
+          transform: rotate(45deg) scale(0);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 268, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label > div div:nth-of-type(1) {
+  padding-left: 5px;
+  width: -webkit-calc((71px / 1.5) + 15px);
+  width: calc((71px / 1.5) + 15px);
+}
+
+/* line 272, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label > div div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: -webkit-calc(100% - ((71px / 1.5) + 15px));
+  max-width: calc(100% - ((71px / 1.5) + 15px));
+  padding-right: 50px;
+}
+
+/* line 281, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label > div p,
+.recipe__box-content > div label > div span {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+/* line 288, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label > div p {
+  font-size: 18px;
+}
+
+/* line 292, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > div label > div span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
 }
 
 /* line 3, src/scss/_components/integrations/_ads.scss */
@@ -3067,6 +3513,166 @@ picture {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 3, src/scss/_components/single-app/_main.scss */
+.s-main {
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(33, 150, 243, 0.17);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/single-app/_main.scss */
+  .s-main {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+/* line 15, src/scss/_components/single-app/_main.scss */
+.s-main__img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* line 24, src/scss/_components/single-app/_main.scss */
+.s-main__title {
+  padding-bottom: 30px;
+}
+
+/* line 28, src/scss/_components/single-app/_main.scss */
+.s-main__desc {
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 28, src/scss/_components/single-app/_main.scss */
+  .s-main__desc {
+    font-size: 18px;
+  }
+}
+
+/* line 41, src/scss/_components/single-app/_main.scss */
+.s-main__arrow {
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 55px;
+  height: 55px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #4f81e2;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 41, src/scss/_components/single-app/_main.scss */
+  .s-main__arrow {
+    position: static;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    margin: 15px auto;
+  }
+}
+
+/* line 58, src/scss/_components/single-app/_main.scss */
+.s-main__arrow .icon-font {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 58, src/scss/_components/single-app/_main.scss */
+  .s-main__arrow .icon-font {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+/* line 67, src/scss/_components/single-app/_main.scss */
+.s-main__box {
+  width: 100%;
+  min-height: 400px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.03);
+          box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.03);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 67, src/scss/_components/single-app/_main.scss */
+  .s-main__box {
+    min-height: 0;
+  }
+}
+
+/* line 77, src/scss/_components/single-app/_main.scss */
+.s-main__box-img {
+  max-width: -webkit-calc(330px / 1.5);
+  max-width: calc(330px / 1.5);
+}
+
+/* line 81, src/scss/_components/single-app/_main.scss */
+.s-main__box-desc {
+  width: 100%;
+  max-width: 350px;
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 81, src/scss/_components/single-app/_main.scss */
+  .s-main__box-desc {
+    font-size: 16px;
+  }
+}
+
+/* line 93, src/scss/_components/single-app/_main.scss */
+.s-main .pick__form {
+  padding-bottom: 30px;
+}
+
+/* line 96, src/scss/_components/single-app/_main.scss */
+.s-main .pick__form .icon-search {
+  color: rgba(0, 0, 0, 0.44);
+}
+
+/* line 100, src/scss/_components/single-app/_main.scss */
+.s-main .pick__form-input {
+  width: 100%;
+  -webkit-border-radius: 2em;
+          border-radius: 2em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #f9f9f9;
+}
+
+/* line 108, src/scss/_components/single-app/_main.scss */
+.s-main .pick__box {
+  width: 130px;
+  height: 130px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 /* line 3, src/scss/_components/plans/_pricing.scss */

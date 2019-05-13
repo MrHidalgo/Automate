@@ -13,9 +13,7 @@
 		}
 
 		&-item {
-			@include adaptive(767) {
-				font-size: 14px;
-			}
+			font-size: 14px;
 
 			& + .breadcrumb-item {
 				&:before {
