@@ -250,10 +250,10 @@
 			margin-left: auto;
 			margin-right: auto;
 			background-color: transparent;
-			border: 1px solid rgba(#2196f3, 0.99);
+			border: 1px solid rgba($brandColor-blue, 0.99);
 			@extend %fontOpenSans;
 			font-size: 18px;
-			color: #2397f3;
+			color: $brandColor-blue;
 			@include transition(border-color, background-color, box-shadow);
 		}
 
@@ -369,7 +369,7 @@
 
 		a {
 			position: relative;
-			color: #2196F3;
+			color: $brandColor-blue;
 
 			&:after {
 				content: '';
@@ -381,7 +381,7 @@
 				height: 2px;
 				margin-left: auto;
 				margin-right: auto;
-				background-color: #2196f3;
+				background-color: $brandColor-blue;
 			}
 		}
 

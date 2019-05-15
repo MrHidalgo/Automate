@@ -40,7 +40,7 @@
 				margin-left: 0;
 				margin-right: 0;
 				margin-bottom: 20px;
-				font-size: 14px;
+				font-size: 16px;
 				color: rgba(#292929, 0.7);
 				@include adaptive(424) {
 					text-align: center;
@@ -91,11 +91,11 @@
 			@include transition(color);
 
 			&:hover {
-				color: #2196f3;
+				color: $brandColor-blue;
 			}
 
 			&.is-active {
-				color: #2196f3;
+				color: $brandColor-blue;
 			}
 
 			&:hover,

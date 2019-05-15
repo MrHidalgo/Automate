@@ -63,11 +63,6 @@
 
 	&__subtitle {
 		padding-bottom: 30px;
-		color: rgba(#000, 0.7);
-		font-size: 20px;
-		@include adaptive(767) {
-			text-align: center;
-		}
 	}
 
 	&__btn {

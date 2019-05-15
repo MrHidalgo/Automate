@@ -4,6 +4,7 @@
 	line-height: 1.2;
 	text-align: center;
 	font-size: 45px;
+	font-family: 'Lora', sans-serif;
 	@extend %fontLora;
 	@include adaptive(1439) {
 		font-size: 42px;

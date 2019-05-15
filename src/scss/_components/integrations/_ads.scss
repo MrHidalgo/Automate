@@ -60,12 +60,6 @@
 				margin-right: auto;
 			}
 		}
-
-		&-desc {
-			@include adaptive(575) {
-				text-align: center;
-			}
-		}
 	}
 }
 

@@ -147,7 +147,7 @@
 					width: 22px;
 					height: 22px;
 					border-radius: 100%;
-					background-color: rgba(#2196F3, 0.23);
+					background-color: rgba($brandColor-blue, 0.23);
 
 					&:before {
 						content: '';
@@ -155,7 +155,7 @@
 						width: 14px;
 						height: 14px;
 						border-radius: 100%;
-						background-color: rgba(#2196F3, 1);
+						background-color: rgba($brandColor-blue, 1);
 					}
 				}
 

@@ -49,7 +49,7 @@
 	&__subtitle {
 		padding-bottom: 30px;
 		text-align: left;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Lora', sans-serif;
 		font-size: 35px;
 		@include adaptive(767) {
 			font-size: 30px;
@@ -59,13 +59,6 @@
 
 	&__text {
 		padding-bottom: 30px;
-		font-size: 20px;
-		@include adaptive(767) {
-			text-align: center;
-		}
-		@include adaptive(575) {
-			font-size: 18px;
-		}
 	}
 
 	&__pr {
@@ -81,7 +74,6 @@
 			display: flex;
 			align-items: center;
 			height: 50%;
-			@extend %fontLora;
 			font-size: 18px;
 
 			&:nth-of-type(2) {

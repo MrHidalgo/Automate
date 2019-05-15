@@ -7,15 +7,15 @@
 $bth-width: unset;
 $bth-height: 45px;
 $btn-border-width: 1px;
-$btn-border-color: rgba(#2196f3, 1);
-$bth-border-radius: 0;
+$btn-border-color: rgba($brandColor-blue, 1);
+$bth-border-radius: 4px;
 $bth-box-shadow: none;
-$bth-background-color: rgba(#2196f3, 1);
+$bth-background-color: rgba($brandColor-blue, 1);
 $bth-color: rgba(#fff, 1);
 $bth-font-size: 16px;
 $bth-font-weight: 400;
 
-$btn-color--border: rgba(#2196f3, 1);
+$btn-color--border: rgba($brandColor-blue, 1);
 
 // ==================================================
 // ==================================================

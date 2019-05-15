@@ -29,12 +29,12 @@
 			}
 
 			&__btn {
-				background-color: #2196f3;
+				background-color: $brandColor-blue;
 				color: #ffffff;
 
 				&:hover {
 					background-color: transparent;
-					color: #2196f3;
+					color: $brandColor-blue;
 				}
 			}
 		}
@@ -122,10 +122,10 @@
 				}
 
 				#sheet-0 {
-					fill: rgba(#2196F3, 0.09);
+					fill: rgba($brandColor-blue, 0.09);
 				}
 				#sheet-1 {
-					stroke: #99B7F1;
+					stroke: $brandColor-blue;
 				}
 			}
 		}

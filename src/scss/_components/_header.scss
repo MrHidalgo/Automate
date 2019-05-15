@@ -99,7 +99,7 @@
 			@include transition(color);
 
 			&:hover {
-				color: #2196f3;
+				color: $brandColor-blue;
 				background-color: transparent;
 				border: none;
 				@include transition(color);

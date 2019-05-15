@@ -1,0 +1,11 @@
+// TEXT :: START
+
+.c-text {
+	font-size: 20px;
+	@include adaptive(767) {
+		text-align: center;
+		font-size: 18px;
+	}
+}
+
+// TEXT :: END

@@ -47,8 +47,9 @@
 
 	&__title {
 		padding-bottom: 30px;
-		font-size: 20px;
 		color: #292929;
+		font-size: 20px;
+		font-family: 'Lora', sans-serif;
 		@include adaptive(424) {
 			text-align: center;
 		}

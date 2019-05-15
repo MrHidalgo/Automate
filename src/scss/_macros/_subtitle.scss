@@ -3,6 +3,7 @@
 .c-subtitle {
 	font-size: 28px;
 	font-weight: 300;
+	font-family: 'Lora', sans-serif;
 	@include adaptive(1439) {
 		font-size: 26px;
 	}
