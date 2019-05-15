@@ -2169,6 +2169,7 @@ picture {
 
 /* line 13, src/scss/_components/home/_complex.scss */
 .complex__path {
+  position: relative;
   display: block;
   width: 200px;
   max-width: 100%;
@@ -2176,20 +2177,20 @@ picture {
   margin-left: auto;
 }
 
-/* line 21, src/scss/_components/home/_complex.scss */
+/* line 22, src/scss/_components/home/_complex.scss */
 .complex__title {
   padding-bottom: 30px;
   text-align: left;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 21, src/scss/_components/home/_complex.scss */
+  /* line 22, src/scss/_components/home/_complex.scss */
   .complex__title {
     text-align: center;
   }
 }
 
-/* line 29, src/scss/_components/home/_complex.scss */
+/* line 30, src/scss/_components/home/_complex.scss */
 .complex__pazzle {
   display: block;
   width: 250px;
@@ -2199,13 +2200,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 29, src/scss/_components/home/_complex.scss */
+  /* line 30, src/scss/_components/home/_complex.scss */
   .complex__pazzle {
     width: 200px;
   }
 }
 
-/* line 40, src/scss/_components/home/_complex.scss */
+/* line 41, src/scss/_components/home/_complex.scss */
 .complex__pr {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2214,7 +2215,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 40, src/scss/_components/home/_complex.scss */
+  /* line 41, src/scss/_components/home/_complex.scss */
   .complex__pr {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2223,7 +2224,7 @@ picture {
   }
 }
 
-/* line 46, src/scss/_components/home/_complex.scss */
+/* line 47, src/scss/_components/home/_complex.scss */
 .complex__pr-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2234,13 +2235,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 46, src/scss/_components/home/_complex.scss */
+  /* line 47, src/scss/_components/home/_complex.scss */
   .complex__pr-left {
     padding-top: 50px;
   }
 }
 
-/* line 54, src/scss/_components/home/_complex.scss */
+/* line 55, src/scss/_components/home/_complex.scss */
 .complex__pr-left p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2256,24 +2257,24 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 54, src/scss/_components/home/_complex.scss */
+  /* line 55, src/scss/_components/home/_complex.scss */
   .complex__pr-left p {
     height: auto;
     margin-bottom: 30px;
     font-size: 16px;
   }
-  /* line 64, src/scss/_components/home/_complex.scss */
+  /* line 65, src/scss/_components/home/_complex.scss */
   .complex__pr-left p:last-of-type {
     margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 71, src/scss/_components/home/_complex.scss */
+  /* line 72, src/scss/_components/home/_complex.scss */
   .complex__pr-right {
     width: 40%;
   }
-  /* line 75, src/scss/_components/home/_complex.scss */
+  /* line 76, src/scss/_components/home/_complex.scss */
   .complex__pr-right img {
     display: block;
     max-width: 100%;
@@ -3490,6 +3491,7 @@ picture {
 
 /* line 15, src/scss/_components/single-app/_main.scss */
 .s-main__img {
+  position: relative;
   display: block;
   max-width: 200px;
   height: auto;
@@ -3498,12 +3500,12 @@ picture {
   margin-bottom: 30px;
 }
 
-/* line 24, src/scss/_components/single-app/_main.scss */
+/* line 25, src/scss/_components/single-app/_main.scss */
 .s-main__title {
   padding-bottom: 30px;
 }
 
-/* line 28, src/scss/_components/single-app/_main.scss */
+/* line 29, src/scss/_components/single-app/_main.scss */
 .s-main__desc {
   padding-bottom: 50px;
   width: 100%;
@@ -3513,7 +3515,7 @@ picture {
   text-align: center;
 }
 
-/* line 37, src/scss/_components/single-app/_main.scss */
+/* line 38, src/scss/_components/single-app/_main.scss */
 .s-main__arrow {
   overflow: hidden;
   z-index: 1;
@@ -3531,7 +3533,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 37, src/scss/_components/single-app/_main.scss */
+  /* line 38, src/scss/_components/single-app/_main.scss */
   .s-main__arrow {
     position: static;
     -webkit-transform: translate(0);
@@ -3541,14 +3543,14 @@ picture {
   }
 }
 
-/* line 54, src/scss/_components/single-app/_main.scss */
+/* line 55, src/scss/_components/single-app/_main.scss */
 .s-main__arrow .icon-font {
   color: #ffffff;
   font-size: 22px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 54, src/scss/_components/single-app/_main.scss */
+  /* line 55, src/scss/_components/single-app/_main.scss */
   .s-main__arrow .icon-font {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
@@ -3556,7 +3558,7 @@ picture {
   }
 }
 
-/* line 63, src/scss/_components/single-app/_main.scss */
+/* line 64, src/scss/_components/single-app/_main.scss */
 .s-main__box {
   width: 100%;
   min-height: 400px;
@@ -3568,19 +3570,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 63, src/scss/_components/single-app/_main.scss */
+  /* line 64, src/scss/_components/single-app/_main.scss */
   .s-main__box {
     min-height: 0;
   }
 }
 
-/* line 73, src/scss/_components/single-app/_main.scss */
+/* line 74, src/scss/_components/single-app/_main.scss */
 .s-main__box-img {
   max-width: -webkit-calc(330px / 1.5);
   max-width: calc(330px / 1.5);
 }
 
-/* line 77, src/scss/_components/single-app/_main.scss */
+/* line 78, src/scss/_components/single-app/_main.scss */
 .s-main__box-desc {
   width: 100%;
   max-width: 350px;
@@ -3588,17 +3590,17 @@ picture {
   text-align: left;
 }
 
-/* line 86, src/scss/_components/single-app/_main.scss */
+/* line 87, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form {
   padding-bottom: 30px;
 }
 
-/* line 89, src/scss/_components/single-app/_main.scss */
+/* line 90, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form .icon-search {
   color: rgba(0, 0, 0, 0.44);
 }
 
-/* line 93, src/scss/_components/single-app/_main.scss */
+/* line 94, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form-input {
   width: 100%;
   -webkit-border-radius: 2em;
@@ -3608,7 +3610,7 @@ picture {
   background-color: #f9f9f9;
 }
 
-/* line 101, src/scss/_components/single-app/_main.scss */
+/* line 102, src/scss/_components/single-app/_main.scss */
 .s-main .pick__box {
   width: 130px;
   height: 130px;

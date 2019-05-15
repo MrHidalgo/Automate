@@ -7,5 +7,7 @@
 * - jquery;
 * - popper.js;
 * - bootstrap;
+* - jquery migrate;
+* - jquery.stellar;
 *
 * */

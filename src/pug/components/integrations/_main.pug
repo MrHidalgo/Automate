@@ -11,7 +11,8 @@ section#i-main.i-main
 			.row
 				.col-12
 
-					img.i-main__img(src="img/img-i-main-bg.png" srcset="img/img-i-main-bg@2x.png 2x" alt="" title="")
+					div(parallax-js)
+						img.i-main__img(data-stellar-ratio="0.95" src="img/img-i-main-bg.png" srcset="img/img-i-main-bg@2x.png 2x" alt="" title="")
 
 					h1.i-main__title.c-title!= "Facebook & Pipedrive Integration"
 					p.i-main__desc.c-text!= "Sync contact data and automate CRM actions. Connect Facebook Lead Ads and Pipedrive. Run workflows."

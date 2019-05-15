@@ -8,7 +8,8 @@ section#s-main.s-main
 			.row
 				.col-12
 
-					img.s-main__img(src="img/img-s-main-pazzle.svg" alt="" title="")
+					div(parallax-js)
+						img.s-main__img(data-stellar-ratio="0.95" src="img/img-s-main-pazzle.svg" alt="" title="")
 
 					h1.s-main__title.c-title!= "Integrate Facebook Lead Ads"
 					p.s-main__desc.c-text!= "with your favourite apps"

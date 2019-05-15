@@ -22,7 +22,8 @@ section#complex.complex
 				.col-xl-6.col-12.d-flex.flex-column.justify-content-between
 
 					div
-						img.complex__path(src="img/img-complex-bg.svg" alt="" title="")
+						div(parallax-js)
+							img.complex__path(data-stellar-ratio="1.05" src="img/img-complex-bg.svg" alt="" title="")
 
 						h1.complex__title.c-title!= "Complex Workflows"
 						p.complex__desc.c-text!= "When someone fills a form on a website, send me a notification email first. Then, add them to the nurturing campaign in Mailchimp. Wait for 4 days Check the lead score or email open rate. If it's good, Create a contact in Salesforce"
