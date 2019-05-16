@@ -1413,42 +1413,42 @@ picture {
 /* line 33, src/scss/_components/common/_integrate.scss */
 .integrate__box-img img {
   display: block;
-  max-width: -webkit-calc(71px / 1.5);
-  max-width: calc(71px / 1.5);
+  max-width: 64px;
   height: auto;
 }
 
-/* line 39, src/scss/_components/common/_integrate.scss */
+/* line 40, src/scss/_components/common/_integrate.scss */
 .integrate__box-img .icon-font {
   margin-left: 20px;
   padding-right: 20px;
   font-size: 20px;
 }
 
-/* line 46, src/scss/_components/common/_integrate.scss */
+/* line 47, src/scss/_components/common/_integrate.scss */
 .integrate__box-desc {
   padding-top: 20px;
+  font-size: 18px;
 }
 
-/* line 49, src/scss/_components/common/_integrate.scss */
+/* line 51, src/scss/_components/common/_integrate.scss */
 .integrate__box-desc p {
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 
-/* line 55, src/scss/_components/common/_integrate.scss */
+/* line 57, src/scss/_components/common/_integrate.scss */
 .integrate__box-btn {
   padding-top: 20px;
 }
 
-/* line 58, src/scss/_components/common/_integrate.scss */
+/* line 60, src/scss/_components/common/_integrate.scss */
 .integrate__box-btn a {
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 66, src/scss/_components/common/_integrate.scss */
+/* line 68, src/scss/_components/common/_integrate.scss */
 .integrate .card {
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -1463,7 +1463,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 73, src/scss/_components/common/_integrate.scss */
+/* line 75, src/scss/_components/common/_integrate.scss */
 .integrate .card:hover {
   -webkit-box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
@@ -3861,15 +3861,15 @@ picture {
 }
 
 /* line 120, src/scss/_components/single-app/_do.scss */
-.do__box-header p {
+.do__box-header h2 {
   padding-left: 50px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 767px) {
   /* line 120, src/scss/_components/single-app/_do.scss */
-  .do__box-header p {
-    font-size: 18px;
+  .do__box-header h2 {
+    font-size: 22px;
   }
 }
 

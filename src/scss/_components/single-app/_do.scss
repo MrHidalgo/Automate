@@ -117,11 +117,11 @@
 				height: auto;
 			}
 
-			p {
+			h2 {
 				padding-left: 50px;
-				font-size: 22px;
+				font-size: 24px;
 				@include adaptive(767) {
-					font-size: 18px;
+					font-size: 22px;
 				}
 			}
 		}

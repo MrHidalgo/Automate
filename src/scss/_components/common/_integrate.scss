@@ -32,7 +32,8 @@
 
 			img {
 				display: block;
-				max-width: calc(71px / 1.5);
+				//max-width: calc(71px / 1.5);
+				max-width: 64px;
 				height: auto;
 			}
 
@@ -45,6 +46,7 @@
 
 		&-desc {
 			padding-top: 20px;
+			font-size: 18px;
 
 			p {
 				color: rgba(#000, 0.7);
