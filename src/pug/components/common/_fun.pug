@@ -17,6 +17,9 @@ section#fun.fun(class!= (pageClassName === 'p-integrations') ? 'fun--dark':'')
 			h1.fun__title.c-title!= "Automate Work. Have Fun!"
 			h2.fun__subtitle.c-subtitle!= "Say Goodbye to those busy days"
 
-			a.fun__btn.c-btn.c-btn--border(href="#" class="" title="")!= "TRY NOW FOR FREE"
+			if(pageClassName === 'p-integrations')
+				a.fun__btn.c-btn.c-btn--border(href="#" class="" title="")!= "TRY NOW FOR FREE"
+			else
+				a.fun__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "TRY NOW FOR FREE"
 
 // SECTION fun :: END

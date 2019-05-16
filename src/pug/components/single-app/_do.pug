@@ -25,14 +25,16 @@ section#do.do
 								h2.c-subtitle!= "Triggers"
 
 						.do__box-body.p-5
-							each val, idx in [1,2,3]
-								div
-									.do__box-info.d-flex.align-items-center
+							ul
+								each val, idx in [1,2,3]
+									li
 										div
-											i.d-flex.align-items-center.justify-content-center
-										div
-											p!= "New Lead"
-											span!= "Triggers when a new lead is added"
+											.do__box-info.d-flex.align-items-center
+												div
+													i.d-flex.align-items-center.justify-content-center
+												div
+													p!= "New Lead"
+													span!= "Triggers when a new lead is added"
 
 				a.do__arrow.d-flex.align-items-center.justify-content-center(href="#" class="" title="")
 					i.icon-font.icon-arrow
@@ -47,13 +49,15 @@ section#do.do
 								h2.c-subtitle!= "Actions"
 
 						.do__box-body.p-5
-							each val, idx in [1,2,3]
-								div
-									.do__box-info.d-flex.align-items-center
+							ul
+								each val, idx in [1,2,3]
+									li
 										div
-											i.d-flex.align-items-center.justify-content-center
-										div
-											p!= "New Lead"
-											span!= "Triggers when a new lead is added"
+											.do__box-info.d-flex.align-items-center
+												div
+													i.d-flex.align-items-center.justify-content-center
+												div
+													p!= "New Lead"
+													span!= "Triggers when a new lead is added"
 
 // SECTION do :: END

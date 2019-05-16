@@ -83,7 +83,7 @@ section#pricing.pricing
 				.pricing__wrapper.pricing__wrapper-1
 					.pricing__box-wrapper
 						each val, idx in pricingData
-							div
+							div(class!= (idx === 3) ? 'is-active':'')
 								a.pricing__box(href="#" class!= "pricing__box-" + pricingData[idx].id)
 									p.pricing__box-title!= pricingData[idx].title
 

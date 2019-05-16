@@ -15,21 +15,22 @@ section#integrate.integrate
 
 		.container
 			.row
-				each val, idx in [1,2,3,4,5,6,7,8]
-					.col-lg-3.col-md-4.col-sm-6.col-12.pb-5
-						.card
-							.card-body
-								.integrate__box
-									.integrate__box-img
-										img(src="img/img-integrate-facebook.png" srcset="img/img-integrate-facebook@2x.png 2x" alt="" title="")
-										i.icon-font.icon-arrow
-										img(src="img/img-integrate-pipedrive.png" srcset="img/img-integrate-pipedrive@2x.png 2x" alt="" title="")
+				ul
+					each val, idx in [1,2,3,4,5,6,7,8]
+						li.col-lg-3.col-md-4.col-sm-6.col-12.pb-5
+							.card
+								.card-body
+									.integrate__box
+										.integrate__box-img
+											img(src="img/img-integrate-facebook.png" srcset="img/img-integrate-facebook@2x.png 2x" alt="" title="")
+											i.icon-font.icon-arrow
+											img(src="img/img-integrate-pipedrive.png" srcset="img/img-integrate-pipedrive@2x.png 2x" alt="" title="")
 
-									.integrate__box-desc
-										p!= "Add or Update a Person in Pipedrive on a New Lead in Facebook Lead Ads"
+										.integrate__box-desc
+											p!= "Add or Update a Person in Pipedrive on a New Lead in Facebook Lead Ads"
 
-									.integrate__box-btn
-										a.c-btn.c-btn--bg(href="#" class="" title="")!= "Try Now"
+										.integrate__box-btn
+											a.c-btn.c-btn--border(href="#" class="" title="")!= "Try Now"
 
 
 // SECTION integrate :: END

@@ -7,9 +7,6 @@ section#s-main.s-main
 		.container
 			.row
 				.col-12
-
-					img.s-main__img(src="img/img-s-main-pazzle.svg" alt="" title="")
-
 					h1.s-main__title.c-title!= "Integrate Facebook Lead Ads"
 					p.s-main__desc.c-text!= "with your favourite apps"
 
@@ -18,7 +15,7 @@ section#s-main.s-main
 
 				.col-md-6.col-12
 
-					.s-main__box.p-4.h-100.d-flex.align-items-center
+					.s-main__box.s-main__box-1.p-4.h-100.d-flex.align-items-center.justify-content-center
 
 						div
 							img.s-main__box-img.img-fluid(src="img/img-ads-facebook.png" srcset="img/img-ads-facebook@2x.png 2x" alt="" title="")
@@ -30,7 +27,7 @@ section#s-main.s-main
 
 				.col-md-6.col-12
 
-					.s-main__box.p-4.h-100
+					.s-main__box.s-main__box-2.p-4.h-100
 
 						div
 							form.pick__form(action='' autocomplete="off")
@@ -57,5 +54,10 @@ section#s-main.s-main
 										img(src="img/img-pick-twitter.png" srcset="img/img-pick-twitter@2x.png 2x" alt="" title="")
 									.pick__box-title
 										p!= "Twitter"
+
+			.container
+				.row
+					.col-12
+						img.s-main__img(src="img/img-s-main-pazzle.svg" alt="" title="")
 
 // SECTION main :: END

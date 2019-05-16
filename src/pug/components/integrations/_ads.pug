@@ -2,6 +2,10 @@
 
 section#ads.ads
 
+	.ads__bg
+		.ads__bg-img(parallax-js)
+			img(data-stellar-ratio="0.95" src="img/img-run-bg-2.svg" alt="" title="")
+
 	.ads__wrapper
 
 		.container
@@ -13,7 +17,7 @@ section#ads.ads
 							.ads__box-img.d-flex.align-items-center.justify-content-center
 								img.img-fluid(src="img/img-ads-facebook.png" srcset="img/img-ads-facebook@2x.png 2x" alt="" title="")
 
-							p.ads__box-title!= "Facebook Lead Ads"
+							p.ads__box-title.c-subtitle!= "Facebook Lead Ads"
 							.ads__box-line
 							p.ads__box-desc.c-text!= "Reach out to your prospects and get leads for your business with targeted ads using Facebook Lead Ads."
 
@@ -24,7 +28,7 @@ section#ads.ads
 							.ads__box-img.d-flex.align-items-center.justify-content-center
 								img.img-fluid(src="img/img-ads-pipedrive.png" srcset="img/img-ads-pipedrive@2x.png 2x" alt="" title="")
 
-							p.ads__box-title!= "Pipedrive"
+							p.ads__box-title.c-subtitle!= "Pipedrive"
 							.ads__box-line
 							p.ads__box-desc.c-text!= "Pipedrive is a CRM and deal pipeline management software that is simple and easy to use."
 

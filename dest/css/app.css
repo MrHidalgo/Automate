@@ -6,7 +6,7 @@ body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
 }
 
 /* line 9, src/scss/_utilities/_extend.scss */
-.c-title, .ads__box-title, .pricing__box-title, .pricing__box-price {
+.c-title, .pricing__box-title, .pricing__box-price {
   font-family: 'Lora', sans-serif;
 }
 
@@ -497,7 +497,7 @@ picture {
           align-items: center;
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 575px) {
   /* line 17, src/scss/_shared/_common.scss */
   .social--footer {
     -webkit-box-orient: vertical;
@@ -517,7 +517,7 @@ picture {
   color: #000;
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 575px) {
   /* line 24, src/scss/_shared/_common.scss */
   .social__title {
     margin-right: 0;
@@ -704,7 +704,7 @@ picture {
           align-items: flex-start;
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 575px) {
   /* line 22, src/scss/_macros/_nav.scss */
   .nav--footer .nav__list {
     width: 100%;
@@ -729,7 +729,7 @@ picture {
   color: rgba(41, 41, 41, 0.7);
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 575px) {
   /* line 39, src/scss/_macros/_nav.scss */
   .nav--footer .nav__list-link {
     text-align: center;
@@ -753,28 +753,45 @@ picture {
           align-items: center;
 }
 
-/* line 57, src/scss/_macros/_nav.scss */
+@media screen and (max-width: 575px) {
+  /* line 52, src/scss/_macros/_nav.scss */
+  .nav--footer-row .nav__list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 60, src/scss/_macros/_nav.scss */
 .nav--footer-row .nav__list-item {
   margin-right: 30px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 57, src/scss/_macros/_nav.scss */
+  /* line 60, src/scss/_macros/_nav.scss */
   .nav--footer-row .nav__list-item {
-    padding-bottom: 15px;
+    padding-bottom: 0;
   }
-  /* line 62, src/scss/_macros/_nav.scss */
+  /* line 65, src/scss/_macros/_nav.scss */
   .nav--footer-row .nav__list-item:last-of-type {
     margin-right: 0;
   }
 }
 
-/* line 68, src/scss/_macros/_nav.scss */
+@media screen and (max-width: 767px) {
+  /* line 60, src/scss/_macros/_nav.scss */
+  .nav--footer-row .nav__list-item {
+    padding-bottom: 15px;
+  }
+}
+
+/* line 74, src/scss/_macros/_nav.scss */
 .nav--footer-row .nav__list-link {
   margin-bottom: 0;
 }
 
-/* line 75, src/scss/_macros/_nav.scss */
+/* line 81, src/scss/_macros/_nav.scss */
 .nav__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -786,7 +803,7 @@ picture {
           align-items: center;
 }
 
-/* line 79, src/scss/_macros/_nav.scss */
+/* line 85, src/scss/_macros/_nav.scss */
 .nav__list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -798,7 +815,7 @@ picture {
           align-items: center;
 }
 
-/* line 84, src/scss/_macros/_nav.scss */
+/* line 90, src/scss/_macros/_nav.scss */
 .nav__list-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -817,17 +834,17 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 93, src/scss/_macros/_nav.scss */
+/* line 99, src/scss/_macros/_nav.scss */
 .nav__list-link:hover {
   color: #5F84E1;
 }
 
-/* line 97, src/scss/_macros/_nav.scss */
+/* line 103, src/scss/_macros/_nav.scss */
 .nav__list-link.is-active {
   color: #5F84E1;
 }
 
-/* line 101, src/scss/_macros/_nav.scss */
+/* line 107, src/scss/_macros/_nav.scss */
 .nav__list-link:hover, .nav__list-link.is-active {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
@@ -923,15 +940,15 @@ picture {
   width: auto;
   max-width: unset;
   height: 45px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: 1px solid #5f84e1;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -1243,7 +1260,7 @@ picture {
   padding-top: 20px;
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 575px) {
   /* line 23, src/scss/_components/_footer.scss */
   .footer__wrapper-0 {
     padding-bottom: 20px;
@@ -1283,7 +1300,7 @@ picture {
   font-family: 'Lora', sans-serif;
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 575px) {
   /* line 48, src/scss/_components/_footer.scss */
   .footer__title {
     text-align: center;
@@ -1335,7 +1352,7 @@ picture {
 
 /* line 29, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs .breadcrumb-item.active {
-  color: rgba(255, 255, 255, 0.36);
+  color: white;
 }
 
 /* line 3, src/scss/_components/common/_integrate.scss */
@@ -1366,7 +1383,18 @@ picture {
   }
 }
 
-/* line 23, src/scss/_components/common/_integrate.scss */
+/* line 22, src/scss/_components/common/_integrate.scss */
+.integrate ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 28, src/scss/_components/common/_integrate.scss */
 .integrate__box-img {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1382,7 +1410,7 @@ picture {
           justify-content: center;
 }
 
-/* line 28, src/scss/_components/common/_integrate.scss */
+/* line 33, src/scss/_components/common/_integrate.scss */
 .integrate__box-img img {
   display: block;
   max-width: -webkit-calc(71px / 1.5);
@@ -1390,37 +1418,37 @@ picture {
   height: auto;
 }
 
-/* line 34, src/scss/_components/common/_integrate.scss */
+/* line 39, src/scss/_components/common/_integrate.scss */
 .integrate__box-img .icon-font {
   margin-left: 20px;
   padding-right: 20px;
   font-size: 20px;
 }
 
-/* line 41, src/scss/_components/common/_integrate.scss */
+/* line 46, src/scss/_components/common/_integrate.scss */
 .integrate__box-desc {
   padding-top: 20px;
 }
 
-/* line 44, src/scss/_components/common/_integrate.scss */
+/* line 49, src/scss/_components/common/_integrate.scss */
 .integrate__box-desc p {
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 
-/* line 50, src/scss/_components/common/_integrate.scss */
+/* line 55, src/scss/_components/common/_integrate.scss */
 .integrate__box-btn {
   padding-top: 20px;
 }
 
-/* line 53, src/scss/_components/common/_integrate.scss */
+/* line 58, src/scss/_components/common/_integrate.scss */
 .integrate__box-btn a {
-  max-width: 125px;
+  max-width: 150px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 61, src/scss/_components/common/_integrate.scss */
+/* line 66, src/scss/_components/common/_integrate.scss */
 .integrate .card {
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -1435,7 +1463,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 68, src/scss/_components/common/_integrate.scss */
+/* line 73, src/scss/_components/common/_integrate.scss */
 .integrate .card:hover {
   -webkit-box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
@@ -1625,8 +1653,8 @@ picture {
 .run__box {
   overflow: hidden;
   position: relative;
-  width: 55px;
-  height: 55px;
+  width: 75px;
+  height: 75px;
   -webkit-border-radius: 100%;
           border-radius: 100%;
   background-color: #fff;
@@ -1637,7 +1665,7 @@ picture {
 /* line 149, src/scss/_components/common/_run.scss */
 .run__box img {
   display: block;
-  max-width: 50%;
+  max-width: 64px;
   height: auto;
 }
 
@@ -2840,7 +2868,7 @@ picture {
   display: block;
   bottom: 0;
   right: -30px;
-  width: 250px;
+  width: 200px;
   max-width: 100%;
   height: auto;
 }
@@ -3168,7 +3196,7 @@ picture {
 }
 
 /* line 192, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div {
+.recipe__box-content > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3182,13 +3210,13 @@ picture {
 }
 
 /* line 200, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label {
+.recipe__box-content > li label {
   cursor: pointer;
   width: 100%;
 }
 
 /* line 204, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label input {
+.recipe__box-content > li label input {
   position: absolute;
   opacity: 0;
   width: 0;
@@ -3196,7 +3224,7 @@ picture {
 }
 
 /* line 212, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label input:checked + div:before {
+.recipe__box-content > li label input:checked + div:before {
   border-color: #4F81E2;
   background-color: #4f81e2;
   -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -3205,7 +3233,7 @@ picture {
 }
 
 /* line 217, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label input:checked + div:after {
+.recipe__box-content > li label input:checked + div:after {
   opacity: 1;
   -webkit-transform: rotate(45deg) scale(1);
       -ms-transform: rotate(45deg) scale(1);
@@ -3218,15 +3246,14 @@ picture {
 }
 
 /* line 226, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label img {
+.recipe__box-content > li label img {
   display: block;
-  max-width: -webkit-calc(71px / 1.5);
-  max-width: calc(71px / 1.5);
+  max-width: 38px;
   height: auto;
 }
 
 /* line 232, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label > div {
+.recipe__box-content > li label > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3239,13 +3266,13 @@ picture {
 }
 
 /* line 237, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label > div:before, .recipe__box-content > div label > div:after {
+.recipe__box-content > li label > div:before, .recipe__box-content > li label > div:after {
   content: '';
   position: absolute;
 }
 
 /* line 243, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label > div:before {
+.recipe__box-content > li label > div:before {
   right: 13px;
   width: 24px;
   height: 24px;
@@ -3259,7 +3286,7 @@ picture {
 }
 
 /* line 253, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label > div:after {
+.recipe__box-content > li label > div:after {
   opacity: 0;
   top: 14px;
   right: 20px;
@@ -3279,14 +3306,14 @@ picture {
 }
 
 /* line 267, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label > div div:nth-of-type(1) {
+.recipe__box-content > li label > div div:nth-of-type(1) {
   padding-left: 5px;
   width: -webkit-calc((71px / 1.5) + 15px);
   width: calc((71px / 1.5) + 15px);
 }
 
 /* line 271, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label > div div:nth-of-type(2) {
+.recipe__box-content > li label > div div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3306,8 +3333,8 @@ picture {
 }
 
 /* line 280, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label > div p,
-.recipe__box-content > div label > div span {
+.recipe__box-content > li label > div p,
+.recipe__box-content > li label > div span {
   overflow: hidden;
   white-space: nowrap;
   -o-text-overflow: ellipsis;
@@ -3315,18 +3342,20 @@ picture {
 }
 
 /* line 287, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label > div p {
+.recipe__box-content > li label > div p {
   font-size: 18px;
 }
 
 /* line 291, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > div label > div span {
+.recipe__box-content > li label > div span {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
 }
 
 /* line 3, src/scss/_components/integrations/_ads.scss */
 .ads {
+  overflow: hidden;
+  position: relative;
   padding-top: 150px;
   padding-bottom: 150px;
 }
@@ -3339,66 +3368,114 @@ picture {
   }
 }
 
-/* line 14, src/scss/_components/integrations/_ads.scss */
-.ads__box-0 .ads__box-line {
-  background-color: #8021f3;
+/* line 13, src/scss/_components/integrations/_ads.scss */
+.ads__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* line 21, src/scss/_components/integrations/_ads.scss */
-.ads__box-1 .ads__box-line {
-  background-color: #F32194;
-}
-
-/* line 27, src/scss/_components/integrations/_ads.scss */
-.ads__box-wrapper {
+.ads__bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 350px;
+  height: 100%;
 }
 
-/* line 32, src/scss/_components/integrations/_ads.scss */
-.ads__box-img {
-  height: 180px;
-  padding: 15px;
+@media screen and (max-width: 575px) {
+  /* line 21, src/scss/_components/integrations/_ads.scss */
+  .ads__bg-img {
+    display: none;
+  }
+}
+
+/* line 31, src/scss/_components/integrations/_ads.scss */
+.ads__bg-img img {
+  position: absolute;
+  display: block;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  max-width: 297.14286px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 31, src/scss/_components/integrations/_ads.scss */
+  .ads__bg-img img {
+    right: -100px;
+    bottom: -50px;
+  }
+}
+
+/* line 47, src/scss/_components/integrations/_ads.scss */
+.ads__box {
+  padding: 30px 30px 60px;
   margin-bottom: 30px;
   background-color: #fff;
   -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.07);
           box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
-/* line 39, src/scss/_components/integrations/_ads.scss */
+/* line 55, src/scss/_components/integrations/_ads.scss */
+.ads__box-0 .ads__box-line {
+  background-color: #8021f3;
+}
+
+/* line 62, src/scss/_components/integrations/_ads.scss */
+.ads__box-1 .ads__box-line {
+  background-color: #F32194;
+}
+
+/* line 68, src/scss/_components/integrations/_ads.scss */
+.ads__box-wrapper {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* line 73, src/scss/_components/integrations/_ads.scss */
+.ads__box-img {
+  min-height: 180px;
+}
+
+/* line 76, src/scss/_components/integrations/_ads.scss */
 .ads__box-img img {
   max-width: -webkit-calc(330px / 1.5);
   max-width: calc(330px / 1.5);
 }
 
-/* line 44, src/scss/_components/integrations/_ads.scss */
+/* line 81, src/scss/_components/integrations/_ads.scss */
 .ads__box-title {
   padding-bottom: 5px;
   font-size: 30px;
+  text-align: center;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 44, src/scss/_components/integrations/_ads.scss */
+  /* line 81, src/scss/_components/integrations/_ads.scss */
   .ads__box-title {
     text-align: center;
   }
 }
 
-/* line 53, src/scss/_components/integrations/_ads.scss */
+/* line 90, src/scss/_components/integrations/_ads.scss */
 .ads__box-line {
   width: 40px;
   height: 5px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (max-width: 575px) {
-  /* line 53, src/scss/_components/integrations/_ads.scss */
-  .ads__box-line {
-    margin-left: auto;
-    margin-right: auto;
-  }
+/* line 99, src/scss/_components/integrations/_ads.scss */
+.ads__box-desc {
+  text-align: center;
 }
 
 /* line 3, src/scss/_components/integrations/_why.scss */
@@ -3495,9 +3572,9 @@ picture {
   display: block;
   max-width: 200px;
   height: auto;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
 }
 
 /* line 25, src/scss/_components/single-app/_main.scss */
@@ -3577,30 +3654,35 @@ picture {
 }
 
 /* line 74, src/scss/_components/single-app/_main.scss */
+.s-main__box-1 {
+  text-align: center;
+}
+
+/* line 78, src/scss/_components/single-app/_main.scss */
 .s-main__box-img {
   max-width: -webkit-calc(330px / 1.5);
   max-width: calc(330px / 1.5);
 }
 
-/* line 78, src/scss/_components/single-app/_main.scss */
+/* line 82, src/scss/_components/single-app/_main.scss */
 .s-main__box-desc {
   width: 100%;
   max-width: 350px;
   padding-top: 30px;
-  text-align: left;
+  text-align: center;
 }
 
-/* line 87, src/scss/_components/single-app/_main.scss */
+/* line 91, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form {
   padding-bottom: 30px;
 }
 
-/* line 90, src/scss/_components/single-app/_main.scss */
+/* line 94, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form .icon-search {
   color: rgba(0, 0, 0, 0.44);
 }
 
-/* line 94, src/scss/_components/single-app/_main.scss */
+/* line 98, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form-input {
   width: 100%;
   -webkit-border-radius: 2em;
@@ -3610,7 +3692,7 @@ picture {
   background-color: #f9f9f9;
 }
 
-/* line 102, src/scss/_components/single-app/_main.scss */
+/* line 106, src/scss/_components/single-app/_main.scss */
 .s-main .pick__box {
   width: 130px;
   height: 130px;
@@ -3792,7 +3874,7 @@ picture {
 }
 
 /* line 130, src/scss/_components/single-app/_do.scss */
-.do__box-body > div {
+.do__box-body li {
   margin-bottom: 30px;
 }
 
@@ -3981,16 +4063,20 @@ picture {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   /* line 90, src/scss/_components/plans/_pricing.scss */
   .pricing__box-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-/* line 97, src/scss/_components/plans/_pricing.scss */
+/* line 98, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div {
   z-index: 1;
   cursor: pointer;
@@ -4003,26 +4089,105 @@ picture {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 22px rgba(0, 0, 0, 0.16);
           box-shadow: 0 2px 22px rgba(0, 0, 0, 0.16);
+  /*&:hover {
+					z-index: 2;
+
+					&:before {
+						opacity: 1;
+						z-index: 0;
+						@include transition(opacity 0.5s);
+					}
+
+					.pricing__box {
+						z-index: 5;
+
+						&-title,
+						&-price,
+						&-free {
+							color: #ffffff;
+							@include transition(color);
+						}
+
+						&-btn {
+							border-color: #ffffff;
+							background-color: #fff;
+							box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
+							@include transition(border-color, background-color, box-shadow);
+						}
+
+						&-line {
+							width: calc(100% + 30px);
+							margin-left: -15px;
+							background-color: rgba(#fff, 0.59);
+							@include transition(width, background-color);
+						}
+
+						&-detail {
+							span,
+							p {
+								color: #ffffff;
+								@include transition(color);
+							}
+						}
+
+						&-desc {
+							li {
+								i {
+									&:before,
+									&:after {
+										background-color: #ffffff;
+										@include transition(background-color);
+									}
+								}
+								p {
+									color: #ffffff;
+									@include transition(color);
+								}
+							}
+						}
+					}
+				}*/
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 98, src/scss/_components/plans/_pricing.scss */
+  .pricing__box-wrapper > div {
+    max-width: -webkit-calc((100% - 90px) / 3);
+    max-width: calc((100% - 90px) / 3);
+    padding-bottom: 45px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 97, src/scss/_components/plans/_pricing.scss */
+  /* line 98, src/scss/_components/plans/_pricing.scss */
   .pricing__box-wrapper > div {
-    max-width: -webkit-calc((100% - 15px) / 2);
-    max-width: calc((100% - 15px) / 2);
-    padding-bottom: 45px;
-    margin-bottom: 15px;
+    max-width: -webkit-calc((100% - 60px) / 2);
+    max-width: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 98, src/scss/_components/plans/_pricing.scss */
+  .pricing__box-wrapper > div {
+    max-width: -webkit-calc((100% - 20px) / 2);
+    max-width: calc((100% - 20px) / 2);
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 97, src/scss/_components/plans/_pricing.scss */
+  /* line 98, src/scss/_components/plans/_pricing.scss */
   .pricing__box-wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 116, src/scss/_components/plans/_pricing.scss */
+/* line 128, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:before {
   opacity: 0;
   content: '';
@@ -4042,13 +4207,13 @@ picture {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* line 130, src/scss/_components/plans/_pricing.scss */
-.pricing__box-wrapper > div:hover {
+/* line 142, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div.is-active {
   z-index: 2;
 }
 
-/* line 133, src/scss/_components/plans/_pricing.scss */
-.pricing__box-wrapper > div:hover:before {
+/* line 145, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div.is-active:before {
   opacity: 1;
   z-index: 0;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -4056,21 +4221,21 @@ picture {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* line 139, src/scss/_components/plans/_pricing.scss */
-.pricing__box-wrapper > div:hover .pricing__box {
+/* line 151, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div.is-active .pricing__box {
   z-index: 5;
 }
 
-/* line 142, src/scss/_components/plans/_pricing.scss */
-.pricing__box-wrapper > div:hover .pricing__box-title, .pricing__box-wrapper > div:hover .pricing__box-price, .pricing__box-wrapper > div:hover .pricing__box-free {
+/* line 154, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div.is-active .pricing__box-title, .pricing__box-wrapper > div.is-active .pricing__box-price, .pricing__box-wrapper > div.is-active .pricing__box-free {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 149, src/scss/_components/plans/_pricing.scss */
-.pricing__box-wrapper > div:hover .pricing__box-btn {
+/* line 161, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div.is-active .pricing__box-btn {
   border-color: #ffffff;
   background-color: #fff;
   -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
@@ -4082,8 +4247,8 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 156, src/scss/_components/plans/_pricing.scss */
-.pricing__box-wrapper > div:hover .pricing__box-line {
+/* line 168, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div.is-active .pricing__box-line {
   width: -webkit-calc(100% + 30px);
   width: calc(100% + 30px);
   margin-left: -15px;
@@ -4093,32 +4258,32 @@ picture {
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 164, src/scss/_components/plans/_pricing.scss */
-.pricing__box-wrapper > div:hover .pricing__box-detail span,
-.pricing__box-wrapper > div:hover .pricing__box-detail p {
+/* line 176, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div.is-active .pricing__box-detail span,
+.pricing__box-wrapper > div.is-active .pricing__box-detail p {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 174, src/scss/_components/plans/_pricing.scss */
-.pricing__box-wrapper > div:hover .pricing__box-desc li i:before, .pricing__box-wrapper > div:hover .pricing__box-desc li i:after {
+/* line 186, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div.is-active .pricing__box-desc li i:before, .pricing__box-wrapper > div.is-active .pricing__box-desc li i:after {
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 180, src/scss/_components/plans/_pricing.scss */
-.pricing__box-wrapper > div:hover .pricing__box-desc li p {
+/* line 192, src/scss/_components/plans/_pricing.scss */
+.pricing__box-wrapper > div.is-active .pricing__box-desc li p {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 191, src/scss/_components/plans/_pricing.scss */
+/* line 262, src/scss/_components/plans/_pricing.scss */
 .pricing__box-title, .pricing__box-free {
   text-align: center;
   color: #000;
@@ -4127,13 +4292,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 198, src/scss/_components/plans/_pricing.scss */
+/* line 269, src/scss/_components/plans/_pricing.scss */
 .pricing__box-title {
   padding-bottom: 30px;
   font-size: 33px;
 }
 
-/* line 204, src/scss/_components/plans/_pricing.scss */
+/* line 275, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4150,13 +4315,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 212, src/scss/_components/plans/_pricing.scss */
+/* line 283, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price span,
 .pricing__box-price p {
   line-height: 1;
 }
 
-/* line 217, src/scss/_components/plans/_pricing.scss */
+/* line 288, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price span {
   position: relative;
   top: 5px;
@@ -4164,7 +4329,7 @@ picture {
   font-size: 22px;
 }
 
-/* line 224, src/scss/_components/plans/_pricing.scss */
+/* line 295, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price h3 {
   position: relative;
   left: 6px;
@@ -4172,7 +4337,7 @@ picture {
   line-height: 1;
 }
 
-/* line 231, src/scss/_components/plans/_pricing.scss */
+/* line 302, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price p {
   position: relative;
   top: 22px;
@@ -4180,7 +4345,7 @@ picture {
   font-size: 22px;
 }
 
-/* line 239, src/scss/_components/plans/_pricing.scss */
+/* line 310, src/scss/_components/plans/_pricing.scss */
 .pricing__box-free {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -4188,7 +4353,7 @@ picture {
   font-size: 18px;
 }
 
-/* line 246, src/scss/_components/plans/_pricing.scss */
+/* line 317, src/scss/_components/plans/_pricing.scss */
 .pricing__box-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4218,7 +4383,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 263, src/scss/_components/plans/_pricing.scss */
+/* line 334, src/scss/_components/plans/_pricing.scss */
 .pricing__box-line {
   width: 100%;
   height: 1px;
@@ -4230,13 +4395,13 @@ picture {
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 272, src/scss/_components/plans/_pricing.scss */
+/* line 343, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail {
   padding-left: 25px;
   padding-right: 10px;
 }
 
-/* line 276, src/scss/_components/plans/_pricing.scss */
+/* line 347, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4249,12 +4414,12 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 281, src/scss/_components/plans/_pricing.scss */
+/* line 352, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 285, src/scss/_components/plans/_pricing.scss */
+/* line 356, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li span,
 .pricing__box-detail li p {
   white-space: nowrap;
@@ -4270,18 +4435,18 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 295, src/scss/_components/plans/_pricing.scss */
+/* line 366, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li p {
   text-align: right;
 }
 
-/* line 301, src/scss/_components/plans/_pricing.scss */
+/* line 372, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc {
   padding-left: 25px;
   padding-right: 10px;
 }
 
-/* line 305, src/scss/_components/plans/_pricing.scss */
+/* line 376, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4294,19 +4459,19 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 310, src/scss/_components/plans/_pricing.scss */
+/* line 381, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 314, src/scss/_components/plans/_pricing.scss */
+/* line 385, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i {
   position: relative;
   width: 14px;
   height: 14px;
 }
 
-/* line 319, src/scss/_components/plans/_pricing.scss */
+/* line 390, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:before, .pricing__box-desc li i:after {
   content: '';
   position: absolute;
@@ -4318,7 +4483,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 328, src/scss/_components/plans/_pricing.scss */
+/* line 399, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:before {
   top: 0;
   left: 50%;
@@ -4329,7 +4494,7 @@ picture {
   height: 100%;
 }
 
-/* line 336, src/scss/_components/plans/_pricing.scss */
+/* line 407, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:after {
   top: 50%;
   left: 0;
@@ -4340,7 +4505,7 @@ picture {
   height: 3px;
 }
 
-/* line 345, src/scss/_components/plans/_pricing.scss */
+/* line 416, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li p {
   padding-left: 15px;
   letter-spacing: -0.4px;
@@ -4351,7 +4516,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 356, src/scss/_components/plans/_pricing.scss */
+/* line 427, src/scss/_components/plans/_pricing.scss */
 .pricing__question {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4367,32 +4532,32 @@ picture {
           justify-content: center;
 }
 
-/* line 361, src/scss/_components/plans/_pricing.scss */
+/* line 432, src/scss/_components/plans/_pricing.scss */
 .pricing__question p,
 .pricing__question a {
   font-weight: 400;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 361, src/scss/_components/plans/_pricing.scss */
+  /* line 432, src/scss/_components/plans/_pricing.scss */
   .pricing__question p,
   .pricing__question a {
     font-size: 18px;
   }
 }
 
-/* line 369, src/scss/_components/plans/_pricing.scss */
+/* line 440, src/scss/_components/plans/_pricing.scss */
 .pricing__question p {
   color: #f32194;
 }
 
-/* line 373, src/scss/_components/plans/_pricing.scss */
+/* line 444, src/scss/_components/plans/_pricing.scss */
 .pricing__question a {
   position: relative;
   color: #5F84E1;
 }
 
-/* line 377, src/scss/_components/plans/_pricing.scss */
+/* line 448, src/scss/_components/plans/_pricing.scss */
 .pricing__question a:after {
   content: '';
   position: absolute;
@@ -4406,7 +4571,7 @@ picture {
   background-color: #5F84E1;
 }
 
-/* line 391, src/scss/_components/plans/_pricing.scss */
+/* line 462, src/scss/_components/plans/_pricing.scss */
 .pricing__question img {
   position: absolute;
   top: 0;
@@ -4415,16 +4580,16 @@ picture {
 
 /* line 3, src/scss/_components/plans/_welcome.scss */
 .welcome {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #5F84E1;
 }
 
 @media screen and (max-width: 767px) {
   /* line 3, src/scss/_components/plans/_welcome.scss */
   .welcome {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -4442,14 +4607,14 @@ picture {
 
 /* line 17, src/scss/_components/plans/_welcome.scss */
 .welcome__title {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   color: #fff;
 }
 
 /* line 22, src/scss/_components/plans/_welcome.scss */
 .welcome img {
   display: block;
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -4643,8 +4808,7 @@ picture {
 /* line 53, src/scss/_components/dual-app/_pick.scss */
 .pick__form-input {
   outline: none;
-  width: -webkit-calc(100% - 25px);
-  width: calc(100% - 25px);
+  width: 100%;
   height: 50px;
   padding: 0 50px;
   border: none;
@@ -4681,7 +4845,7 @@ picture {
   font-size: 16px;
 }
 
-/* line 68, src/scss/_components/dual-app/_pick.scss */
+/* line 69, src/scss/_components/dual-app/_pick.scss */
 .pick__form-btn {
   outline: none;
   cursor: pointer;
@@ -4705,7 +4869,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 84, src/scss/_components/dual-app/_pick.scss */
+/* line 85, src/scss/_components/dual-app/_pick.scss */
 .pick__form-btn:hover {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
@@ -4717,7 +4881,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 91, src/scss/_components/dual-app/_pick.scss */
+/* line 92, src/scss/_components/dual-app/_pick.scss */
 .pick__box {
   width: 150px;
   height: 150px;
@@ -4737,7 +4901,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 91, src/scss/_components/dual-app/_pick.scss */
+  /* line 92, src/scss/_components/dual-app/_pick.scss */
   .pick__box {
     margin-right: 15px;
     margin-bottom: 15px;
@@ -4745,7 +4909,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 91, src/scss/_components/dual-app/_pick.scss */
+  /* line 92, src/scss/_components/dual-app/_pick.scss */
   .pick__box {
     width: -webkit-calc((100% - 15px) / 2);
     width: calc((100% - 15px) / 2);
@@ -4753,7 +4917,7 @@ picture {
   }
 }
 
-/* line 110, src/scss/_components/dual-app/_pick.scss */
+/* line 111, src/scss/_components/dual-app/_pick.scss */
 .pick__box:hover {
   -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
@@ -4764,43 +4928,43 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 117, src/scss/_components/dual-app/_pick.scss */
+/* line 118, src/scss/_components/dual-app/_pick.scss */
 .pick__box-0 .pick__box-icon img {
   width: -webkit-calc(76px / 1.25);
   width: calc(76px / 1.25);
 }
 
-/* line 124, src/scss/_components/dual-app/_pick.scss */
+/* line 125, src/scss/_components/dual-app/_pick.scss */
 .pick__box-1 .pick__box-icon img {
   width: -webkit-calc(85px / 1.25);
   width: calc(85px / 1.25);
 }
 
-/* line 131, src/scss/_components/dual-app/_pick.scss */
+/* line 132, src/scss/_components/dual-app/_pick.scss */
 .pick__box-2 .pick__box-icon img {
   width: -webkit-calc(83px / 1.25);
   width: calc(83px / 1.25);
 }
 
-/* line 137, src/scss/_components/dual-app/_pick.scss */
+/* line 138, src/scss/_components/dual-app/_pick.scss */
 .pick__box-icon {
   height: 70px;
 }
 
-/* line 140, src/scss/_components/dual-app/_pick.scss */
+/* line 141, src/scss/_components/dual-app/_pick.scss */
 .pick__box-icon img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 148, src/scss/_components/dual-app/_pick.scss */
+/* line 149, src/scss/_components/dual-app/_pick.scss */
 .pick__box-title p {
   color: #000;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 153, src/scss/_components/dual-app/_pick.scss */
+  /* line 154, src/scss/_components/dual-app/_pick.scss */
   .pick__box-wrapper {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -4809,12 +4973,23 @@ picture {
   }
 }
 
-/* line 160, src/scss/_components/dual-app/_pick.scss */
+/* line 161, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 95px;
   width: 100%;
 }
 
-/* line 163, src/scss/_components/dual-app/_pick.scss */
+@media screen and (max-width: 767px) {
+  /* line 161, src/scss/_components/dual-app/_pick.scss */
+  .pick .dropdown {
+    position: relative;
+    top: 0;
+  }
+}
+
+/* line 170, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn {
   width: 100%;
   height: 50px;
@@ -4827,32 +5002,33 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 163, src/scss/_components/dual-app/_pick.scss */
+  /* line 170, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown .btn {
     font-size: 14px;
   }
 }
 
-/* line 174, src/scss/_components/dual-app/_pick.scss */
+/* line 181, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn .icon-font {
   margin-right: 10px;
   font-size: 10px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 174, src/scss/_components/dual-app/_pick.scss */
+  /* line 181, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown .btn .icon-font {
     font-size: 8px;
   }
 }
 
-/* line 182, src/scss/_components/dual-app/_pick.scss */
+/* line 189, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn:after {
   display: none;
 }
 
-/* line 187, src/scss/_components/dual-app/_pick.scss */
+/* line 194, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-menu {
+  display: block;
   width: 100%;
   margin-top: 0;
   padding: 0;
@@ -4862,32 +5038,43 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 187, src/scss/_components/dual-app/_pick.scss */
+  /* line 194, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-menu {
     min-width: 0;
   }
 }
 
-/* line 198, src/scss/_components/dual-app/_pick.scss */
+@media screen and (max-width: 767px) {
+  /* line 194, src/scss/_components/dual-app/_pick.scss */
+  .pick .dropdown-menu {
+    display: none;
+  }
+  /* line 207, src/scss/_components/dual-app/_pick.scss */
+  .pick .dropdown-menu.show {
+    display: block;
+  }
+}
+
+/* line 213, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-item {
   height: 50px;
   padding: 0 15px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 198, src/scss/_components/dual-app/_pick.scss */
+  /* line 213, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-item {
     font-size: 14px;
   }
 }
 
-/* line 205, src/scss/_components/dual-app/_pick.scss */
+/* line 220, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-item.is-active {
   background-color: #4f81e2;
   color: #ffffff;
 }
 
-/* line 211, src/scss/_components/dual-app/_pick.scss */
+/* line 226, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-divider {
   margin-left: 5px;
   margin-right: 5px;

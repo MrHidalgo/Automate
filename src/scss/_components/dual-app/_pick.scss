@@ -52,7 +52,8 @@
 
 		&-input {
 			outline: none;
-			width: calc(100% - 25px);
+			//width: calc(100% - 25px);
+			width: 100%;
 			height: 50px;
 			padding: 0 50px;
 			border: none;
@@ -158,7 +159,13 @@
 	}
 
 	.dropdown {
+		position: sticky;
+		top: 95px;
 		width: 100%;
+		@include adaptive(767) {
+			position: relative;
+			top: 0;
+		}
 
 		.btn {
 			width: 100%;
@@ -185,6 +192,7 @@
 		}
 
 		&-menu {
+			display: block;
 			width: 100%;
 			margin-top: 0;
 			padding: 0;
@@ -192,6 +200,13 @@
 			box-shadow: none;
 			@include adaptive(1023) {
 				min-width: 0;
+			}
+			@include adaptive(767) {
+				display: none;
+
+				&.show {
+					display: block;
+				}
 			}
 		}
 
