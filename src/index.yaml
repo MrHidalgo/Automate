@@ -3,10 +3,10 @@ ProjectTitle: Automate
 PageList:
 - file: index.html
   titleName: Home
-  ready: 90
+  ready: 95
 - file: single-app.html
   titleName: Single app
-  ready: 90
+  ready: 95
 - file: integrations.html
   titleName: Integrations
   ready: 90
@@ -15,4 +15,4 @@ PageList:
   ready: 90
 - file: plans.html
   titleName: Plans
-  ready: 90
+  ready: 95

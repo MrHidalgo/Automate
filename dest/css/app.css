@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,500,600,700,800");
 /* line 6, src/scss/_utilities/_extend.scss */
-body, .c-btn, .pricing__tabs, .pricing__box-btn, .frequently__block {
+body, .c-btn, .pricing__tabs, .frequently__block {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -2890,21 +2890,89 @@ picture {
 /* line 41, src/scss/_components/integrations/_main.scss */
 .i-main__img {
   display: block;
-  width: -webkit-calc(595px / 2);
-  width: calc(595px / 2);
-  max-width: 100%;
+  max-width: 32px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
 }
 
-/* line 51, src/scss/_components/integrations/_main.scss */
+/* line 46, src/scss/_components/integrations/_main.scss */
+.i-main__img-bg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 52, src/scss/_components/integrations/_main.scss */
+.i-main__img-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+/* line 61, src/scss/_components/integrations/_main.scss */
+.i-main__img-col-1 {
+  left: 0;
+}
+
+/* line 64, src/scss/_components/integrations/_main.scss */
+.i-main__img-col-1 img {
+  -webkit-transform: rotate(-11deg);
+      -ms-transform: rotate(-11deg);
+          transform: rotate(-11deg);
+}
+
+/* line 68, src/scss/_components/integrations/_main.scss */
+.i-main__img-col-2 {
+  right: 0;
+}
+
+/* line 71, src/scss/_components/integrations/_main.scss */
+.i-main__img-col-2 img {
+  -webkit-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+/* line 77, src/scss/_components/integrations/_main.scss */
+.i-main__img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 90, src/scss/_components/integrations/_main.scss */
 .i-main__title {
   padding-bottom: 30px;
 }
 
-/* line 55, src/scss/_components/integrations/_main.scss */
+/* line 94, src/scss/_components/integrations/_main.scss */
 .i-main__desc {
   padding-bottom: 50px;
   width: 100%;
@@ -2914,7 +2982,7 @@ picture {
   text-align: center;
 }
 
-/* line 64, src/scss/_components/integrations/_main.scss */
+/* line 103, src/scss/_components/integrations/_main.scss */
 .i-main__btn {
   max-width: 250px;
   margin-left: auto;
@@ -3435,20 +3503,22 @@ picture {
 .ads__box-wrapper {
   width: 100%;
   max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 73, src/scss/_components/integrations/_ads.scss */
+/* line 75, src/scss/_components/integrations/_ads.scss */
 .ads__box-img {
   min-height: 180px;
 }
 
-/* line 76, src/scss/_components/integrations/_ads.scss */
+/* line 78, src/scss/_components/integrations/_ads.scss */
 .ads__box-img img {
   max-width: -webkit-calc(330px / 1.5);
   max-width: calc(330px / 1.5);
 }
 
-/* line 81, src/scss/_components/integrations/_ads.scss */
+/* line 83, src/scss/_components/integrations/_ads.scss */
 .ads__box-title {
   padding-bottom: 5px;
   font-size: 30px;
@@ -3456,13 +3526,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 81, src/scss/_components/integrations/_ads.scss */
+  /* line 83, src/scss/_components/integrations/_ads.scss */
   .ads__box-title {
     text-align: center;
   }
 }
 
-/* line 90, src/scss/_components/integrations/_ads.scss */
+/* line 92, src/scss/_components/integrations/_ads.scss */
 .ads__box-line {
   width: 40px;
   height: 5px;
@@ -3473,7 +3543,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 99, src/scss/_components/integrations/_ads.scss */
+/* line 101, src/scss/_components/integrations/_ads.scss */
 .ads__box-desc {
   text-align: center;
 }
@@ -4089,64 +4159,6 @@ picture {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 22px rgba(0, 0, 0, 0.16);
           box-shadow: 0 2px 22px rgba(0, 0, 0, 0.16);
-  /*&:hover {
-					z-index: 2;
-
-					&:before {
-						opacity: 1;
-						z-index: 0;
-						@include transition(opacity 0.5s);
-					}
-
-					.pricing__box {
-						z-index: 5;
-
-						&-title,
-						&-price,
-						&-free {
-							color: #ffffff;
-							@include transition(color);
-						}
-
-						&-btn {
-							border-color: #ffffff;
-							background-color: #fff;
-							box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
-							@include transition(border-color, background-color, box-shadow);
-						}
-
-						&-line {
-							width: calc(100% + 30px);
-							margin-left: -15px;
-							background-color: rgba(#fff, 0.59);
-							@include transition(width, background-color);
-						}
-
-						&-detail {
-							span,
-							p {
-								color: #ffffff;
-								@include transition(color);
-							}
-						}
-
-						&-desc {
-							li {
-								i {
-									&:before,
-									&:after {
-										background-color: #ffffff;
-										@include transition(background-color);
-									}
-								}
-								p {
-									color: #ffffff;
-									@include transition(color);
-								}
-							}
-						}
-					}
-				}*/
 }
 
 @media screen and (max-width: 1199px) {
@@ -4190,6 +4202,7 @@ picture {
 /* line 128, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:before {
   opacity: 0;
+  visibility: hidden;
   content: '';
   z-index: 5;
   position: absolute;
@@ -4207,26 +4220,27 @@ picture {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* line 142, src/scss/_components/plans/_pricing.scss */
+/* line 143, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div.is-active {
   z-index: 2;
 }
 
-/* line 145, src/scss/_components/plans/_pricing.scss */
+/* line 146, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div.is-active:before {
   opacity: 1;
   z-index: 0;
+  visibility: visible;
   -webkit-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
 
-/* line 151, src/scss/_components/plans/_pricing.scss */
+/* line 153, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div.is-active .pricing__box {
   z-index: 5;
 }
 
-/* line 154, src/scss/_components/plans/_pricing.scss */
+/* line 156, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div.is-active .pricing__box-title, .pricing__box-wrapper > div.is-active .pricing__box-price, .pricing__box-wrapper > div.is-active .pricing__box-free {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -4234,12 +4248,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 161, src/scss/_components/plans/_pricing.scss */
+/* line 163, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div.is-active .pricing__box-btn {
-  border-color: #ffffff;
+  border-color: #5F84E1;
   background-color: #fff;
   -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
           box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
+  color: #5F84E1;
   -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -4247,7 +4262,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 168, src/scss/_components/plans/_pricing.scss */
+/* line 171, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div.is-active .pricing__box-line {
   width: -webkit-calc(100% + 30px);
   width: calc(100% + 30px);
@@ -4258,7 +4273,7 @@ picture {
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 176, src/scss/_components/plans/_pricing.scss */
+/* line 179, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div.is-active .pricing__box-detail span,
 .pricing__box-wrapper > div.is-active .pricing__box-detail p {
   color: #ffffff;
@@ -4267,7 +4282,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 186, src/scss/_components/plans/_pricing.scss */
+/* line 189, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div.is-active .pricing__box-desc li i:before, .pricing__box-wrapper > div.is-active .pricing__box-desc li i:after {
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -4275,7 +4290,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 192, src/scss/_components/plans/_pricing.scss */
+/* line 195, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div.is-active .pricing__box-desc li p {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -4283,7 +4298,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 262, src/scss/_components/plans/_pricing.scss */
+/* line 206, src/scss/_components/plans/_pricing.scss */
 .pricing__box-title, .pricing__box-free {
   text-align: center;
   color: #000;
@@ -4292,13 +4307,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 269, src/scss/_components/plans/_pricing.scss */
+/* line 213, src/scss/_components/plans/_pricing.scss */
 .pricing__box-title {
   padding-bottom: 30px;
   font-size: 33px;
 }
 
-/* line 275, src/scss/_components/plans/_pricing.scss */
+/* line 219, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4315,13 +4330,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 283, src/scss/_components/plans/_pricing.scss */
+/* line 227, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price span,
 .pricing__box-price p {
   line-height: 1;
 }
 
-/* line 288, src/scss/_components/plans/_pricing.scss */
+/* line 232, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price span {
   position: relative;
   top: 5px;
@@ -4329,7 +4344,7 @@ picture {
   font-size: 22px;
 }
 
-/* line 295, src/scss/_components/plans/_pricing.scss */
+/* line 239, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price h3 {
   position: relative;
   left: 6px;
@@ -4337,7 +4352,7 @@ picture {
   line-height: 1;
 }
 
-/* line 302, src/scss/_components/plans/_pricing.scss */
+/* line 246, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price p {
   position: relative;
   top: 22px;
@@ -4345,7 +4360,7 @@ picture {
   font-size: 22px;
 }
 
-/* line 310, src/scss/_components/plans/_pricing.scss */
+/* line 254, src/scss/_components/plans/_pricing.scss */
 .pricing__box-free {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -4353,7 +4368,7 @@ picture {
   font-size: 18px;
 }
 
-/* line 317, src/scss/_components/plans/_pricing.scss */
+/* line 261, src/scss/_components/plans/_pricing.scss */
 .pricing__box-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4367,15 +4382,10 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   max-width: 80%;
   height: 55px;
   margin-left: auto;
   margin-right: auto;
-  background-color: transparent;
-  border: 1px solid rgba(95, 132, 225, 0.99);
-  font-size: 18px;
-  color: #5F84E1;
   -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -4383,7 +4393,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 334, src/scss/_components/plans/_pricing.scss */
+/* line 278, src/scss/_components/plans/_pricing.scss */
 .pricing__box-line {
   width: 100%;
   height: 1px;
@@ -4395,13 +4405,13 @@ picture {
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 343, src/scss/_components/plans/_pricing.scss */
+/* line 287, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail {
   padding-left: 25px;
   padding-right: 10px;
 }
 
-/* line 347, src/scss/_components/plans/_pricing.scss */
+/* line 291, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4414,12 +4424,12 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 352, src/scss/_components/plans/_pricing.scss */
+/* line 296, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 356, src/scss/_components/plans/_pricing.scss */
+/* line 300, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li span,
 .pricing__box-detail li p {
   white-space: nowrap;
@@ -4435,18 +4445,18 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 366, src/scss/_components/plans/_pricing.scss */
+/* line 310, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li p {
   text-align: right;
 }
 
-/* line 372, src/scss/_components/plans/_pricing.scss */
+/* line 316, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc {
   padding-left: 25px;
   padding-right: 10px;
 }
 
-/* line 376, src/scss/_components/plans/_pricing.scss */
+/* line 320, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4459,19 +4469,19 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 381, src/scss/_components/plans/_pricing.scss */
+/* line 325, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 385, src/scss/_components/plans/_pricing.scss */
+/* line 329, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i {
   position: relative;
   width: 14px;
   height: 14px;
 }
 
-/* line 390, src/scss/_components/plans/_pricing.scss */
+/* line 334, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:before, .pricing__box-desc li i:after {
   content: '';
   position: absolute;
@@ -4483,7 +4493,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 399, src/scss/_components/plans/_pricing.scss */
+/* line 343, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:before {
   top: 0;
   left: 50%;
@@ -4494,7 +4504,7 @@ picture {
   height: 100%;
 }
 
-/* line 407, src/scss/_components/plans/_pricing.scss */
+/* line 351, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:after {
   top: 50%;
   left: 0;
@@ -4505,7 +4515,7 @@ picture {
   height: 3px;
 }
 
-/* line 416, src/scss/_components/plans/_pricing.scss */
+/* line 360, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li p {
   padding-left: 15px;
   letter-spacing: -0.4px;
@@ -4516,7 +4526,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 427, src/scss/_components/plans/_pricing.scss */
+/* line 371, src/scss/_components/plans/_pricing.scss */
 .pricing__question {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4532,32 +4542,32 @@ picture {
           justify-content: center;
 }
 
-/* line 432, src/scss/_components/plans/_pricing.scss */
+/* line 376, src/scss/_components/plans/_pricing.scss */
 .pricing__question p,
 .pricing__question a {
   font-weight: 400;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 432, src/scss/_components/plans/_pricing.scss */
+  /* line 376, src/scss/_components/plans/_pricing.scss */
   .pricing__question p,
   .pricing__question a {
     font-size: 18px;
   }
 }
 
-/* line 440, src/scss/_components/plans/_pricing.scss */
+/* line 384, src/scss/_components/plans/_pricing.scss */
 .pricing__question p {
   color: #f32194;
 }
 
-/* line 444, src/scss/_components/plans/_pricing.scss */
+/* line 388, src/scss/_components/plans/_pricing.scss */
 .pricing__question a {
   position: relative;
   color: #5F84E1;
 }
 
-/* line 448, src/scss/_components/plans/_pricing.scss */
+/* line 392, src/scss/_components/plans/_pricing.scss */
 .pricing__question a:after {
   content: '';
   position: absolute;
@@ -4571,7 +4581,7 @@ picture {
   background-color: #5F84E1;
 }
 
-/* line 462, src/scss/_components/plans/_pricing.scss */
+/* line 406, src/scss/_components/plans/_pricing.scss */
 .pricing__question img {
   position: absolute;
   top: 0;

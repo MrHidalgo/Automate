@@ -40,12 +40,51 @@
 
 	&__img {
 		display: block;
-		width: calc(595px / 2);
-		max-width: 100%;
+		max-width: 32px;
 		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 30px;
+
+		&-bg {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		&-col {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			width: 50%;
+			height: 100%;
+
+			&-1 {
+				left: 0;
+
+				img {
+					transform: rotate(-11deg);
+				}
+			}
+			&-2 {
+				right: 0;
+
+				img {
+					transform: rotate(10deg);
+				}
+			}
+		}
+
+		&-wrapper {
+			position: relative;
+			width: 100%;
+			max-width: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 30px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	&__title {

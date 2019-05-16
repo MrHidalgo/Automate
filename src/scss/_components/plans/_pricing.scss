@@ -127,6 +127,7 @@
 
 				&:before {
 					opacity: 0;
+					visibility: hidden;
 					content: '';
 					z-index: 5;
 					position: absolute;
@@ -145,6 +146,7 @@
 					&:before {
 						opacity: 1;
 						z-index: 0;
+						visibility: visible;
 						@include transition(opacity 0.5s);
 					}
 
@@ -159,9 +161,10 @@
 						}
 
 						&-btn {
-							border-color: #ffffff;
+							border-color: $brandColor-blue;
 							background-color: #fff;
 							box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
+							color: $brandColor-blue;
 							@include transition(border-color, background-color, box-shadow);
 						}
 
@@ -197,65 +200,6 @@
 						}
 					}
 				}
-
-				/*&:hover {
-					z-index: 2;
-
-					&:before {
-						opacity: 1;
-						z-index: 0;
-						@include transition(opacity 0.5s);
-					}
-
-					.pricing__box {
-						z-index: 5;
-
-						&-title,
-						&-price,
-						&-free {
-							color: #ffffff;
-							@include transition(color);
-						}
-
-						&-btn {
-							border-color: #ffffff;
-							background-color: #fff;
-							box-shadow: 0 3px 12px rgba(0, 0, 0, 0.31);
-							@include transition(border-color, background-color, box-shadow);
-						}
-
-						&-line {
-							width: calc(100% + 30px);
-							margin-left: -15px;
-							background-color: rgba(#fff, 0.59);
-							@include transition(width, background-color);
-						}
-
-						&-detail {
-							span,
-							p {
-								color: #ffffff;
-								@include transition(color);
-							}
-						}
-
-						&-desc {
-							li {
-								i {
-									&:before,
-									&:after {
-										background-color: #ffffff;
-										@include transition(background-color);
-									}
-								}
-								p {
-									color: #ffffff;
-									@include transition(color);
-								}
-							}
-						}
-					}
-				}*/
 			}
 		}
 
@@ -318,16 +262,16 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 100%;
+			//width: 100%;
 			max-width: 80%;
 			height: 55px;
 			margin-left: auto;
 			margin-right: auto;
-			background-color: transparent;
-			border: 1px solid rgba($brandColor-blue, 0.99);
-			@extend %fontOpenSans;
-			font-size: 18px;
-			color: $brandColor-blue;
+			//background-color: transparent;
+			//border: 1px solid rgba($brandColor-blue, 0.99);
+			//@extend %fontOpenSans;
+			//font-size: 18px;
+			//color: $brandColor-blue;
 			@include transition(border-color, background-color, box-shadow);
 		}
 
