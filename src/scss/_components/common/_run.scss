@@ -114,7 +114,7 @@
 	&__title {
 		padding-bottom: 75px;
 		text-align: center;
-		color: #4f81e2;
+		color: $brandColor-blue;
 		@include adaptive(575) {
 			padding-bottom: 50px;
 		}
@@ -127,7 +127,7 @@
 		margin-right: auto;
 		padding-bottom: 50px;
 		text-align: center;
-		color: #4f81e2;
+		color: $brandColor-blue;
 	}
 
 	&__btn {
@@ -167,7 +167,7 @@
 			height: 55px;
 
 			.icon-font {
-				color: #4f81e2;
+				color: $brandColor-blue;
 				font-size: 30px;
 				@include adaptive(1023) {
 					transform: rotate(90deg);
@@ -194,7 +194,7 @@
 		&-title {
 			padding-top: 15px;
 			text-align: center;
-			color: #4f81e2;
+			color: $brandColor-blue;
 			font-size: 14px;
 		}
 	}

@@ -93,7 +93,7 @@ var initStellar = function initStellar() {
         // Select which property is used to position elements.
         // Choose between 'position' or 'transform',
         // or write your own 'positionProperty' plugin.
-        positionProperty: 'transform',
+        positionProperty: 'position',
 
         // Enable or disable the two types of parallax
         parallaxBackgrounds: true,
@@ -160,61 +160,13 @@ var initWebFontLoader = function initWebFontLoader() {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
-  var initPricingTabs = function initPricingTabs() {
-    var _btns = document.getElementsByClassName('pricing__tabs');
+  /**
+   *
+   */
+  var initFloatingSupportedBlock = function initFloatingSupportedBlock() {
+    var _tl = new TimelineMax({ repeat: -1, yoyo: true });
 
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = _btns[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var _el = _step.value;
-
-        _el.addEventListener("click", function (ev) {
-          var _iteratorNormalCompletion2 = true;
-          var _didIteratorError2 = false;
-          var _iteratorError2 = undefined;
-
-          try {
-
-            for (var _iterator2 = _btns[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-              var _e = _step2.value;
-
-              _e.classList.remove('is-active');
-            }
-          } catch (err) {
-            _didIteratorError2 = true;
-            _iteratorError2 = err;
-          } finally {
-            try {
-              if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                _iterator2.return();
-              }
-            } finally {
-              if (_didIteratorError2) {
-                throw _iteratorError2;
-              }
-            }
-          }
-
-          ev.currentTarget.classList.add('is-active');
-        });
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
-    }
+    _tl.fromTo($('.supported__block-1'), 1.75, { y: 0 }, { y: 20, ease: Power1.easeInOut }).fromTo($('.supported__block-2'), 1.65, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.75').fromTo($('.supported__block-3'), 1.55, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.65').fromTo($('.supported__block-4'), 1.45, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.55').fromTo($('.supported__block-5'), 1.85, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.45').fromTo($('.supported__block-6'), 1.95, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.85').fromTo($('.supported__block-7'), 1.65, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.95').fromTo($('.supported__block-8'), 1.45, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.65').fromTo($('.supported__block-9'), 1.55, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.45').fromTo($('.supported__block-10'), 1.85, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.55').fromTo($('.supported__block-11'), 1.75, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.85');
   };
   /*
   * CALLBACK :: end
@@ -239,7 +191,7 @@ var initWebFontLoader = function initWebFontLoader() {
 
     // callback
     // ==========================================
-    initPricingTabs();
+    initFloatingSupportedBlock();
   };
   initNative();
 })();

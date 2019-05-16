@@ -45,7 +45,7 @@
 		width: 55px;
 		height: 55px;
 		border-radius: 100%;
-		background-color: #4f81e2;
+		background-color: $brandColor-blue;
 		@include adaptive(767) {
 			position: static;
 			transform: translate(0);

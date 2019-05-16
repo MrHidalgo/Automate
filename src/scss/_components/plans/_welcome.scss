@@ -3,7 +3,7 @@
 .welcome {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: #4f81e2;
+	background-color: $brandColor-blue;
 	@include adaptive(767) {
 		padding-top: 75px;
 		padding-bottom: 75px;

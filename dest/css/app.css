@@ -1593,7 +1593,7 @@ picture {
 .run__title {
   padding-bottom: 75px;
   text-align: center;
-  color: #4f81e2;
+  color: #5F84E1;
 }
 
 @media screen and (max-width: 575px) {
@@ -1611,7 +1611,7 @@ picture {
   margin-right: auto;
   padding-bottom: 50px;
   text-align: center;
-  color: #4f81e2;
+  color: #5F84E1;
 }
 
 /* line 133, src/scss/_components/common/_run.scss */
@@ -1661,7 +1661,7 @@ picture {
 
 /* line 169, src/scss/_components/common/_run.scss */
 .run__box-arrow .icon-font {
-  color: #4f81e2;
+  color: #5F84E1;
   font-size: 30px;
 }
 
@@ -1694,7 +1694,7 @@ picture {
 .run__box-title {
   padding-top: 15px;
   text-align: center;
-  color: #4f81e2;
+  color: #5F84E1;
   font-size: 14px;
 }
 
@@ -1727,7 +1727,7 @@ picture {
 
 /* line 26, src/scss/_components/common/_fun.scss */
 .fun--dark .fun__title, .fun--dark .fun__subtitle {
-  color: #4f81e2;
+  color: #5F84E1;
 }
 
 /* line 31, src/scss/_components/common/_fun.scss */
@@ -3529,7 +3529,7 @@ picture {
   height: 55px;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  background-color: #4f81e2;
+  background-color: #5F84E1;
 }
 
 @media screen and (max-width: 767px) {
@@ -3634,7 +3634,7 @@ picture {
   left: 0;
   width: 100%;
   height: 350px;
-  background-color: #4F81E2;
+  background-color: #5F84E1;
   background-image: url("../img/img-do-bg.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -3669,7 +3669,7 @@ picture {
   height: 55px;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  background-color: #4f81e2;
+  background-color: #5F84E1;
 }
 
 @media screen and (max-width: 767px) {
@@ -3868,36 +3868,39 @@ picture {
 }
 
 /* line 22, src/scss/_components/plans/_pricing.scss */
-.pricing__bg img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+.pricing__bg div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img-pricing-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
-/* line 31, src/scss/_components/plans/_pricing.scss */
+/* line 34, src/scss/_components/plans/_pricing.scss */
 .pricing__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 35, src/scss/_components/plans/_pricing.scss */
+/* line 38, src/scss/_components/plans/_pricing.scss */
 .pricing__wrapper-0 {
   padding-bottom: 75px;
 }
 
-/* line 38, src/scss/_components/plans/_pricing.scss */
+/* line 41, src/scss/_components/plans/_pricing.scss */
 .pricing__wrapper-1 {
   padding-bottom: 75px;
 }
 
-/* line 44, src/scss/_components/plans/_pricing.scss */
+/* line 47, src/scss/_components/plans/_pricing.scss */
 .pricing__title {
   padding-bottom: 50px;
 }
 
-/* line 48, src/scss/_components/plans/_pricing.scss */
+/* line 51, src/scss/_components/plans/_pricing.scss */
 .pricing__tabs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3925,25 +3928,25 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 63, src/scss/_components/plans/_pricing.scss */
+/* line 66, src/scss/_components/plans/_pricing.scss */
 .pricing__tabs:hover {
   background-color: rgba(0, 142, 255, 0.05);
-  color: #4f81e2;
+  color: #5F84E1;
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 69, src/scss/_components/plans/_pricing.scss */
+/* line 72, src/scss/_components/plans/_pricing.scss */
 .pricing__tabs.is-active {
   background-color: rgba(0, 142, 255, 0.1);
-  color: #4f81e2;
+  color: #5F84E1;
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 75, src/scss/_components/plans/_pricing.scss */
+/* line 78, src/scss/_components/plans/_pricing.scss */
 .pricing__tabs-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3959,14 +3962,14 @@ picture {
           justify-content: center;
 }
 
-/* line 82, src/scss/_components/plans/_pricing.scss */
+/* line 85, src/scss/_components/plans/_pricing.scss */
 .pricing__box {
   cursor: pointer;
   position: relative;
   width: 100%;
 }
 
-/* line 87, src/scss/_components/plans/_pricing.scss */
+/* line 90, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3979,7 +3982,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 87, src/scss/_components/plans/_pricing.scss */
+  /* line 90, src/scss/_components/plans/_pricing.scss */
   .pricing__box-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -3987,7 +3990,7 @@ picture {
   }
 }
 
-/* line 94, src/scss/_components/plans/_pricing.scss */
+/* line 97, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div {
   z-index: 1;
   cursor: pointer;
@@ -4003,7 +4006,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 94, src/scss/_components/plans/_pricing.scss */
+  /* line 97, src/scss/_components/plans/_pricing.scss */
   .pricing__box-wrapper > div {
     max-width: -webkit-calc((100% - 15px) / 2);
     max-width: calc((100% - 15px) / 2);
@@ -4013,13 +4016,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 94, src/scss/_components/plans/_pricing.scss */
+  /* line 97, src/scss/_components/plans/_pricing.scss */
   .pricing__box-wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 113, src/scss/_components/plans/_pricing.scss */
+/* line 116, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:before {
   opacity: 0;
   content: '';
@@ -4031,7 +4034,7 @@ picture {
   width: calc(100% + 30px);
   height: -webkit-calc(100% + 30px);
   height: calc(100% + 30px);
-  background-color: #79A0EB;
+  background-color: #5F84E1;
   -webkit-box-shadow: 0 2px 40px rgba(0, 0, 0, 0.31);
           box-shadow: 0 2px 40px rgba(0, 0, 0, 0.31);
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -4039,12 +4042,12 @@ picture {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* line 127, src/scss/_components/plans/_pricing.scss */
+/* line 130, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover {
   z-index: 2;
 }
 
-/* line 130, src/scss/_components/plans/_pricing.scss */
+/* line 133, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover:before {
   opacity: 1;
   z-index: 0;
@@ -4053,12 +4056,12 @@ picture {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* line 136, src/scss/_components/plans/_pricing.scss */
+/* line 139, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box {
   z-index: 5;
 }
 
-/* line 139, src/scss/_components/plans/_pricing.scss */
+/* line 142, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-title, .pricing__box-wrapper > div:hover .pricing__box-price, .pricing__box-wrapper > div:hover .pricing__box-free {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -4066,7 +4069,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 146, src/scss/_components/plans/_pricing.scss */
+/* line 149, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-btn {
   border-color: #ffffff;
   background-color: #fff;
@@ -4079,7 +4082,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 153, src/scss/_components/plans/_pricing.scss */
+/* line 156, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-line {
   width: -webkit-calc(100% + 30px);
   width: calc(100% + 30px);
@@ -4090,7 +4093,7 @@ picture {
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 161, src/scss/_components/plans/_pricing.scss */
+/* line 164, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-detail span,
 .pricing__box-wrapper > div:hover .pricing__box-detail p {
   color: #ffffff;
@@ -4099,7 +4102,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 171, src/scss/_components/plans/_pricing.scss */
+/* line 174, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-desc li i:before, .pricing__box-wrapper > div:hover .pricing__box-desc li i:after {
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -4107,7 +4110,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 177, src/scss/_components/plans/_pricing.scss */
+/* line 180, src/scss/_components/plans/_pricing.scss */
 .pricing__box-wrapper > div:hover .pricing__box-desc li p {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -4115,7 +4118,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 188, src/scss/_components/plans/_pricing.scss */
+/* line 191, src/scss/_components/plans/_pricing.scss */
 .pricing__box-title, .pricing__box-free {
   text-align: center;
   color: #000;
@@ -4124,13 +4127,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 195, src/scss/_components/plans/_pricing.scss */
+/* line 198, src/scss/_components/plans/_pricing.scss */
 .pricing__box-title {
   padding-bottom: 30px;
   font-size: 33px;
 }
 
-/* line 201, src/scss/_components/plans/_pricing.scss */
+/* line 204, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4147,13 +4150,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 209, src/scss/_components/plans/_pricing.scss */
+/* line 212, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price span,
 .pricing__box-price p {
   line-height: 1;
 }
 
-/* line 214, src/scss/_components/plans/_pricing.scss */
+/* line 217, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price span {
   position: relative;
   top: 5px;
@@ -4161,7 +4164,7 @@ picture {
   font-size: 22px;
 }
 
-/* line 221, src/scss/_components/plans/_pricing.scss */
+/* line 224, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price h3 {
   position: relative;
   left: 6px;
@@ -4169,7 +4172,7 @@ picture {
   line-height: 1;
 }
 
-/* line 228, src/scss/_components/plans/_pricing.scss */
+/* line 231, src/scss/_components/plans/_pricing.scss */
 .pricing__box-price p {
   position: relative;
   top: 22px;
@@ -4177,7 +4180,7 @@ picture {
   font-size: 22px;
 }
 
-/* line 236, src/scss/_components/plans/_pricing.scss */
+/* line 239, src/scss/_components/plans/_pricing.scss */
 .pricing__box-free {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -4185,7 +4188,7 @@ picture {
   font-size: 18px;
 }
 
-/* line 243, src/scss/_components/plans/_pricing.scss */
+/* line 246, src/scss/_components/plans/_pricing.scss */
 .pricing__box-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4215,7 +4218,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 260, src/scss/_components/plans/_pricing.scss */
+/* line 263, src/scss/_components/plans/_pricing.scss */
 .pricing__box-line {
   width: 100%;
   height: 1px;
@@ -4227,13 +4230,13 @@ picture {
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 269, src/scss/_components/plans/_pricing.scss */
+/* line 272, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail {
   padding-left: 25px;
   padding-right: 10px;
 }
 
-/* line 273, src/scss/_components/plans/_pricing.scss */
+/* line 276, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4246,12 +4249,12 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 278, src/scss/_components/plans/_pricing.scss */
+/* line 281, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 282, src/scss/_components/plans/_pricing.scss */
+/* line 285, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li span,
 .pricing__box-detail li p {
   white-space: nowrap;
@@ -4267,18 +4270,18 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 292, src/scss/_components/plans/_pricing.scss */
+/* line 295, src/scss/_components/plans/_pricing.scss */
 .pricing__box-detail li p {
   text-align: right;
 }
 
-/* line 298, src/scss/_components/plans/_pricing.scss */
+/* line 301, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc {
   padding-left: 25px;
   padding-right: 10px;
 }
 
-/* line 302, src/scss/_components/plans/_pricing.scss */
+/* line 305, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4291,31 +4294,31 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 307, src/scss/_components/plans/_pricing.scss */
+/* line 310, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 311, src/scss/_components/plans/_pricing.scss */
+/* line 314, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i {
   position: relative;
   width: 14px;
   height: 14px;
 }
 
-/* line 316, src/scss/_components/plans/_pricing.scss */
+/* line 319, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:before, .pricing__box-desc li i:after {
   content: '';
   position: absolute;
   -webkit-border-radius: 2em;
           border-radius: 2em;
-  background-color: #4f81e2;
+  background-color: #5F84E1;
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 325, src/scss/_components/plans/_pricing.scss */
+/* line 328, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:before {
   top: 0;
   left: 50%;
@@ -4326,7 +4329,7 @@ picture {
   height: 100%;
 }
 
-/* line 333, src/scss/_components/plans/_pricing.scss */
+/* line 336, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li i:after {
   top: 50%;
   left: 0;
@@ -4337,7 +4340,7 @@ picture {
   height: 3px;
 }
 
-/* line 342, src/scss/_components/plans/_pricing.scss */
+/* line 345, src/scss/_components/plans/_pricing.scss */
 .pricing__box-desc li p {
   padding-left: 15px;
   letter-spacing: -0.4px;
@@ -4348,7 +4351,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 353, src/scss/_components/plans/_pricing.scss */
+/* line 356, src/scss/_components/plans/_pricing.scss */
 .pricing__question {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4364,32 +4367,32 @@ picture {
           justify-content: center;
 }
 
-/* line 358, src/scss/_components/plans/_pricing.scss */
+/* line 361, src/scss/_components/plans/_pricing.scss */
 .pricing__question p,
 .pricing__question a {
   font-weight: 400;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 358, src/scss/_components/plans/_pricing.scss */
+  /* line 361, src/scss/_components/plans/_pricing.scss */
   .pricing__question p,
   .pricing__question a {
     font-size: 18px;
   }
 }
 
-/* line 366, src/scss/_components/plans/_pricing.scss */
+/* line 369, src/scss/_components/plans/_pricing.scss */
 .pricing__question p {
   color: #f32194;
 }
 
-/* line 370, src/scss/_components/plans/_pricing.scss */
+/* line 373, src/scss/_components/plans/_pricing.scss */
 .pricing__question a {
   position: relative;
   color: #5F84E1;
 }
 
-/* line 374, src/scss/_components/plans/_pricing.scss */
+/* line 377, src/scss/_components/plans/_pricing.scss */
 .pricing__question a:after {
   content: '';
   position: absolute;
@@ -4403,7 +4406,7 @@ picture {
   background-color: #5F84E1;
 }
 
-/* line 388, src/scss/_components/plans/_pricing.scss */
+/* line 391, src/scss/_components/plans/_pricing.scss */
 .pricing__question img {
   position: absolute;
   top: 0;
@@ -4414,7 +4417,7 @@ picture {
 .welcome {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #4f81e2;
+  background-color: #5F84E1;
 }
 
 @media screen and (max-width: 767px) {
