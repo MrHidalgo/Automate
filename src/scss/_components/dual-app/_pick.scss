@@ -2,7 +2,7 @@
 
 .pick {
 	padding-top: 100px;
-	padding-bottom: 200px;
+	padding-bottom: 450px;
 	@include adaptive(767) {
 		padding-top: 75px;
 		padding-bottom: 75px;
@@ -165,6 +165,12 @@
 		@include adaptive(767) {
 			position: relative;
 			top: 0;
+
+			&.is-open {
+				.dropdown-menu {
+					display: block;
+				}
+			}
 		}
 
 		.btn {
@@ -203,10 +209,6 @@
 			}
 			@include adaptive(767) {
 				display: none;
-
-				&.show {
-					display: block;
-				}
 			}
 		}
 

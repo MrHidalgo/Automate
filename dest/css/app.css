@@ -1413,7 +1413,7 @@ picture {
 /* line 33, src/scss/_components/common/_integrate.scss */
 .integrate__box-img img {
   display: block;
-  max-width: 64px;
+  max-width: 38px;
   height: auto;
 }
 
@@ -4750,7 +4750,7 @@ picture {
 /* line 3, src/scss/_components/dual-app/_pick.scss */
 .pick {
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 450px;
 }
 
 @media screen and (max-width: 767px) {
@@ -4997,9 +4997,13 @@ picture {
     position: relative;
     top: 0;
   }
+  /* line 170, src/scss/_components/dual-app/_pick.scss */
+  .pick .dropdown.is-open .dropdown-menu {
+    display: block;
+  }
 }
 
-/* line 170, src/scss/_components/dual-app/_pick.scss */
+/* line 176, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn {
   width: 100%;
   height: 50px;
@@ -5012,31 +5016,31 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 170, src/scss/_components/dual-app/_pick.scss */
+  /* line 176, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown .btn {
     font-size: 14px;
   }
 }
 
-/* line 181, src/scss/_components/dual-app/_pick.scss */
+/* line 187, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn .icon-font {
   margin-right: 10px;
   font-size: 10px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 181, src/scss/_components/dual-app/_pick.scss */
+  /* line 187, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown .btn .icon-font {
     font-size: 8px;
   }
 }
 
-/* line 189, src/scss/_components/dual-app/_pick.scss */
+/* line 195, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn:after {
   display: none;
 }
 
-/* line 194, src/scss/_components/dual-app/_pick.scss */
+/* line 200, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-menu {
   display: block;
   width: 100%;
@@ -5048,43 +5052,39 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 194, src/scss/_components/dual-app/_pick.scss */
+  /* line 200, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-menu {
     min-width: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 194, src/scss/_components/dual-app/_pick.scss */
+  /* line 200, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-menu {
     display: none;
   }
-  /* line 207, src/scss/_components/dual-app/_pick.scss */
-  .pick .dropdown-menu.show {
-    display: block;
-  }
 }
 
-/* line 213, src/scss/_components/dual-app/_pick.scss */
+/* line 215, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-item {
   height: 50px;
   padding: 0 15px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 213, src/scss/_components/dual-app/_pick.scss */
+  /* line 215, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-item {
     font-size: 14px;
   }
 }
 
-/* line 220, src/scss/_components/dual-app/_pick.scss */
+/* line 222, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-item.is-active {
   background-color: #4f81e2;
   color: #ffffff;
 }
 
-/* line 226, src/scss/_components/dual-app/_pick.scss */
+/* line 228, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-divider {
   margin-left: 5px;
   margin-right: 5px;

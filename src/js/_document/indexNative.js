@@ -25,6 +25,23 @@
 			.fromTo($('.supported__block-10'), 1.85, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.55')
 			.fromTo($('.supported__block-11'), 1.75, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.85');
 	};
+
+
+	/**
+	 *
+	 */
+	const initFilterBtn = () => {
+		$('.dropdown > a').on('click', (ev) => {
+			if($(window).width() < 768) {
+				$(ev.currentTarget).closest('.dropdown').toggleClass('is-open');
+			}
+		});
+		$('.dropdown-menu > a').on('click', (ev) => {
+			if($(window).width() < 768) {
+				$(ev.currentTarget).closest('.dropdown').removeClass('is-open');
+			}
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -50,6 +67,7 @@
 		// callback
 		// ==========================================
 		initFloatingSupportedBlock();
+		initFilterBtn();
 	};
 	initNative();
 })();

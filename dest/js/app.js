@@ -168,6 +168,22 @@ var initWebFontLoader = function initWebFontLoader() {
 
     _tl.fromTo($('.supported__block-1'), 1.75, { y: 0 }, { y: 20, ease: Power1.easeInOut }).fromTo($('.supported__block-2'), 1.65, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.75').fromTo($('.supported__block-3'), 1.55, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.65').fromTo($('.supported__block-4'), 1.45, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.55').fromTo($('.supported__block-5'), 1.85, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.45').fromTo($('.supported__block-6'), 1.95, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.85').fromTo($('.supported__block-7'), 1.65, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.95').fromTo($('.supported__block-8'), 1.45, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.65').fromTo($('.supported__block-9'), 1.55, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.45').fromTo($('.supported__block-10'), 1.85, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.55').fromTo($('.supported__block-11'), 1.75, { y: 0 }, { y: 20, ease: Power1.easeInOut }, '-=1.85');
   };
+
+  /**
+   *
+   */
+  var initFilterBtn = function initFilterBtn() {
+    $('.dropdown > a').on('click', function (ev) {
+      if ($(window).width() < 768) {
+        $(ev.currentTarget).closest('.dropdown').toggleClass('is-open');
+      }
+    });
+    $('.dropdown-menu > a').on('click', function (ev) {
+      if ($(window).width() < 768) {
+        $(ev.currentTarget).closest('.dropdown').removeClass('is-open');
+      }
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -192,6 +208,7 @@ var initWebFontLoader = function initWebFontLoader() {
     // callback
     // ==========================================
     initFloatingSupportedBlock();
+    initFilterBtn();
   };
   initNative();
 })();
