@@ -9,10 +9,10 @@ PageList:
   ready: 95
 - file: integrations.html
   titleName: Integrations
-  ready: 90
+  ready: 95
 - file: dual-app.html
   titleName: Dual app
-  ready: 90
+  ready: 95
 - file: plans.html
   titleName: Plans
   ready: 95
