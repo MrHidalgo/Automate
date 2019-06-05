@@ -1656,39 +1656,39 @@ picture {
           box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.02);
 }
 
-/* line 149, src/scss/_components/common/_run.scss */
+/* line 148, src/scss/_components/common/_run.scss */
 .run__box img {
   display: block;
   max-width: 64px;
   height: auto;
 }
 
-/* line 155, src/scss/_components/common/_run.scss */
+/* line 154, src/scss/_components/common/_run.scss */
 .run__box-wrapper {
   overflow: hidden;
   padding-bottom: 50px;
 }
 
-/* line 159, src/scss/_components/common/_run.scss */
+/* line 158, src/scss/_components/common/_run.scss */
 .run__box-wrapper > div {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-/* line 165, src/scss/_components/common/_run.scss */
+/* line 164, src/scss/_components/common/_run.scss */
 .run__box-arrow {
-  width: 55px;
-  height: 55px;
+  width: 75px;
+  height: 75px;
 }
 
-/* line 169, src/scss/_components/common/_run.scss */
+/* line 168, src/scss/_components/common/_run.scss */
 .run__box-arrow .icon-font {
   color: #5F84E1;
   font-size: 30px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 169, src/scss/_components/common/_run.scss */
+  /* line 168, src/scss/_components/common/_run.scss */
   .run__box-arrow .icon-font {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
@@ -1696,23 +1696,23 @@ picture {
   }
 }
 
-/* line 181, src/scss/_components/common/_run.scss */
+/* line 180, src/scss/_components/common/_run.scss */
 .run__box-content .run__box {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-/* line 185, src/scss/_components/common/_run.scss */
+/* line 184, src/scss/_components/common/_run.scss */
 .run__box-content .run__box:first-of-type {
   margin-left: 0;
 }
 
-/* line 188, src/scss/_components/common/_run.scss */
+/* line 187, src/scss/_components/common/_run.scss */
 .run__box-content .run__box:last-of-type {
   margin-right: 0;
 }
 
-/* line 194, src/scss/_components/common/_run.scss */
+/* line 193, src/scss/_components/common/_run.scss */
 .run__box-title {
   padding-top: 15px;
   text-align: center;
@@ -3338,10 +3338,14 @@ picture {
 .recipe__box-content > li label > div:before, .recipe__box-content > li label > div:after {
   content: '';
   position: absolute;
+  top: 50%;
 }
 
-/* line 243, src/scss/_components/integrations/_recipe.scss */
+/* line 244, src/scss/_components/integrations/_recipe.scss */
 .recipe__box-content > li label > div:before {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 13px;
   width: 24px;
   height: 24px;
@@ -3354,10 +3358,11 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 253, src/scss/_components/integrations/_recipe.scss */
+/* line 255, src/scss/_components/integrations/_recipe.scss */
 .recipe__box-content > li label > div:after {
   opacity: 0;
-  top: 14px;
+  top: -webkit-calc(50% - 10px);
+  top: calc(50% - 10px);
   right: 20px;
   width: 9px;
   height: 14px;
@@ -3374,14 +3379,14 @@ picture {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 267, src/scss/_components/integrations/_recipe.scss */
+/* line 269, src/scss/_components/integrations/_recipe.scss */
 .recipe__box-content > li label > div div:nth-of-type(1) {
   padding-left: 5px;
   width: -webkit-calc((71px / 1.5) + 15px);
   width: calc((71px / 1.5) + 15px);
 }
 
-/* line 271, src/scss/_components/integrations/_recipe.scss */
+/* line 273, src/scss/_components/integrations/_recipe.scss */
 .recipe__box-content > li label > div div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3401,21 +3406,12 @@ picture {
   padding-right: 50px;
 }
 
-/* line 280, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label > div p,
-.recipe__box-content > li label > div span {
-  overflow: hidden;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-}
-
-/* line 287, src/scss/_components/integrations/_recipe.scss */
+/* line 289, src/scss/_components/integrations/_recipe.scss */
 .recipe__box-content > li label > div p {
   font-size: 18px;
 }
 
-/* line 291, src/scss/_components/integrations/_recipe.scss */
+/* line 293, src/scss/_components/integrations/_recipe.scss */
 .recipe__box-content > li label > div span {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
@@ -3483,6 +3479,7 @@ picture {
 
 /* line 47, src/scss/_components/integrations/_ads.scss */
 .ads__box {
+  min-height: 100%;
   padding: 30px 30px 60px;
   margin-bottom: 30px;
   background-color: #fff;
@@ -3490,36 +3487,37 @@ picture {
           box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
-/* line 55, src/scss/_components/integrations/_ads.scss */
+/* line 56, src/scss/_components/integrations/_ads.scss */
 .ads__box-0 .ads__box-line {
   background-color: #8021f3;
 }
 
-/* line 62, src/scss/_components/integrations/_ads.scss */
+/* line 63, src/scss/_components/integrations/_ads.scss */
 .ads__box-1 .ads__box-line {
   background-color: #F32194;
 }
 
-/* line 68, src/scss/_components/integrations/_ads.scss */
+/* line 69, src/scss/_components/integrations/_ads.scss */
 .ads__box-wrapper {
   width: 100%;
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
 }
 
-/* line 75, src/scss/_components/integrations/_ads.scss */
+/* line 77, src/scss/_components/integrations/_ads.scss */
 .ads__box-img {
   min-height: 180px;
 }
 
-/* line 78, src/scss/_components/integrations/_ads.scss */
+/* line 80, src/scss/_components/integrations/_ads.scss */
 .ads__box-img img {
   max-width: -webkit-calc(330px / 1.5);
   max-width: calc(330px / 1.5);
 }
 
-/* line 83, src/scss/_components/integrations/_ads.scss */
+/* line 85, src/scss/_components/integrations/_ads.scss */
 .ads__box-title {
   padding-bottom: 5px;
   font-size: 30px;
@@ -3527,13 +3525,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 83, src/scss/_components/integrations/_ads.scss */
+  /* line 85, src/scss/_components/integrations/_ads.scss */
   .ads__box-title {
     text-align: center;
   }
 }
 
-/* line 92, src/scss/_components/integrations/_ads.scss */
+/* line 94, src/scss/_components/integrations/_ads.scss */
 .ads__box-line {
   width: 40px;
   height: 5px;
@@ -3544,7 +3542,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 101, src/scss/_components/integrations/_ads.scss */
+/* line 103, src/scss/_components/integrations/_ads.scss */
 .ads__box-desc {
   text-align: center;
 }
