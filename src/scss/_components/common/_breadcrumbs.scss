@@ -4,16 +4,24 @@
 	background-color: $brandColor-blue;
 
 	.breadcrumb {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		display: block;
+		width: 100%;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		background-color: transparent;
 		@include adaptive(767) {
-			display: flex;
-			flex-direction: column;
+			//display: flex;
+			//flex-direction: column;
 		}
 
 		&-item {
+			display: inline-block;
+			vertical-align: middle;
 			font-size: 14px;
+			color: #ffffff;
 
 			& + .breadcrumb-item {
 				&:before {
