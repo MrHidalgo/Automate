@@ -42,6 +42,13 @@
 			}
 		});
 	};
+
+
+	const initStickyElem = () => {
+		$("#dropdown-sticky").stick_in_parent({
+			offset_top: 95
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -68,6 +75,7 @@
 		// ==========================================
 		initFloatingSupportedBlock();
 		initFilterBtn();
+		initStickyElem();
 	};
 	initNative();
 })();

@@ -184,6 +184,12 @@ var initWebFontLoader = function initWebFontLoader() {
       }
     });
   };
+
+  var initStickyElem = function initStickyElem() {
+    $("#dropdown-sticky").stick_in_parent({
+      offset_top: 95
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -209,6 +215,7 @@ var initWebFontLoader = function initWebFontLoader() {
     // ==========================================
     initFloatingSupportedBlock();
     initFilterBtn();
+    initStickyElem();
   };
   initNative();
 })();

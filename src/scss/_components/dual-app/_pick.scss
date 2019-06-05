@@ -1,6 +1,7 @@
 // SECTION pick :: START
 
 .pick {
+	overflow: hidden;
 	padding-top: 100px;
 	padding-bottom: 450px;
 	@include adaptive(767) {
@@ -159,7 +160,7 @@
 	}
 
 	.dropdown {
-		position: sticky;
+		//position: sticky;
 		top: 95px;
 		width: 100%;
 		@include adaptive(767) {

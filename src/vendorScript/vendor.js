@@ -10,5 +10,6 @@
 * - jquery migrate;
 * - jquery.stellar;
 * - TweenMax.min.js;
+* - sticky-kit;
 *
 * */

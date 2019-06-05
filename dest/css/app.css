@@ -4749,6 +4749,7 @@ picture {
 
 /* line 3, src/scss/_components/dual-app/_pick.scss */
 .pick {
+  overflow: hidden;
   padding-top: 100px;
   padding-bottom: 450px;
 }
@@ -4761,7 +4762,7 @@ picture {
   }
 }
 
-/* line 11, src/scss/_components/dual-app/_pick.scss */
+/* line 12, src/scss/_components/dual-app/_pick.scss */
 .pick__img {
   display: block;
   width: 100%;
@@ -4773,35 +4774,35 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 11, src/scss/_components/dual-app/_pick.scss */
+  /* line 12, src/scss/_components/dual-app/_pick.scss */
   .pick__img {
     max-width: 200px;
   }
 }
 
-/* line 24, src/scss/_components/dual-app/_pick.scss */
+/* line 25, src/scss/_components/dual-app/_pick.scss */
 .pick__title {
   padding-bottom: 15px;
 }
 
-/* line 28, src/scss/_components/dual-app/_pick.scss */
+/* line 29, src/scss/_components/dual-app/_pick.scss */
 .pick__subtitle {
   padding-bottom: 50px;
   text-align: center;
 }
 
-/* line 33, src/scss/_components/dual-app/_pick.scss */
+/* line 34, src/scss/_components/dual-app/_pick.scss */
 .pick__form {
   position: relative;
   padding-bottom: 50px;
 }
 
-/* line 37, src/scss/_components/dual-app/_pick.scss */
+/* line 38, src/scss/_components/dual-app/_pick.scss */
 .pick__form-field {
   position: relative;
 }
 
-/* line 41, src/scss/_components/dual-app/_pick.scss */
+/* line 42, src/scss/_components/dual-app/_pick.scss */
 .pick__form-icon {
   position: absolute;
   top: 0;
@@ -4810,12 +4811,12 @@ picture {
   height: 50px;
 }
 
-/* line 48, src/scss/_components/dual-app/_pick.scss */
+/* line 49, src/scss/_components/dual-app/_pick.scss */
 .pick__form-icon .icon-search {
   font-size: 20px;
 }
 
-/* line 53, src/scss/_components/dual-app/_pick.scss */
+/* line 54, src/scss/_components/dual-app/_pick.scss */
 .pick__form-input {
   outline: none;
   width: 100%;
@@ -4855,7 +4856,7 @@ picture {
   font-size: 16px;
 }
 
-/* line 69, src/scss/_components/dual-app/_pick.scss */
+/* line 70, src/scss/_components/dual-app/_pick.scss */
 .pick__form-btn {
   outline: none;
   cursor: pointer;
@@ -4879,7 +4880,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 85, src/scss/_components/dual-app/_pick.scss */
+/* line 86, src/scss/_components/dual-app/_pick.scss */
 .pick__form-btn:hover {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
@@ -4891,7 +4892,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 92, src/scss/_components/dual-app/_pick.scss */
+/* line 93, src/scss/_components/dual-app/_pick.scss */
 .pick__box {
   width: 150px;
   height: 150px;
@@ -4911,7 +4912,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 92, src/scss/_components/dual-app/_pick.scss */
+  /* line 93, src/scss/_components/dual-app/_pick.scss */
   .pick__box {
     margin-right: 15px;
     margin-bottom: 15px;
@@ -4919,7 +4920,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 92, src/scss/_components/dual-app/_pick.scss */
+  /* line 93, src/scss/_components/dual-app/_pick.scss */
   .pick__box {
     width: -webkit-calc((100% - 15px) / 2);
     width: calc((100% - 15px) / 2);
@@ -4927,7 +4928,7 @@ picture {
   }
 }
 
-/* line 111, src/scss/_components/dual-app/_pick.scss */
+/* line 112, src/scss/_components/dual-app/_pick.scss */
 .pick__box:hover {
   -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
@@ -4938,43 +4939,43 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 118, src/scss/_components/dual-app/_pick.scss */
+/* line 119, src/scss/_components/dual-app/_pick.scss */
 .pick__box-0 .pick__box-icon img {
   width: -webkit-calc(76px / 1.25);
   width: calc(76px / 1.25);
 }
 
-/* line 125, src/scss/_components/dual-app/_pick.scss */
+/* line 126, src/scss/_components/dual-app/_pick.scss */
 .pick__box-1 .pick__box-icon img {
   width: -webkit-calc(85px / 1.25);
   width: calc(85px / 1.25);
 }
 
-/* line 132, src/scss/_components/dual-app/_pick.scss */
+/* line 133, src/scss/_components/dual-app/_pick.scss */
 .pick__box-2 .pick__box-icon img {
   width: -webkit-calc(83px / 1.25);
   width: calc(83px / 1.25);
 }
 
-/* line 138, src/scss/_components/dual-app/_pick.scss */
+/* line 139, src/scss/_components/dual-app/_pick.scss */
 .pick__box-icon {
   height: 70px;
 }
 
-/* line 141, src/scss/_components/dual-app/_pick.scss */
+/* line 142, src/scss/_components/dual-app/_pick.scss */
 .pick__box-icon img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 149, src/scss/_components/dual-app/_pick.scss */
+/* line 150, src/scss/_components/dual-app/_pick.scss */
 .pick__box-title p {
   color: #000;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 154, src/scss/_components/dual-app/_pick.scss */
+  /* line 155, src/scss/_components/dual-app/_pick.scss */
   .pick__box-wrapper {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -4983,27 +4984,25 @@ picture {
   }
 }
 
-/* line 161, src/scss/_components/dual-app/_pick.scss */
+/* line 162, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown {
-  position: -webkit-sticky;
-  position: sticky;
   top: 95px;
   width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 161, src/scss/_components/dual-app/_pick.scss */
+  /* line 162, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown {
     position: relative;
     top: 0;
   }
-  /* line 170, src/scss/_components/dual-app/_pick.scss */
+  /* line 171, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown.is-open .dropdown-menu {
     display: block;
   }
 }
 
-/* line 176, src/scss/_components/dual-app/_pick.scss */
+/* line 177, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn {
   width: 100%;
   height: 50px;
@@ -5016,31 +5015,31 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 176, src/scss/_components/dual-app/_pick.scss */
+  /* line 177, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown .btn {
     font-size: 14px;
   }
 }
 
-/* line 187, src/scss/_components/dual-app/_pick.scss */
+/* line 188, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn .icon-font {
   margin-right: 10px;
   font-size: 10px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 187, src/scss/_components/dual-app/_pick.scss */
+  /* line 188, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown .btn .icon-font {
     font-size: 8px;
   }
 }
 
-/* line 195, src/scss/_components/dual-app/_pick.scss */
+/* line 196, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn:after {
   display: none;
 }
 
-/* line 200, src/scss/_components/dual-app/_pick.scss */
+/* line 201, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-menu {
   display: block;
   width: 100%;
@@ -5052,39 +5051,39 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 200, src/scss/_components/dual-app/_pick.scss */
+  /* line 201, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-menu {
     min-width: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 200, src/scss/_components/dual-app/_pick.scss */
+  /* line 201, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-menu {
     display: none;
   }
 }
 
-/* line 215, src/scss/_components/dual-app/_pick.scss */
+/* line 216, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-item {
   height: 50px;
   padding: 0 15px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 215, src/scss/_components/dual-app/_pick.scss */
+  /* line 216, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-item {
     font-size: 14px;
   }
 }
 
-/* line 222, src/scss/_components/dual-app/_pick.scss */
+/* line 223, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-item.is-active {
   background-color: #4f81e2;
   color: #ffffff;
 }
 
-/* line 228, src/scss/_components/dual-app/_pick.scss */
+/* line 229, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-divider {
   margin-left: 5px;
   margin-right: 5px;
