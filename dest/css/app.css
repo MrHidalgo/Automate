@@ -1820,26 +1820,33 @@ picture {
   height: 100%;
 }
 
-/* line 76, src/scss/_components/common/_fun.scss */
+@media screen and (max-width: 1279px) {
+  /* line 69, src/scss/_components/common/_fun.scss */
+  .fun__bg-sheet {
+    display: none;
+  }
+}
+
+/* line 79, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg {
   position: absolute;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 76, src/scss/_components/common/_fun.scss */
+  /* line 79, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg {
     opacity: 0.65;
   }
 }
 
-/* line 82, src/scss/_components/common/_fun.scss */
+/* line 85, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg:nth-of-type(1) {
   top: 110px;
   left: 62px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 82, src/scss/_components/common/_fun.scss */
+  /* line 85, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(1) {
     top: 75px;
     left: 50px;
@@ -1847,14 +1854,14 @@ picture {
 }
 
 @media screen and (max-width: 424px) {
-  /* line 82, src/scss/_components/common/_fun.scss */
+  /* line 85, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(1) {
     top: 15px;
     left: 15px;
   }
 }
 
-/* line 94, src/scss/_components/common/_fun.scss */
+/* line 97, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg:nth-of-type(2) {
   top: 50.9%;
   left: 21.5%;
@@ -1864,13 +1871,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 94, src/scss/_components/common/_fun.scss */
+  /* line 97, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(2) {
     left: 130px;
   }
 }
 
-/* line 102, src/scss/_components/common/_fun.scss */
+/* line 105, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg:nth-of-type(3) {
   top: 44.8%;
   right: 22.2%;
@@ -1880,13 +1887,13 @@ picture {
 }
 
 @media screen and (max-width: 424px) {
-  /* line 102, src/scss/_components/common/_fun.scss */
+  /* line 105, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(3) {
     display: none;
   }
 }
 
-/* line 110, src/scss/_components/common/_fun.scss */
+/* line 113, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg:nth-of-type(4) {
   top: 54.4%;
   right: 110px;
@@ -1896,7 +1903,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 110, src/scss/_components/common/_fun.scss */
+  /* line 113, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(4) {
     top: 70%;
     right: 50px;
@@ -1904,41 +1911,41 @@ picture {
 }
 
 @media screen and (max-width: 424px) {
-  /* line 110, src/scss/_components/common/_fun.scss */
+  /* line 113, src/scss/_components/common/_fun.scss */
   .fun__bg-sheet svg:nth-of-type(4) {
     top: 80%;
     right: 0;
   }
 }
 
-/* line 124, src/scss/_components/common/_fun.scss */
+/* line 127, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg #sheet-0 {
   fill: rgba(95, 132, 225, 0.09);
 }
 
-/* line 127, src/scss/_components/common/_fun.scss */
+/* line 130, src/scss/_components/common/_fun.scss */
 .fun__bg-sheet svg #sheet-1 {
   stroke: #5F84E1;
 }
 
-/* line 134, src/scss/_components/common/_fun.scss */
+/* line 137, src/scss/_components/common/_fun.scss */
 .fun__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 139, src/scss/_components/common/_fun.scss */
+/* line 142, src/scss/_components/common/_fun.scss */
 .fun__title, .fun__subtitle {
   text-align: center;
   color: #000000;
 }
 
-/* line 145, src/scss/_components/common/_fun.scss */
+/* line 148, src/scss/_components/common/_fun.scss */
 .fun__subtitle {
   padding-bottom: 50px;
 }
 
-/* line 149, src/scss/_components/common/_fun.scss */
+/* line 152, src/scss/_components/common/_fun.scss */
 .fun__btn {
   max-width: 250px;
   margin-left: auto;
