@@ -48,6 +48,9 @@
 		$("#dropdown-sticky").stick_in_parent({
 			offset_top: 95
 		});
+		$('#recipeSticky').stick_in_parent({
+			offset_top: 95
+		});
 	};
 	/*
 	* CALLBACK :: end
@@ -67,15 +70,16 @@
 		// ==========================================
 
 		// lib
-		// ==========================================
 		initHamburger();
 		initStellar();
+		initSmoothScroll();
+		// ==========================================
 
 		// callback
-		// ==========================================
 		initFloatingSupportedBlock();
 		initFilterBtn();
 		initStickyElem();
+		// ==========================================
 	};
 	initNative();
 })();

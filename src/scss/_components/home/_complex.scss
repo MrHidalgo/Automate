@@ -4,6 +4,7 @@
 	overflow: hidden;
 	position: relative;
 	padding-top: 50px;
+	padding-bottom: 50px;
 
 	&__wrapper {
 		z-index: 2;
@@ -33,53 +34,74 @@
 		max-width: 100%;
 		height: auto;
 		margin-left: auto;
-		@include adaptive(575) {
-			width: 200px;
+		@include adaptive(1199) {
+			display: none;
 		}
 	}
 
 	&__pr {
 		display: flex;
+		padding-right: 50px;
+		@include adaptive(1199) {
+			width: 100%;
+			max-width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-right: 0;
+			padding-top: 50px;
+		}
 		@include adaptive(575) {
-			align-items: center;
+			max-width: 100%;
+			//align-items: center;
 		}
 
 		&-left {
 			flex: 1;
-			padding-top: 30px;
-			padding-bottom: 50px;
 			@include adaptive(575) {
-				padding-top: 50px;
+				flex: unset;
+				width: 100%;
+				max-width: 250px;
 			}
 
 			p {
 				display: flex;
 				align-items: center;
 				height: calc(100% / 5);
+				width: 100%;
+				max-width: 250px;
 				font-size: 18px;
 				@include adaptive(575) {
-					height: auto;
-					margin-bottom: 30px;
+					max-width: 100%;
 					font-size: 16px;
+					padding-right: 30px;
+				}
+				@include adaptive(374) {
+					font-size: 14px;
+				}
 
-					&:last-of-type {
-						margin-bottom: 0;
+				&:nth-of-type(1) {
+					align-items: flex-start;
+					padding-top: 15px;
+					@include adaptive(575) {
+						padding-top: 0;
 					}
 				}
 			}
 		}
 
 		&-right {
+			max-width: 180px;
 			@include adaptive(575) {
-				width: 40%;
+				max-width: unset;
+				width: 180px;
+			}
 
-				img {
-					display: block;
-					max-width: 100%;
-					height: auto;
-					margin-left: auto;
-					margin-right: auto;
-				}
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 	}

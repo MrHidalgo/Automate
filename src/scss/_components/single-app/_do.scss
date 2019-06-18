@@ -60,6 +60,7 @@
 	&__box {
 		position: relative;
 		width: 100%;
+		min-height: calc(100% - 50px);
 		margin-top: 50px;
 		border-bottom-left-radius: 7px;
 		border-bottom-right-radius: 7px;

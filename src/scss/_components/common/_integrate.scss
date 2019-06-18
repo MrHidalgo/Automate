@@ -25,21 +25,34 @@
 	}
 
 	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 100%;
+
 		&-img {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 
+			&--two {}
+			&--three {
+				.icon-arrow.icon-font {
+					margin-left: 5px;
+					margin-right: 5px;
+				}
+			}
+
 			img {
 				display: block;
-				//max-width: calc(71px / 1.5);
 				max-width: 38px;
 				height: auto;
 			}
 
 			.icon-font {
-				margin-left: 20px;
-				padding-right: 20px;
+				margin-left: 15px;
+				margin-right: 15px;
+				padding-right: 0;
 				font-size: 20px;
 			}
 		}
@@ -66,6 +79,7 @@
 	}
 
 	.card {
+		min-height: 100%;
 		border-radius: 5px;
 		background-color: #fff;
 		border: 1px solid rgba(0, 0, 0, 0.2);
@@ -75,6 +89,47 @@
 		&:hover {
 			box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
 			@include transition(box-shadow);
+		}
+
+		&-body {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+	&__list {
+		display: flex;
+
+		ul {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			width: calc(100% + 60px);
+			margin-left: -30px;
+			@include adaptive(991) {
+				width: calc(100% + 30px);
+				margin-left: -15px;
+			}
+		}
+
+		li {
+			width: 100%;
+			max-width: calc((100% - (30px * 4)) / 4);
+			margin-left: 30px;
+			margin-bottom: 30px;
+			@include adaptive(1199) {
+				max-width: calc((100% - (30px * 3)) / 3);
+			}
+			@include adaptive(991) {
+				max-width: calc((100% - (15px * 3)) / 3);
+				margin-left: 15px;
+			}
+			@include adaptive(767) {
+				max-width: calc((100% - (15px * 2)) / 2);
+			}
+			@include adaptive(575) {
+				max-width: 100%;
+			}
 		}
 	}
 }

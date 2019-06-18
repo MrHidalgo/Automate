@@ -112,6 +112,18 @@
 			margin-left: 10px;
 			margin-right: 0;
 			margin-bottom: 10px;
+			@include adaptive(1199) {
+				max-width: calc((100% - ((10px * 3) + 10px)) / 3);
+			}
+			@include adaptive(991) {
+				max-width: calc((100% - ((10px * 2) + 10px)) / 2);
+			}
+			@include adaptive(767) {
+				max-width: calc((100% - ((10px * 4) + 10px)) / 4);
+			}
+			@include adaptive(575) {
+				max-width: calc((100% - ((10px * 2) + 10px)) / 2);
+			}
 
 			&-title {
 				text-align: center;

@@ -61,6 +61,33 @@ var initPreventBehavior = function initPreventBehavior() {
 };
 
 /**
+ * @name initSmoothScroll
+ *
+ * @description Smooth transition to anchors to the block.
+ */
+var initSmoothScroll = function initSmoothScroll() {
+  var btnName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "[anchor-js]";
+  var animateSpeed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
+
+
+  $(btnName).on("click", function (e) {
+    var _offset = 0;
+
+    var linkHref = $(e.currentTarget).attr('href'),
+        headerHeight = $(".header").outerHeight() || 0,
+        topHeightOffset = $(linkHref).offset().top - headerHeight;
+
+    if (linkHref === '#pickSearch') {
+      _offset += 50;
+    }
+
+    $('body, html').animate({
+      scrollTop: topHeightOffset - _offset
+    }, animateSpeed);
+  });
+};
+
+/**
  * @name initStellar
  * @description Stellar.js is a jQuery plugin that provides parallax scrolling effects to any scrolling element.
  *
@@ -189,6 +216,9 @@ var initWebFontLoader = function initWebFontLoader() {
     $("#dropdown-sticky").stick_in_parent({
       offset_top: 95
     });
+    $('#recipeSticky').stick_in_parent({
+      offset_top: 95
+    });
   };
   /*
   * CALLBACK :: end
@@ -207,15 +237,16 @@ var initWebFontLoader = function initWebFontLoader() {
     // ==========================================
 
     // lib
-    // ==========================================
     initHamburger();
     initStellar();
+    initSmoothScroll();
+    // ==========================================
 
     // callback
-    // ==========================================
     initFloatingSupportedBlock();
     initFilterBtn();
     initStickyElem();
+    // ==========================================
   };
   initNative();
 })();

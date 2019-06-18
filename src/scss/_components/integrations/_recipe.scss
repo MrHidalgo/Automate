@@ -183,10 +183,6 @@
 		}
 
 		&-content {
-			overflow: hidden;
-			overflow-y: auto;
-			height: 100%;
-			max-height: calc(58px * 6);
 			padding-bottom: 30px;
 
 			> li {
