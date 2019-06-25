@@ -30,32 +30,35 @@
 	@if $filename == arrow {
 		$char: "\E001";
 	}
-	@if $filename == corner {
+	@if $filename == close {
 		$char: "\E002";
 	}
-	@if $filename == facebook {
+	@if $filename == corner {
 		$char: "\E003";
 	}
-	@if $filename == filter {
+	@if $filename == facebook {
 		$char: "\E004";
 	}
-	@if $filename == instagram {
+	@if $filename == filter {
 		$char: "\E005";
 	}
-	@if $filename == linkedin {
+	@if $filename == instagram {
 		$char: "\E006";
 	}
-	@if $filename == quotes {
+	@if $filename == linkedin {
 		$char: "\E007";
 	}
-	@if $filename == search {
+	@if $filename == quotes {
 		$char: "\E008";
 	}
-	@if $filename == twitter {
+	@if $filename == search {
 		$char: "\E009";
 	}
-	@if $filename == youtube {
+	@if $filename == twitter {
 		$char: "\E00A";
+	}
+	@if $filename == youtube {
+		$char: "\E00B";
 	}
 
 	@return $char;
@@ -74,6 +77,10 @@
 
 .icon-arrow {
 	@include icon(arrow);
+
+}
+.icon-close {
+	@include icon(close);
 
 }
 .icon-corner {

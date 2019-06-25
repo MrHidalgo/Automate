@@ -13,17 +13,17 @@
 		let _tl = new TimelineMax({repeat:-1, yoyo: true});
 
 		_tl
-			.fromTo($('.supported__block-1'), 1.75, {y:0}, {y:20, ease: Power1.easeInOut})
-			.fromTo($('.supported__block-2'), 1.65, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.75')
-			.fromTo($('.supported__block-3'), 1.55, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.65')
-			.fromTo($('.supported__block-4'), 1.45, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.55')
-			.fromTo($('.supported__block-5'), 1.85, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.45')
-			.fromTo($('.supported__block-6'), 1.95, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.85')
-			.fromTo($('.supported__block-7'), 1.65, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.95')
-			.fromTo($('.supported__block-8'), 1.45, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.65')
-			.fromTo($('.supported__block-9'), 1.55, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.45')
-			.fromTo($('.supported__block-10'), 1.85, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.55')
-			.fromTo($('.supported__block-11'), 1.75, {y:0}, {y:20, ease: Power1.easeInOut}, '-=1.85');
+			.fromTo($('.supported__block-1'), 1.85, {y:0}, {y:20, ease: Power1.linear})
+			.fromTo($('.supported__block-2'), 1.75, {y:0}, {y:20, ease: Power1.linear}, '-=1.85')
+			.fromTo($('.supported__block-3'), 1.65, {y:0}, {y:20, ease: Power1.linear}, '-=1.75')
+			.fromTo($('.supported__block-4'), 1.55, {y:0}, {y:20, ease: Power1.linear}, '-=1.65')
+			.fromTo($('.supported__block-5'), 1.95, {y:0}, {y:20, ease: Power1.linear}, '-=1.55')
+			.fromTo($('.supported__block-6'), 2.05, {y:0}, {y:20, ease: Power1.linear}, '-=1.95')
+			.fromTo($('.supported__block-7'), 1.75, {y:0}, {y:20, ease: Power1.linear}, '-=2.05')
+			.fromTo($('.supported__block-8'), 1.65, {y:0}, {y:20, ease: Power1.linear}, '-=1.75')
+			.fromTo($('.supported__block-9'), 1.75, {y:0}, {y:20, ease: Power1.linear}, '-=1.65')
+			.fromTo($('.supported__block-10'), 1.95, {y:0}, {y:20, ease: Power1.linear}, '-=1.75')
+			.fromTo($('.supported__block-11'), 1.85, {y:0}, {y:20, ease: Power1.linear}, '-=1.95');
 	};
 
 
@@ -50,6 +50,27 @@
 		});
 		$('#recipeSticky').stick_in_parent({
 			offset_top: 95
+		});
+	};
+
+	const initSearchApp = () => {
+		$('[search-app-js]').on('keyup', (ev) => {
+			const _el = $(ev.currentTarget),
+				_iconNode = _el.prev().find('.icon-font');
+
+			if(_el.val().length > 0) {
+				_iconNode.removeClass('icon-search').addClass('icon-close');
+			} else {
+				_iconNode.addClass('icon-search').removeClass('icon-close');
+			}
+		});
+
+		$('.pick__form-icon .icon-font').on('click', (ev) => {
+			if($(ev.currentTarget).hasClass('icon-close')) {
+				$('[search-app-js]').val('');
+
+				$(ev.currentTarget).addClass('icon-search').removeClass('icon-close');
+			}
 		});
 	};
 	/*
@@ -79,6 +100,7 @@
 		initFloatingSupportedBlock();
 		initFilterBtn();
 		initStickyElem();
+		initSearchApp();
 		// ==========================================
 	};
 	initNative();

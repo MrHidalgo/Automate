@@ -28,6 +28,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		width: 100%;
 		min-height: 100%;
 
 		&-img {
@@ -115,6 +116,7 @@
 		li {
 			width: 100%;
 			max-width: calc((100% - (30px * 4)) / 4);
+			min-height: 250px;
 			margin-left: 30px;
 			margin-bottom: 30px;
 			@include adaptive(1199) {

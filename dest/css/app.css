@@ -186,7 +186,7 @@ body, .c-btn, .pricing__tabs, .frequently__block {
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-arrow:before, .icon-corner:before, .icon-facebook:before, .icon-filter:before, .icon-instagram:before, .icon-linkedin:before, .icon-quotes:before, .icon-search:before, .icon-twitter:before, .icon-youtube:before {
+.icon-arrow:before, .icon-close:before, .icon-corner:before, .icon-facebook:before, .icon-filter:before, .icon-instagram:before, .icon-linkedin:before, .icon-quotes:before, .icon-search:before, .icon-twitter:before, .icon-youtube:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -197,54 +197,59 @@ body, .c-btn, .pricing__tabs, .frequently__block {
   text-transform: none;
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
+/* line 68, src/scss/_generated/_spriteFont.scss */
 .icon-arrow:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-corner:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-close:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-corner:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-filter:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-instagram:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-filter:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-instagram:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-quotes:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-search:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-quotes:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-search:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-youtube:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
   content: "";
+}
+
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-youtube:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -1403,10 +1408,11 @@ picture {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   min-height: 100%;
 }
 
-/* line 33, src/scss/_components/common/_integrate.scss */
+/* line 34, src/scss/_components/common/_integrate.scss */
 .integrate__box-img {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1422,20 +1428,20 @@ picture {
           justify-content: center;
 }
 
-/* line 40, src/scss/_components/common/_integrate.scss */
+/* line 41, src/scss/_components/common/_integrate.scss */
 .integrate__box-img--three .icon-arrow.icon-font {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-/* line 46, src/scss/_components/common/_integrate.scss */
+/* line 47, src/scss/_components/common/_integrate.scss */
 .integrate__box-img img {
   display: block;
   max-width: 38px;
   height: auto;
 }
 
-/* line 52, src/scss/_components/common/_integrate.scss */
+/* line 53, src/scss/_components/common/_integrate.scss */
 .integrate__box-img .icon-font {
   margin-left: 15px;
   margin-right: 15px;
@@ -1443,31 +1449,31 @@ picture {
   font-size: 20px;
 }
 
-/* line 60, src/scss/_components/common/_integrate.scss */
+/* line 61, src/scss/_components/common/_integrate.scss */
 .integrate__box-desc {
   padding-top: 20px;
   font-size: 18px;
 }
 
-/* line 64, src/scss/_components/common/_integrate.scss */
+/* line 65, src/scss/_components/common/_integrate.scss */
 .integrate__box-desc p {
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 
-/* line 70, src/scss/_components/common/_integrate.scss */
+/* line 71, src/scss/_components/common/_integrate.scss */
 .integrate__box-btn {
   padding-top: 20px;
 }
 
-/* line 73, src/scss/_components/common/_integrate.scss */
+/* line 74, src/scss/_components/common/_integrate.scss */
 .integrate__box-btn a {
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 81, src/scss/_components/common/_integrate.scss */
+/* line 82, src/scss/_components/common/_integrate.scss */
 .integrate .card {
   min-height: 100%;
   -webkit-border-radius: 5px;
@@ -1483,7 +1489,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 89, src/scss/_components/common/_integrate.scss */
+/* line 90, src/scss/_components/common/_integrate.scss */
 .integrate .card:hover {
   -webkit-box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
@@ -1494,7 +1500,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 94, src/scss/_components/common/_integrate.scss */
+/* line 95, src/scss/_components/common/_integrate.scss */
 .integrate .card-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1507,7 +1513,7 @@ picture {
           flex-direction: row;
 }
 
-/* line 100, src/scss/_components/common/_integrate.scss */
+/* line 101, src/scss/_components/common/_integrate.scss */
 .integrate__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1515,7 +1521,7 @@ picture {
   display: flex;
 }
 
-/* line 103, src/scss/_components/common/_integrate.scss */
+/* line 104, src/scss/_components/common/_integrate.scss */
 .integrate__list ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1534,7 +1540,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 103, src/scss/_components/common/_integrate.scss */
+  /* line 104, src/scss/_components/common/_integrate.scss */
   .integrate__list ul {
     width: -webkit-calc(100% + 30px);
     width: calc(100% + 30px);
@@ -1542,17 +1548,18 @@ picture {
   }
 }
 
-/* line 115, src/scss/_components/common/_integrate.scss */
+/* line 116, src/scss/_components/common/_integrate.scss */
 .integrate__list li {
   width: 100%;
   max-width: -webkit-calc((100% - (30px * 4)) / 4);
   max-width: calc((100% - (30px * 4)) / 4);
+  min-height: 250px;
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 115, src/scss/_components/common/_integrate.scss */
+  /* line 116, src/scss/_components/common/_integrate.scss */
   .integrate__list li {
     max-width: -webkit-calc((100% - (30px * 3)) / 3);
     max-width: calc((100% - (30px * 3)) / 3);
@@ -1560,7 +1567,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 115, src/scss/_components/common/_integrate.scss */
+  /* line 116, src/scss/_components/common/_integrate.scss */
   .integrate__list li {
     max-width: -webkit-calc((100% - (15px * 3)) / 3);
     max-width: calc((100% - (15px * 3)) / 3);
@@ -1569,7 +1576,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 115, src/scss/_components/common/_integrate.scss */
+  /* line 116, src/scss/_components/common/_integrate.scss */
   .integrate__list li {
     max-width: -webkit-calc((100% - (15px * 2)) / 2);
     max-width: calc((100% - (15px * 2)) / 2);
@@ -1577,7 +1584,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 115, src/scss/_components/common/_integrate.scss */
+  /* line 116, src/scss/_components/common/_integrate.scss */
   .integrate__list li {
     max-width: 100%;
   }
@@ -2683,6 +2690,9 @@ picture {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transform: scale(0.65);
+      -ms-transform: scale(0.65);
+          transform: scale(0.65);
 }
 
 @media screen and (max-width: 767px) {
@@ -2703,7 +2713,7 @@ picture {
   }
 }
 
-/* line 86, src/scss/_components/home/_supported.scss */
+/* line 87, src/scss/_components/home/_supported.scss */
 .supported__block--paypal {
   top: 44px;
   left: 0;
@@ -2711,13 +2721,13 @@ picture {
   height: 113px;
 }
 
-/* line 92, src/scss/_components/home/_supported.scss */
+/* line 93, src/scss/_components/home/_supported.scss */
 .supported__block--paypal img {
   width: -webkit-calc(98px / 1.5);
   width: calc(98px / 1.5);
 }
 
-/* line 96, src/scss/_components/home/_supported.scss */
+/* line 97, src/scss/_components/home/_supported.scss */
 .supported__block--facebook {
   top: 0;
   left: 25%;
@@ -2726,13 +2736,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 96, src/scss/_components/home/_supported.scss */
+  /* line 97, src/scss/_components/home/_supported.scss */
   .supported__block--facebook {
     left: 20%;
   }
 }
 
-/* line 109, src/scss/_components/home/_supported.scss */
+/* line 110, src/scss/_components/home/_supported.scss */
 .supported__block--slack {
   top: 0;
   left: 50%;
@@ -2740,13 +2750,13 @@ picture {
   height: 113px;
 }
 
-/* line 115, src/scss/_components/home/_supported.scss */
+/* line 116, src/scss/_components/home/_supported.scss */
 .supported__block--slack img {
   width: -webkit-calc(95px / 1.5);
   width: calc(95px / 1.5);
 }
 
-/* line 119, src/scss/_components/home/_supported.scss */
+/* line 120, src/scss/_components/home/_supported.scss */
 .supported__block--w {
   top: 44px;
   right: 20%;
@@ -2754,7 +2764,7 @@ picture {
   height: 85px;
 }
 
-/* line 129, src/scss/_components/home/_supported.scss */
+/* line 130, src/scss/_components/home/_supported.scss */
 .supported__block--stripe {
   top: 88px;
   right: 0;
@@ -2763,13 +2773,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 129, src/scss/_components/home/_supported.scss */
+  /* line 130, src/scss/_components/home/_supported.scss */
   .supported__block--stripe {
     top: 58px;
   }
 }
 
-/* line 143, src/scss/_components/home/_supported.scss */
+/* line 144, src/scss/_components/home/_supported.scss */
 .supported__block--q {
   top: 175px;
   left: 10%;
@@ -2778,13 +2788,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 143, src/scss/_components/home/_supported.scss */
+  /* line 144, src/scss/_components/home/_supported.scss */
   .supported__block--q {
     left: 4%;
   }
 }
 
-/* line 156, src/scss/_components/home/_supported.scss */
+/* line 157, src/scss/_components/home/_supported.scss */
 .supported__block--social {
   top: 150px;
   left: 22%;
@@ -2793,18 +2803,18 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 156, src/scss/_components/home/_supported.scss */
+  /* line 157, src/scss/_components/home/_supported.scss */
   .supported__block--social {
     left: 17%;
   }
 }
 
-/* line 165, src/scss/_components/home/_supported.scss */
+/* line 166, src/scss/_components/home/_supported.scss */
 .supported__block--social img {
   width: 140px;
 }
 
-/* line 169, src/scss/_components/home/_supported.scss */
+/* line 170, src/scss/_components/home/_supported.scss */
 .supported__block--mailchimp {
   top: 75px;
   left: 35%;
@@ -2813,13 +2823,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 169, src/scss/_components/home/_supported.scss */
+  /* line 170, src/scss/_components/home/_supported.scss */
   .supported__block--mailchimp {
     left: 33%;
   }
 }
 
-/* line 182, src/scss/_components/home/_supported.scss */
+/* line 183, src/scss/_components/home/_supported.scss */
 .supported__block--trello {
   top: 150px;
   left: 50%;
@@ -2829,20 +2839,20 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 182, src/scss/_components/home/_supported.scss */
+  /* line 183, src/scss/_components/home/_supported.scss */
   .supported__block--trello {
     top: 190px;
     left: 52%;
   }
 }
 
-/* line 193, src/scss/_components/home/_supported.scss */
+/* line 194, src/scss/_components/home/_supported.scss */
 .supported__block--trello img {
   width: -webkit-calc(132px / 1.5);
   width: calc(132px / 1.5);
 }
 
-/* line 197, src/scss/_components/home/_supported.scss */
+/* line 198, src/scss/_components/home/_supported.scss */
 .supported__block--salesforce {
   top: 125px;
   right: 25%;
@@ -2851,14 +2861,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 197, src/scss/_components/home/_supported.scss */
+  /* line 198, src/scss/_components/home/_supported.scss */
   .supported__block--salesforce {
     top: 135px;
     right: 18%;
   }
 }
 
-/* line 211, src/scss/_components/home/_supported.scss */
+/* line 212, src/scss/_components/home/_supported.scss */
 .supported__block--podio {
   top: 150px;
   right: 10%;
@@ -2867,26 +2877,26 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 211, src/scss/_components/home/_supported.scss */
+  /* line 212, src/scss/_components/home/_supported.scss */
   .supported__block--podio {
     right: 1%;
   }
 }
 
-/* line 220, src/scss/_components/home/_supported.scss */
+/* line 221, src/scss/_components/home/_supported.scss */
 .supported__block--podio img {
   width: -webkit-calc(94px / 1.5);
   width: calc(94px / 1.5);
 }
 
-/* line 233, src/scss/_components/home/_supported.scss */
+/* line 234, src/scss/_components/home/_supported.scss */
 .supported__block-wrapper {
   position: relative;
   min-height: 300px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 233, src/scss/_components/home/_supported.scss */
+  /* line 234, src/scss/_components/home/_supported.scss */
   .supported__block-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3174,7 +3184,7 @@ picture {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 400px;
   background-color: #f32194;
 }
 
