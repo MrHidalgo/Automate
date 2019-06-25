@@ -1451,29 +1451,32 @@ picture {
 
 /* line 61, src/scss/_components/common/_integrate.scss */
 .integrate__box-desc {
+  overflow: hidden;
+  position: relative;
   padding-top: 20px;
   font-size: 18px;
+  height: 120px;
 }
 
-/* line 65, src/scss/_components/common/_integrate.scss */
+/* line 68, src/scss/_components/common/_integrate.scss */
 .integrate__box-desc p {
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 
-/* line 71, src/scss/_components/common/_integrate.scss */
+/* line 74, src/scss/_components/common/_integrate.scss */
 .integrate__box-btn {
   padding-top: 20px;
 }
 
-/* line 74, src/scss/_components/common/_integrate.scss */
+/* line 77, src/scss/_components/common/_integrate.scss */
 .integrate__box-btn a {
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 82, src/scss/_components/common/_integrate.scss */
+/* line 85, src/scss/_components/common/_integrate.scss */
 .integrate .card {
   min-height: 100%;
   -webkit-border-radius: 5px;
@@ -1489,7 +1492,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 90, src/scss/_components/common/_integrate.scss */
+/* line 93, src/scss/_components/common/_integrate.scss */
 .integrate .card:hover {
   -webkit-box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 12px 13px 0 rgba(0, 0, 0, 0.1);
@@ -1500,7 +1503,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 95, src/scss/_components/common/_integrate.scss */
+/* line 98, src/scss/_components/common/_integrate.scss */
 .integrate .card-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1513,7 +1516,7 @@ picture {
           flex-direction: row;
 }
 
-/* line 101, src/scss/_components/common/_integrate.scss */
+/* line 104, src/scss/_components/common/_integrate.scss */
 .integrate__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1521,7 +1524,7 @@ picture {
   display: flex;
 }
 
-/* line 104, src/scss/_components/common/_integrate.scss */
+/* line 107, src/scss/_components/common/_integrate.scss */
 .integrate__list ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1540,7 +1543,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 104, src/scss/_components/common/_integrate.scss */
+  /* line 107, src/scss/_components/common/_integrate.scss */
   .integrate__list ul {
     width: -webkit-calc(100% + 30px);
     width: calc(100% + 30px);
@@ -1548,18 +1551,18 @@ picture {
   }
 }
 
-/* line 116, src/scss/_components/common/_integrate.scss */
+/* line 119, src/scss/_components/common/_integrate.scss */
 .integrate__list li {
   width: 100%;
   max-width: -webkit-calc((100% - (30px * 4)) / 4);
   max-width: calc((100% - (30px * 4)) / 4);
-  min-height: 250px;
+  height: 263px;
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 116, src/scss/_components/common/_integrate.scss */
+  /* line 119, src/scss/_components/common/_integrate.scss */
   .integrate__list li {
     max-width: -webkit-calc((100% - (30px * 3)) / 3);
     max-width: calc((100% - (30px * 3)) / 3);
@@ -1567,7 +1570,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 116, src/scss/_components/common/_integrate.scss */
+  /* line 119, src/scss/_components/common/_integrate.scss */
   .integrate__list li {
     max-width: -webkit-calc((100% - (15px * 3)) / 3);
     max-width: calc((100% - (15px * 3)) / 3);
@@ -1576,7 +1579,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 116, src/scss/_components/common/_integrate.scss */
+  /* line 119, src/scss/_components/common/_integrate.scss */
   .integrate__list li {
     max-width: -webkit-calc((100% - (15px * 2)) / 2);
     max-width: calc((100% - (15px * 2)) / 2);
@@ -1584,7 +1587,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 116, src/scss/_components/common/_integrate.scss */
+  /* line 119, src/scss/_components/common/_integrate.scss */
   .integrate__list li {
     max-width: 100%;
   }

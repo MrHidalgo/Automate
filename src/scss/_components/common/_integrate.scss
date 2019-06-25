@@ -59,8 +59,11 @@
 		}
 
 		&-desc {
+			overflow: hidden;
+			position: relative;
 			padding-top: 20px;
 			font-size: 18px;
+			height: 120px;
 
 			p {
 				color: rgba(#000, 0.7);
@@ -116,7 +119,7 @@
 		li {
 			width: 100%;
 			max-width: calc((100% - (30px * 4)) / 4);
-			min-height: 250px;
+			height: 263px;
 			margin-left: 30px;
 			margin-bottom: 30px;
 			@include adaptive(1199) {
