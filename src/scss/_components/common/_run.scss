@@ -1,7 +1,7 @@
 // SECTION run :: START
 
 .run {
-	overflow: hidden;
+	//overflow: hidden;
 	position: relative;
 	padding-top: 75px;
 	padding-bottom: 75px;
@@ -12,8 +12,6 @@
 
 		.run {
 			&__bg {
-
-
 				#img-fun-circle {
 					path {
 						fill: #F2F2F2;
@@ -28,7 +26,7 @@
 			}
 
 			&__box {
-				box-shadow: 0 8px 25px 0 rgba(#000, 0.1);
+				//box-shadow: 0 8px 25px 0 rgba(#000, 0.1);
 
 				&-title {
 					color: #000000;
@@ -139,11 +137,11 @@
 	&__box {
 		overflow: hidden;
 		position: relative;
-		width: 75px;
-		height: 75px;
+		width: 65px;
+		height: 65px;
 		border-radius: 100%;
 		background-color: #fff;
-		box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.02);
+		//box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.02);
 
 		img {
 			display: block;
@@ -162,13 +160,13 @@
 		}
 
 		&-arrow {
-			width: 75px;
-			height: 75px;
+			width: 65px;
+			height: 65px;
 
 			.icon-font {
 				color: $brandColor-blue;
 				font-size: 30px;
-				@include adaptive(1023) {
+				@include adaptive(991) {
 					transform: rotate(90deg);
 				}
 			}
