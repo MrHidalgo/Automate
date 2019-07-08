@@ -10,20 +10,21 @@
 	 *
 	 */
 	const initFloatingSupportedBlock = () => {
-		let _tl = new TimelineMax({repeat:-1, yoyo: true});
+		let _arrEl = $('.supported__block');
 
-		_tl
-			.fromTo($('.supported__block-1'), 1.85, {y:0}, {y:20, ease: Power1.linear})
-			.fromTo($('.supported__block-2'), 1.75, {y:0}, {y:20, ease: Power1.linear}, '-=1.85')
-			.fromTo($('.supported__block-3'), 1.65, {y:0}, {y:20, ease: Power1.linear}, '-=1.75')
-			.fromTo($('.supported__block-4'), 1.55, {y:0}, {y:20, ease: Power1.linear}, '-=1.65')
-			.fromTo($('.supported__block-5'), 1.95, {y:0}, {y:20, ease: Power1.linear}, '-=1.55')
-			.fromTo($('.supported__block-6'), 2.05, {y:0}, {y:20, ease: Power1.linear}, '-=1.95')
-			.fromTo($('.supported__block-7'), 1.75, {y:0}, {y:20, ease: Power1.linear}, '-=2.05')
-			.fromTo($('.supported__block-8'), 1.65, {y:0}, {y:20, ease: Power1.linear}, '-=1.75')
-			.fromTo($('.supported__block-9'), 1.75, {y:0}, {y:20, ease: Power1.linear}, '-=1.65')
-			.fromTo($('.supported__block-10'), 1.95, {y:0}, {y:20, ease: Power1.linear}, '-=1.75')
-			.fromTo($('.supported__block-11'), 1.85, {y:0}, {y:20, ease: Power1.linear}, '-=1.95');
+		function getRandomInt(time) {
+			return (time) ? time : 1.7 + Number(Math.random().toFixed(2));
+		}
+
+		for(let i = 0, j = 1; i < _arrEl.length; i++, j++) {
+			new TimelineMax({repeat:-1, yoyo: true})
+				.fromTo(
+					$('.supported__block-' + j),
+					getRandomInt(),
+					{y:0},
+					{y:30, ease: Power1.easeInOut}
+					);
+		}
 	};
 
 

@@ -966,16 +966,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 48, src/scss/_macros/_btn.scss */
-.c-btn--border:hover {
-  background-color: #5f84e1;
-  color: white;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-/* line 55, src/scss/_macros/_btn.scss */
+/* line 57, src/scss/_macros/_btn.scss */
 .c-btn--bg {
   background-color: #5f84e1;
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -983,13 +974,9 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 59, src/scss/_macros/_btn.scss */
+/* line 61, src/scss/_macros/_btn.scss */
 .c-btn--bg:hover {
-  background-color: transparent;
-  color: #5f84e1;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: white;
 }
 
 /* line 3, src/scss/_components/_header.scss */
@@ -1606,23 +1593,52 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 16, src/scss/_components/common/_run.scss */
+/* line 15, src/scss/_components/common/_run.scss */
+.run--white .run__bg #img-fun-circle {
+  left: auto;
+  right: 154px;
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 15, src/scss/_components/common/_run.scss */
+  .run--white .run__bg #img-fun-circle {
+    right: 120px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 15, src/scss/_components/common/_run.scss */
+  .run--white .run__bg #img-fun-circle {
+    opacity: 0.5;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 15, src/scss/_components/common/_run.scss */
+  .run--white .run__bg #img-fun-circle {
+    opacity: 0.45;
+    right: 0;
+  }
+}
+
+/* line 30, src/scss/_components/common/_run.scss */
 .run--white .run__bg #img-fun-circle path {
   fill: #F2F2F2;
   stroke: #F2F2F2;
 }
 
-/* line 23, src/scss/_components/common/_run.scss */
+/* line 37, src/scss/_components/common/_run.scss */
 .run--white .run__title, .run--white .run__desc {
   color: #000000;
 }
 
-/* line 31, src/scss/_components/common/_run.scss */
+/* line 45, src/scss/_components/common/_run.scss */
 .run--white .run__box-title {
   color: #000000;
 }
 
-/* line 38, src/scss/_components/common/_run.scss */
+/* line 52, src/scss/_components/common/_run.scss */
 .run__bg {
   z-index: 0;
   position: absolute;
@@ -1632,7 +1648,7 @@ picture {
   height: 100%;
 }
 
-/* line 46, src/scss/_components/common/_run.scss */
+/* line 60, src/scss/_components/common/_run.scss */
 .run__bg #img-fun-circle {
   position: absolute;
   bottom: 0;
@@ -1642,14 +1658,14 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 46, src/scss/_components/common/_run.scss */
+  /* line 60, src/scss/_components/common/_run.scss */
   .run__bg #img-fun-circle {
     left: 120px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 46, src/scss/_components/common/_run.scss */
+  /* line 60, src/scss/_components/common/_run.scss */
   .run__bg #img-fun-circle {
     opacity: 0.5;
     left: 30px;
@@ -1657,20 +1673,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 46, src/scss/_components/common/_run.scss */
+  /* line 60, src/scss/_components/common/_run.scss */
   .run__bg #img-fun-circle {
     opacity: 0.45;
     left: 0;
   }
 }
 
-/* line 64, src/scss/_components/common/_run.scss */
+/* line 78, src/scss/_components/common/_run.scss */
 .run__bg #img-fun-circle path {
   fill: #fff;
   stroke: #fff;
 }
 
-/* line 70, src/scss/_components/common/_run.scss */
+/* line 84, src/scss/_components/common/_run.scss */
 .run__bg-img {
   position: absolute;
   top: 0;
@@ -1680,13 +1696,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 70, src/scss/_components/common/_run.scss */
+  /* line 84, src/scss/_components/common/_run.scss */
   .run__bg-img {
     display: none;
   }
 }
 
-/* line 80, src/scss/_components/common/_run.scss */
+/* line 94, src/scss/_components/common/_run.scss */
 .run__bg-img img {
   position: absolute;
   display: block;
@@ -1694,7 +1710,7 @@ picture {
   height: auto;
 }
 
-/* line 86, src/scss/_components/common/_run.scss */
+/* line 100, src/scss/_components/common/_run.scss */
 .run__bg-img img:nth-of-type(1) {
   top: 0;
   left: 0;
@@ -1702,13 +1718,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 86, src/scss/_components/common/_run.scss */
+  /* line 100, src/scss/_components/common/_run.scss */
   .run__bg-img img:nth-of-type(1) {
     left: -50px;
   }
 }
 
-/* line 94, src/scss/_components/common/_run.scss */
+/* line 108, src/scss/_components/common/_run.scss */
 .run__bg-img img:nth-of-type(2) {
   bottom: 0;
   right: 0;
@@ -1716,20 +1732,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 94, src/scss/_components/common/_run.scss */
+  /* line 108, src/scss/_components/common/_run.scss */
   .run__bg-img img:nth-of-type(2) {
     right: -100px;
     bottom: -50px;
   }
 }
 
-/* line 107, src/scss/_components/common/_run.scss */
+/* line 121, src/scss/_components/common/_run.scss */
 .run__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 112, src/scss/_components/common/_run.scss */
+/* line 126, src/scss/_components/common/_run.scss */
 .run__title {
   padding-bottom: 75px;
   text-align: center;
@@ -1737,13 +1753,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 112, src/scss/_components/common/_run.scss */
+  /* line 126, src/scss/_components/common/_run.scss */
   .run__title {
     padding-bottom: 50px;
   }
 }
 
-/* line 121, src/scss/_components/common/_run.scss */
+/* line 135, src/scss/_components/common/_run.scss */
 .run__desc {
   width: 100%;
   max-width: 740px;
@@ -1754,14 +1770,14 @@ picture {
   color: #5F84E1;
 }
 
-/* line 131, src/scss/_components/common/_run.scss */
+/* line 145, src/scss/_components/common/_run.scss */
 .run__btn {
   max-width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 137, src/scss/_components/common/_run.scss */
+/* line 151, src/scss/_components/common/_run.scss */
 .run__box {
   overflow: hidden;
   position: relative;
@@ -1772,39 +1788,39 @@ picture {
   background-color: #fff;
 }
 
-/* line 146, src/scss/_components/common/_run.scss */
+/* line 159, src/scss/_components/common/_run.scss */
 .run__box img {
   display: block;
   max-width: 64px;
   height: auto;
 }
 
-/* line 152, src/scss/_components/common/_run.scss */
+/* line 165, src/scss/_components/common/_run.scss */
 .run__box-wrapper {
   overflow: hidden;
   padding-bottom: 50px;
 }
 
-/* line 156, src/scss/_components/common/_run.scss */
+/* line 169, src/scss/_components/common/_run.scss */
 .run__box-wrapper > div {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-/* line 162, src/scss/_components/common/_run.scss */
+/* line 175, src/scss/_components/common/_run.scss */
 .run__box-arrow {
   width: 65px;
   height: 65px;
 }
 
-/* line 166, src/scss/_components/common/_run.scss */
+/* line 179, src/scss/_components/common/_run.scss */
 .run__box-arrow .icon-font {
   color: #5F84E1;
   font-size: 30px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 166, src/scss/_components/common/_run.scss */
+  /* line 179, src/scss/_components/common/_run.scss */
   .run__box-arrow .icon-font {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
@@ -1812,23 +1828,23 @@ picture {
   }
 }
 
-/* line 178, src/scss/_components/common/_run.scss */
+/* line 191, src/scss/_components/common/_run.scss */
 .run__box-content .run__box {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-/* line 182, src/scss/_components/common/_run.scss */
+/* line 195, src/scss/_components/common/_run.scss */
 .run__box-content .run__box:first-of-type {
   margin-left: 0;
 }
 
-/* line 185, src/scss/_components/common/_run.scss */
+/* line 198, src/scss/_components/common/_run.scss */
 .run__box-content .run__box:last-of-type {
   margin-right: 0;
 }
 
-/* line 191, src/scss/_components/common/_run.scss */
+/* line 204, src/scss/_components/common/_run.scss */
 .run__box-title {
   padding-top: 15px;
   text-align: center;
@@ -3398,7 +3414,7 @@ picture {
 
 /* line 169, src/scss/_components/integrations/_recipe.scss */
 .recipe__box-btn:hover {
-  color: #f32194;
+  color: #fff;
 }
 
 /* line 174, src/scss/_components/integrations/_recipe.scss */
@@ -3886,12 +3902,17 @@ picture {
 }
 
 /* line 78, src/scss/_components/single-app/_main.scss */
+.s-main__box-2 {
+  background-color: #f9f9f9;
+}
+
+/* line 82, src/scss/_components/single-app/_main.scss */
 .s-main__box-img {
   max-width: -webkit-calc(330px / 1.5);
   max-width: calc(330px / 1.5);
 }
 
-/* line 82, src/scss/_components/single-app/_main.scss */
+/* line 86, src/scss/_components/single-app/_main.scss */
 .s-main__box-desc {
   width: 100%;
   max-width: 350px;
@@ -3899,27 +3920,27 @@ picture {
   text-align: center;
 }
 
-/* line 91, src/scss/_components/single-app/_main.scss */
+/* line 95, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form {
   padding-bottom: 30px;
 }
 
-/* line 94, src/scss/_components/single-app/_main.scss */
+/* line 98, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form .icon-search {
   color: rgba(0, 0, 0, 0.44);
 }
 
-/* line 98, src/scss/_components/single-app/_main.scss */
+/* line 102, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form-input {
   width: 100%;
   -webkit-border-radius: 2em;
           border-radius: 2em;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
-/* line 106, src/scss/_components/single-app/_main.scss */
+/* line 110, src/scss/_components/single-app/_main.scss */
 .s-main .pick__box {
   width: 100%;
   max-width: -webkit-calc((100% - ((10px * 4) + 10px)) / 4);
@@ -3933,7 +3954,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 106, src/scss/_components/single-app/_main.scss */
+  /* line 110, src/scss/_components/single-app/_main.scss */
   .s-main .pick__box {
     max-width: -webkit-calc((100% - ((10px * 3) + 10px)) / 3);
     max-width: calc((100% - ((10px * 3) + 10px)) / 3);
@@ -3941,7 +3962,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 106, src/scss/_components/single-app/_main.scss */
+  /* line 110, src/scss/_components/single-app/_main.scss */
   .s-main .pick__box {
     max-width: -webkit-calc((100% - ((10px * 2) + 10px)) / 2);
     max-width: calc((100% - ((10px * 2) + 10px)) / 2);
@@ -3949,7 +3970,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 106, src/scss/_components/single-app/_main.scss */
+  /* line 110, src/scss/_components/single-app/_main.scss */
   .s-main .pick__box {
     max-width: -webkit-calc((100% - ((10px * 4) + 10px)) / 4);
     max-width: calc((100% - ((10px * 4) + 10px)) / 4);
@@ -3957,19 +3978,19 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 106, src/scss/_components/single-app/_main.scss */
+  /* line 110, src/scss/_components/single-app/_main.scss */
   .s-main .pick__box {
     max-width: -webkit-calc((100% - ((10px * 2) + 10px)) / 2);
     max-width: calc((100% - ((10px * 2) + 10px)) / 2);
   }
 }
 
-/* line 128, src/scss/_components/single-app/_main.scss */
+/* line 132, src/scss/_components/single-app/_main.scss */
 .s-main .pick__box-title {
   text-align: center;
 }
 
-/* line 132, src/scss/_components/single-app/_main.scss */
+/* line 136, src/scss/_components/single-app/_main.scss */
 .s-main .pick__box-wrapper {
   overflow-y: auto;
   width: -webkit-calc(100% + (1.5rem * 2));
@@ -4165,16 +4186,17 @@ picture {
 /* line 138, src/scss/_components/single-app/_do.scss */
 .do__box-info > div:nth-of-type(1) {
   width: 50px;
+  padding-top: 2px;
 }
 
-/* line 141, src/scss/_components/single-app/_do.scss */
+/* line 142, src/scss/_components/single-app/_do.scss */
 .do__box-info > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 50px);
   max-width: calc(100% - 50px);
 }
 
-/* line 146, src/scss/_components/single-app/_do.scss */
+/* line 147, src/scss/_components/single-app/_do.scss */
 .do__box-info > div i {
   position: relative;
   width: 22px;
@@ -4184,7 +4206,7 @@ picture {
   background-color: rgba(95, 132, 225, 0.23);
 }
 
-/* line 153, src/scss/_components/single-app/_do.scss */
+/* line 154, src/scss/_components/single-app/_do.scss */
 .do__box-info > div i:before {
   content: '';
   position: absolute;
@@ -4195,12 +4217,12 @@ picture {
   background-color: #5f84e1;
 }
 
-/* line 163, src/scss/_components/single-app/_do.scss */
+/* line 164, src/scss/_components/single-app/_do.scss */
 .do__box-info > div p {
   font-size: 18px;
 }
 
-/* line 167, src/scss/_components/single-app/_do.scss */
+/* line 168, src/scss/_components/single-app/_do.scss */
 .do__box-info > div span {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
@@ -5109,8 +5131,6 @@ picture {
   -webkit-border-radius: 14px;
           border-radius: 14px;
   background-color: #fefefe;
-  -webkit-box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.05);
   -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
   transition: -webkit-box-shadow 0.3s ease-in-out;
   -o-transition: box-shadow 0.3s ease-in-out;
@@ -5140,17 +5160,6 @@ picture {
     max-width: -webkit-calc((100% - (15px * 2)) / 2);
     max-width: calc((100% - (15px * 2)) / 2);
   }
-}
-
-/* line 114, src/scss/_components/dual-app/_pick.scss */
-.pick__box:hover {
-  -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
-  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
-  transition: -webkit-box-shadow 0.3s ease-in-out;
-  -o-transition: box-shadow 0.3s ease-in-out;
-  transition: box-shadow 0.3s ease-in-out;
-  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 /* line 119, src/scss/_components/dual-app/_pick.scss */

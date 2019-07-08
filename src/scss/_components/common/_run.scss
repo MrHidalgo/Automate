@@ -13,6 +13,20 @@
 		.run {
 			&__bg {
 				#img-fun-circle {
+					left: auto;
+					right: 154px;
+					@include adaptive(1439) {
+						right: 120px;
+					}
+					@include adaptive(1023) {
+						opacity: 0.5;
+						right: 30px;
+					}
+					@include adaptive(767) {
+						opacity: 0.45;
+						right: 0;
+					}
+
 					path {
 						fill: #F2F2F2;
 						stroke: #F2F2F2;
@@ -141,7 +155,6 @@
 		height: 65px;
 		border-radius: 100%;
 		background-color: #fff;
-		//box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.02);
 
 		img {
 			display: block;

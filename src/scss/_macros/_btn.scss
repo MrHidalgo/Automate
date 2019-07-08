@@ -46,9 +46,11 @@ $btn-color--border: rgba($brandColor-blue, 1);
 		@include transition(background-color, color);
 
 		&:hover {
-			background-color: $bth-background-color;
-			color: $bth-color;
-			@include transition(background-color, color);
+			//background-color: transparent;
+			//color: $btn-color--border;
+			//background-color: $bth-background-color;
+			//color: $bth-color;
+			//@include transition(background-color, color);
 		}
   }
 
@@ -57,9 +59,11 @@ $btn-color--border: rgba($brandColor-blue, 1);
 		@include transition(background-color, color);
 
 		&:hover {
-			background-color: transparent;
-			color: $bth-background-color;
-			@include transition(background-color, color);
+			//background-color: $bth-background-color;
+			color: $bth-color;
+			//background-color: transparent;
+			//color: $bth-background-color;
+			//@include transition(background-color, color);
 		}
   }
 }

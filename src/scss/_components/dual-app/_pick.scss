@@ -99,7 +99,7 @@
 		padding: 15px 10px;
 		border-radius: 14px;
 		background-color: #fefefe;
-		box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.05);
+		//box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.05);
 		@include transition(box-shadow);
 		@include adaptive(1023) {
 			max-width: calc((100% - (15px * 4)) / 4);
@@ -112,8 +112,8 @@
 		}
 
 		&:hover {
-			box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
-			@include transition(box-shadow);
+			//box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
+			//@include transition(box-shadow);
 		}
 
 		&-icon {
