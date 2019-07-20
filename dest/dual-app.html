@@ -41,14 +41,14 @@
               <div class="header__wrapper-left">
                 <div class="logo logo--header"><a class="logo__btn" href="/" title=""><img class="logo__img" src="img/img-logo.png" srcset="img/img-logo@2x.png 2x" alt="" title=""></a></div>
                 <div class="header__hamburger">
-                  <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
+                  <div class="hamburger hamburger--squeeze" id="hamburger-js" role="button">
                     <div class="hamburger-box">
                       <div class="hamburger-inner"></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="header__wrapper-mobile" mobile-block-js>
+              <div class="header__wrapper-mobile" id="mobile-block-js">
                 <div class="header__wrapper-middle">
                   <div class="nav nav--header">
                     <ul class="nav__list">
@@ -85,8 +85,8 @@
             <div class="row" id="pickSearch">
               <div class="col-md-3 pb-3 pb-md-0">
                 <div class="dropdown" id="dropdown-sticky"><a class="btn d-flex align-items-center justify-content-center" href="#"><i class="icon-font icon-filter"></i>Filter by Apps</a>
-                  <div class="dropdown-menu"><a class="is-active dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch" anchor-js>Top Apps</a><a class="dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch" anchor-js>Premium Apps</a><a class="dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch" anchor-js>Recently Added</a><a class="dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch" anchor-js>Coming Soon</a>
-                    <div class="dropdown-divider"></div><a class="dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch" anchor-js>Marketing</a><a class="dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch" anchor-js>Sales</a><a class="dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch" anchor-js>Support</a><a class="dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch" anchor-js>Chat</a>
+                  <div class="dropdown-menu"><a class="anchor-js is-active dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch">Top Apps</a><a class="anchor-js dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch">Premium Apps</a><a class="anchor-js dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch">Recently Added</a><a class="anchor-js dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch">Coming Soon</a>
+                    <div class="dropdown-divider"></div><a class="anchor-js dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch">Marketing</a><a class="anchor-js dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch">Sales</a><a class="anchor-js dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch">Support</a><a class="anchor-js dropdown-item d-flex align-items-center justify-content-center" href="#pickSearch">Chat</a>
                   </div>
                 </div>
               </div>
@@ -94,7 +94,7 @@
                 <form class="pick__form" action="" autocomplete="off">
                   <div class="pick__form-field">
                     <div class="pick__form-icon d-flex align-items-center justify-content-center"><i class="icon-font icon-search"></i></div>
-                    <input class="pick__form-input" type="text" name="" placeholder="Search for 100+ Apps" search-app-js>
+                    <input class="pick__form-input" id="search-app-js" type="text" name="" placeholder="Search for 100+ Apps">
                   </div>
                 </form>
                 <div class="row pb-3">

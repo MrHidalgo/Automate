@@ -6,7 +6,7 @@
  * @description Smooth transition to anchors to the block.
  */
 const initSmoothScroll = (
-  btnName = "[anchor-js]",
+  btnName = ".anchor-js",
   animateSpeed = 1000
 ) => {
 

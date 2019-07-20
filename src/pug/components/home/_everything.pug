@@ -2,7 +2,7 @@
 
 section#everything.everything
 
-	.everything__bg(parallax-js)
+	.everything__bg.parallax-js
 		img(data-stellar-ratio="0.85" src="img/img-everything-bg-1.svg" alt="" title="")
 
 	.everything__wrapper
@@ -13,7 +13,7 @@ section#everything.everything
 
 					h1.everything__title.c-title!= "Automate Everything"
 
-					.everything__img(parallax-js)
+					.everything__img.parallax-js
 						img(data-stellar-ratio="0.98" src="img/img-everything-bg-2.svg" alt="" title="")
 
 		.container
@@ -28,7 +28,11 @@ section#everything.everything
 						.everything__pr-left
 							img(src="img/img-everything-pr.png" srcset="img/img-everything-pr@2x.png 2x" alt="" title="")
 						.everything__pr-right
-							p.c-text!= "Mail with 'Todo' Tag"
-							p.c-text!= "Created a card in Trello"
+							p.c-text
+								label trigger
+								span!= "Mail with 'Todo' Tag"
+							p.c-text
+								label action
+								span!= "Created a card in Trello"
 
 // SECTION everything :: END

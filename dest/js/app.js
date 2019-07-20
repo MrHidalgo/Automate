@@ -22,9 +22,9 @@
  */
 var initHamburger = function initHamburger() {
 
-  var btn = document.querySelector("[hamburger-js]"),
+  var btn = document.querySelector("#hamburger-js"),
       hideScrollContainer = document.querySelectorAll("html, body"),
-      mobileContainer = document.querySelector("[mobile-block-js]");
+      mobileContainer = document.querySelector("#mobile-block-js");
 
   /**
     * @description
@@ -66,7 +66,7 @@ var initPreventBehavior = function initPreventBehavior() {
  * @description Smooth transition to anchors to the block.
  */
 var initSmoothScroll = function initSmoothScroll() {
-  var btnName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "[anchor-js]";
+  var btnName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ".anchor-js";
   var animateSpeed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
 
 
@@ -98,7 +98,7 @@ var initSmoothScroll = function initSmoothScroll() {
  * - data-stellar-background-ratio="1"
  */
 var initStellar = function initStellar() {
-  if ($("[parallax-js]").length) {
+  if ($(".parallax-js").length) {
     $(function () {
       $.stellar({
         // Set scrolling to be in either one or both directions
@@ -228,7 +228,7 @@ var initWebFontLoader = function initWebFontLoader() {
   };
 
   var initSearchApp = function initSearchApp() {
-    $('[search-app-js]').on('keyup', function (ev) {
+    $('#search-app-js').on('keyup', function (ev) {
       var _el = $(ev.currentTarget),
           _iconNode = _el.prev().find('.icon-font');
 
@@ -241,7 +241,7 @@ var initWebFontLoader = function initWebFontLoader() {
 
     $('.pick__form-icon .icon-font').on('click', function (ev) {
       if ($(ev.currentTarget).hasClass('icon-close')) {
-        $('[search-app-js]').val('');
+        $('#search-app-js').val('');
 
         $(ev.currentTarget).addClass('icon-search').removeClass('icon-close');
       }

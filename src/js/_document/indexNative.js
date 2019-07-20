@@ -55,7 +55,7 @@
 	};
 
 	const initSearchApp = () => {
-		$('[search-app-js]').on('keyup', (ev) => {
+		$('#search-app-js').on('keyup', (ev) => {
 			const _el = $(ev.currentTarget),
 				_iconNode = _el.prev().find('.icon-font');
 
@@ -68,7 +68,7 @@
 
 		$('.pick__form-icon .icon-font').on('click', (ev) => {
 			if($(ev.currentTarget).hasClass('icon-close')) {
-				$('[search-app-js]').val('');
+				$('#search-app-js').val('');
 
 				$(ev.currentTarget).addClass('icon-search').removeClass('icon-close');
 			}

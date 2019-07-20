@@ -23,16 +23,15 @@ section#pick.pick
 							i.icon-font.icon-filter
 							| Filter by Apps
 						.dropdown-menu
-							a.is-active.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch' anchor-js)!= "Top Apps"
-							a.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch' anchor-js)!= "Premium Apps"
-							a.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch' anchor-js)!= "Recently Added"
-							a.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch' anchor-js)!= "Coming Soon"
+							a.anchor-js.is-active.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch')!= "Top Apps"
+							a.anchor-js.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch')!= "Premium Apps"
+							a.anchor-js.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch')!= "Recently Added"
+							a.anchor-js.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch')!= "Coming Soon"
 							.dropdown-divider
-							a.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch' anchor-js)!= "Marketing"
-							a.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch' anchor-js)!= "Sales"
-							a.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch' anchor-js)!= "Support"
-							a.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch' anchor-js)!= "Chat"
-
+							a.anchor-js.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch')!= "Marketing"
+							a.anchor-js.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch')!= "Sales"
+							a.anchor-js.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch')!= "Support"
+							a.anchor-js.dropdown-item.d-flex.align-items-center.justify-content-center(href='#pickSearch')!= "Chat"
 
 				.col-md-9
 
@@ -40,7 +39,7 @@ section#pick.pick
 						.pick__form-field
 							.pick__form-icon.d-flex.align-items-center.justify-content-center
 								i.icon-font.icon-search
-							input.pick__form-input(type='text' name="" placeholder="Search for 100+ Apps" search-app-js)
+							input#search-app-js.pick__form-input(type='text' name="" placeholder="Search for 100+ Apps")
 
 					.row.pb-3
 						.col-12

@@ -11,7 +11,7 @@ body, .c-btn, .pricing__tabs, .frequently__block {
 }
 
 /* line 22, src/scss/_utilities/_extend.scss */
-.supported__block--facebook img, .supported__block--w img, .supported__block--stripe img, .supported__block--q img, .supported__block--mailchimp img, .supported__block--salesforce img {
+.supported__block--facebook img, .supported__block--w img, .supported__block--more-3 img, .supported__block--stripe img, .supported__block--q img, .supported__block--mailchimp img, .supported__block--salesforce img, .supported__block--more-2 img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2297,7 +2297,7 @@ picture {
 }
 
 /* line 73, src/scss/_components/home/_everything.scss */
-.everything__pr p {
+.everything__pr label {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2306,11 +2306,40 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 20px;
+  padding: 2px 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #f756a9;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* line 85, src/scss/_components/home/_everything.scss */
+.everything__pr p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 50%;
   font-size: 18px;
 }
 
-/* line 79, src/scss/_components/home/_everything.scss */
+/* line 93, src/scss/_components/home/_everything.scss */
 .everything__pr p:nth-of-type(2) {
   padding-bottom: 40px;
 }
@@ -2417,7 +2446,7 @@ picture {
 }
 
 /* line 66, src/scss/_components/home/_complex.scss */
-.complex__pr-left p {
+.complex__pr-left label {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2426,6 +2455,31 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 20px;
+  padding: 2px 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #f756a9;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* line 78, src/scss/_components/home/_complex.scss */
+.complex__pr-left p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: -webkit-calc(100% / 5);
   height: calc(100% / 5);
   width: 100%;
@@ -2434,7 +2488,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 66, src/scss/_components/home/_complex.scss */
+  /* line 78, src/scss/_components/home/_complex.scss */
   .complex__pr-left p {
     max-width: 100%;
     font-size: 16px;
@@ -2443,13 +2497,13 @@ picture {
 }
 
 @media screen and (max-width: 374px) {
-  /* line 66, src/scss/_components/home/_complex.scss */
+  /* line 78, src/scss/_components/home/_complex.scss */
   .complex__pr-left p {
     font-size: 14px;
   }
 }
 
-/* line 82, src/scss/_components/home/_complex.scss */
+/* line 95, src/scss/_components/home/_complex.scss */
 .complex__pr-left p:nth-of-type(1) {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -2459,26 +2513,31 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 82, src/scss/_components/home/_complex.scss */
+  /* line 95, src/scss/_components/home/_complex.scss */
   .complex__pr-left p:nth-of-type(1) {
     padding-top: 0;
   }
 }
 
-/* line 92, src/scss/_components/home/_complex.scss */
+/* line 103, src/scss/_components/home/_complex.scss */
+.complex__pr-left p span {
+  display: block;
+}
+
+/* line 109, src/scss/_components/home/_complex.scss */
 .complex__pr-right {
   max-width: 180px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 92, src/scss/_components/home/_complex.scss */
+  /* line 109, src/scss/_components/home/_complex.scss */
   .complex__pr-right {
     max-width: unset;
     width: 180px;
   }
 }
 
-/* line 99, src/scss/_components/home/_complex.scss */
+/* line 116, src/scss/_components/home/_complex.scss */
 .complex__pr-right img {
   display: block;
   max-width: 100%;
@@ -2724,6 +2783,20 @@ picture {
 }
 
 /* line 87, src/scss/_components/home/_supported.scss */
+.supported__block--more-1 {
+  top: 34px;
+  left: 13%;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 93, src/scss/_components/home/_supported.scss */
+.supported__block--more-1 img {
+  width: -webkit-calc(98px / 1.5);
+  width: calc(98px / 1.5);
+}
+
+/* line 97, src/scss/_components/home/_supported.scss */
 .supported__block--paypal {
   top: 44px;
   left: 0;
@@ -2731,13 +2804,13 @@ picture {
   height: 113px;
 }
 
-/* line 93, src/scss/_components/home/_supported.scss */
+/* line 103, src/scss/_components/home/_supported.scss */
 .supported__block--paypal img {
   width: -webkit-calc(98px / 1.5);
   width: calc(98px / 1.5);
 }
 
-/* line 97, src/scss/_components/home/_supported.scss */
+/* line 107, src/scss/_components/home/_supported.scss */
 .supported__block--facebook {
   top: 0;
   left: 25%;
@@ -2746,13 +2819,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 97, src/scss/_components/home/_supported.scss */
+  /* line 107, src/scss/_components/home/_supported.scss */
   .supported__block--facebook {
-    left: 20%;
+    left: 25%;
   }
 }
 
-/* line 110, src/scss/_components/home/_supported.scss */
+/* line 120, src/scss/_components/home/_supported.scss */
 .supported__block--slack {
   top: 0;
   left: 50%;
@@ -2760,13 +2833,13 @@ picture {
   height: 113px;
 }
 
-/* line 116, src/scss/_components/home/_supported.scss */
+/* line 126, src/scss/_components/home/_supported.scss */
 .supported__block--slack img {
   width: -webkit-calc(95px / 1.5);
   width: calc(95px / 1.5);
 }
 
-/* line 120, src/scss/_components/home/_supported.scss */
+/* line 130, src/scss/_components/home/_supported.scss */
 .supported__block--w {
   top: 44px;
   right: 20%;
@@ -2774,7 +2847,22 @@ picture {
   height: 85px;
 }
 
-/* line 130, src/scss/_components/home/_supported.scss */
+/* line 140, src/scss/_components/home/_supported.scss */
+.supported__block--more-3 {
+  top: 24px;
+  right: 32%;
+  width: 65px;
+  height: 65px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 140, src/scss/_components/home/_supported.scss */
+  .supported__block--more-3 {
+    right: 10%;
+  }
+}
+
+/* line 153, src/scss/_components/home/_supported.scss */
 .supported__block--stripe {
   top: 88px;
   right: 0;
@@ -2783,13 +2871,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 130, src/scss/_components/home/_supported.scss */
+  /* line 153, src/scss/_components/home/_supported.scss */
   .supported__block--stripe {
     top: 58px;
   }
 }
 
-/* line 144, src/scss/_components/home/_supported.scss */
+/* line 167, src/scss/_components/home/_supported.scss */
 .supported__block--q {
   top: 175px;
   left: 10%;
@@ -2798,13 +2886,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 144, src/scss/_components/home/_supported.scss */
+  /* line 167, src/scss/_components/home/_supported.scss */
   .supported__block--q {
     left: 4%;
   }
 }
 
-/* line 157, src/scss/_components/home/_supported.scss */
+/* line 180, src/scss/_components/home/_supported.scss */
 .supported__block--social {
   top: 150px;
   left: 22%;
@@ -2813,18 +2901,18 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 157, src/scss/_components/home/_supported.scss */
+  /* line 180, src/scss/_components/home/_supported.scss */
   .supported__block--social {
     left: 17%;
   }
 }
 
-/* line 166, src/scss/_components/home/_supported.scss */
+/* line 189, src/scss/_components/home/_supported.scss */
 .supported__block--social img {
   width: 140px;
 }
 
-/* line 170, src/scss/_components/home/_supported.scss */
+/* line 193, src/scss/_components/home/_supported.scss */
 .supported__block--mailchimp {
   top: 75px;
   left: 35%;
@@ -2833,13 +2921,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 170, src/scss/_components/home/_supported.scss */
+  /* line 193, src/scss/_components/home/_supported.scss */
   .supported__block--mailchimp {
     left: 33%;
   }
 }
 
-/* line 183, src/scss/_components/home/_supported.scss */
+/* line 206, src/scss/_components/home/_supported.scss */
 .supported__block--trello {
   top: 150px;
   left: 50%;
@@ -2849,20 +2937,20 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 183, src/scss/_components/home/_supported.scss */
+  /* line 206, src/scss/_components/home/_supported.scss */
   .supported__block--trello {
     top: 190px;
     left: 52%;
   }
 }
 
-/* line 194, src/scss/_components/home/_supported.scss */
+/* line 217, src/scss/_components/home/_supported.scss */
 .supported__block--trello img {
   width: -webkit-calc(132px / 1.5);
   width: calc(132px / 1.5);
 }
 
-/* line 198, src/scss/_components/home/_supported.scss */
+/* line 221, src/scss/_components/home/_supported.scss */
 .supported__block--salesforce {
   top: 125px;
   right: 25%;
@@ -2871,14 +2959,30 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 198, src/scss/_components/home/_supported.scss */
+  /* line 221, src/scss/_components/home/_supported.scss */
   .supported__block--salesforce {
     top: 135px;
     right: 18%;
   }
 }
 
-/* line 212, src/scss/_components/home/_supported.scss */
+/* line 235, src/scss/_components/home/_supported.scss */
+.supported__block--more-2 {
+  top: 55px;
+  right: 10%;
+  width: 88px;
+  height: 88px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 235, src/scss/_components/home/_supported.scss */
+  .supported__block--more-2 {
+    top: 115px;
+    right: 32%;
+  }
+}
+
+/* line 249, src/scss/_components/home/_supported.scss */
 .supported__block--podio {
   top: 150px;
   right: 10%;
@@ -2887,26 +2991,26 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 212, src/scss/_components/home/_supported.scss */
+  /* line 249, src/scss/_components/home/_supported.scss */
   .supported__block--podio {
     right: 1%;
   }
 }
 
-/* line 221, src/scss/_components/home/_supported.scss */
+/* line 258, src/scss/_components/home/_supported.scss */
 .supported__block--podio img {
   width: -webkit-calc(94px / 1.5);
   width: calc(94px / 1.5);
 }
 
-/* line 234, src/scss/_components/home/_supported.scss */
+/* line 271, src/scss/_components/home/_supported.scss */
 .supported__block-wrapper {
   position: relative;
   min-height: 300px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 234, src/scss/_components/home/_supported.scss */
+  /* line 271, src/scss/_components/home/_supported.scss */
   .supported__block-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3442,6 +3546,10 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
   margin-bottom: 5px;
   padding: 5px;
@@ -3450,75 +3558,72 @@ picture {
   background-color: #fbfbfb;
 }
 
-/* line 196, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label {
-  cursor: pointer;
-  width: 100%;
+/* line 198, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(1) {
+  width: 65px;
+  padding-left: 5px;
 }
 
-/* line 200, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label input {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* line 208, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label input:checked + div:before {
-  border-color: #4F81E2;
-  background-color: #4f81e2;
-  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-/* line 213, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label input:checked + div:after {
-  opacity: 1;
-  -webkit-transform: rotate(45deg) scale(1);
-      -ms-transform: rotate(45deg) scale(1);
-          transform: rotate(45deg) scale(1);
-  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-
-/* line 222, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label img {
+/* line 202, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(1) img {
   display: block;
   max-width: 38px;
   height: auto;
 }
 
-/* line 228, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label > div {
+/* line 209, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(2) {
+  width: -webkit-calc(100% - 130px);
+  width: calc(100% - 130px);
+}
+
+/* line 212, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(2) p {
+  font-size: 18px;
+}
+
+/* line 216, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(2) span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+/* line 222, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(3) {
+  position: relative;
+  width: 65px;
+}
+
+/* line 226, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(3) label {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+  height: 24px;
 }
 
-/* line 233, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label > div:before, .recipe__box-content > li label > div:after {
+/* line 231, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(3) label span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 238, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(3) label span:before, .recipe__box-content > li div:nth-of-type(3) label span:after {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 0;
+  right: 0;
 }
 
-/* line 240, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label > div:before {
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 13px;
+/* line 246, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(3) label span:before {
+  right: 15px;
   width: 24px;
   height: 24px;
   -webkit-border-radius: 3px;
@@ -3530,12 +3635,12 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 251, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label > div:after {
+/* line 256, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(3) label span:after {
   opacity: 0;
   top: -webkit-calc(50% - 10px);
   top: calc(50% - 10px);
-  right: 20px;
+  right: 22px;
   width: 9px;
   height: 14px;
   border-width: 1px;
@@ -3551,42 +3656,34 @@ picture {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 265, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label > div div:nth-of-type(1) {
-  padding-left: 5px;
-  width: -webkit-calc((71px / 1.5) + 15px);
-  width: calc((71px / 1.5) + 15px);
+/* line 271, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(3) input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-/* line 269, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label > div div:nth-of-type(2) {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: -webkit-calc(100% - ((71px / 1.5) + 15px));
-  max-width: calc(100% - ((71px / 1.5) + 15px));
-  padding-right: 50px;
+/* line 279, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(3) input:checked + span:before {
+  border-color: #4F81E2;
+  background-color: #4f81e2;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 285, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label > div p {
-  font-size: 18px;
-}
-
-/* line 289, src/scss/_components/integrations/_recipe.scss */
-.recipe__box-content > li label > div span {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
+/* line 284, src/scss/_components/integrations/_recipe.scss */
+.recipe__box-content > li div:nth-of-type(3) input:checked + span:after {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) scale(1);
+      -ms-transform: rotate(45deg) scale(1);
+          transform: rotate(45deg) scale(1);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/integrations/_ads.scss */
@@ -3920,17 +4017,12 @@ picture {
   text-align: center;
 }
 
-/* line 95, src/scss/_components/single-app/_main.scss */
-.s-main .pick__form {
-  padding-bottom: 30px;
-}
-
-/* line 98, src/scss/_components/single-app/_main.scss */
+/* line 96, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form .icon-search {
   color: rgba(0, 0, 0, 0.44);
 }
 
-/* line 102, src/scss/_components/single-app/_main.scss */
+/* line 100, src/scss/_components/single-app/_main.scss */
 .s-main .pick__form-input {
   width: 100%;
   -webkit-border-radius: 2em;
@@ -3940,7 +4032,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 110, src/scss/_components/single-app/_main.scss */
+/* line 108, src/scss/_components/single-app/_main.scss */
 .s-main .pick__box {
   width: 100%;
   max-width: -webkit-calc((100% - ((10px * 4) + 10px)) / 4);
@@ -3954,7 +4046,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 110, src/scss/_components/single-app/_main.scss */
+  /* line 108, src/scss/_components/single-app/_main.scss */
   .s-main .pick__box {
     max-width: -webkit-calc((100% - ((10px * 3) + 10px)) / 3);
     max-width: calc((100% - ((10px * 3) + 10px)) / 3);
@@ -3962,7 +4054,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 110, src/scss/_components/single-app/_main.scss */
+  /* line 108, src/scss/_components/single-app/_main.scss */
   .s-main .pick__box {
     max-width: -webkit-calc((100% - ((10px * 2) + 10px)) / 2);
     max-width: calc((100% - ((10px * 2) + 10px)) / 2);
@@ -3970,7 +4062,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 110, src/scss/_components/single-app/_main.scss */
+  /* line 108, src/scss/_components/single-app/_main.scss */
   .s-main .pick__box {
     max-width: -webkit-calc((100% - ((10px * 4) + 10px)) / 4);
     max-width: calc((100% - ((10px * 4) + 10px)) / 4);
@@ -3978,28 +4070,28 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 110, src/scss/_components/single-app/_main.scss */
+  /* line 108, src/scss/_components/single-app/_main.scss */
   .s-main .pick__box {
     max-width: -webkit-calc((100% - ((10px * 2) + 10px)) / 2);
     max-width: calc((100% - ((10px * 2) + 10px)) / 2);
   }
 }
 
-/* line 132, src/scss/_components/single-app/_main.scss */
+/* line 130, src/scss/_components/single-app/_main.scss */
 .s-main .pick__box-title {
   text-align: center;
 }
 
-/* line 136, src/scss/_components/single-app/_main.scss */
+/* line 134, src/scss/_components/single-app/_main.scss */
 .s-main .pick__box-wrapper {
   overflow-y: auto;
   width: -webkit-calc(100% + (1.5rem * 2));
   width: calc(100% + (1.5rem * 2));
   margin-left: -1.5rem;
-  min-height: -webkit-calc((130px * 2) + 20px);
-  min-height: calc((130px * 2) + 20px);
-  max-height: -webkit-calc((130px * 2) + 20px);
-  max-height: calc((130px * 2) + 20px);
+  min-height: -webkit-calc((130px * 2) + 40px);
+  min-height: calc((130px * 2) + 40px);
+  max-height: -webkit-calc((130px * 2) + 40px);
+  max-height: calc((130px * 2) + 40px);
   padding-top: 1.5rem;
 }
 
@@ -5020,15 +5112,14 @@ picture {
 /* line 34, src/scss/_components/dual-app/_pick.scss */
 .pick__form {
   position: relative;
-  padding-bottom: 50px;
 }
 
-/* line 38, src/scss/_components/dual-app/_pick.scss */
+/* line 37, src/scss/_components/dual-app/_pick.scss */
 .pick__form-field {
   position: relative;
 }
 
-/* line 42, src/scss/_components/dual-app/_pick.scss */
+/* line 41, src/scss/_components/dual-app/_pick.scss */
 .pick__form-icon {
   position: absolute;
   top: 0;
@@ -5037,12 +5128,12 @@ picture {
   height: 50px;
 }
 
-/* line 49, src/scss/_components/dual-app/_pick.scss */
+/* line 48, src/scss/_components/dual-app/_pick.scss */
 .pick__form-icon .icon-search {
   font-size: 20px;
 }
 
-/* line 54, src/scss/_components/dual-app/_pick.scss */
+/* line 53, src/scss/_components/dual-app/_pick.scss */
 .pick__form-input {
   outline: none;
   width: 100%;
@@ -5082,7 +5173,7 @@ picture {
   font-size: 16px;
 }
 
-/* line 69, src/scss/_components/dual-app/_pick.scss */
+/* line 68, src/scss/_components/dual-app/_pick.scss */
 .pick__form-btn {
   outline: none;
   cursor: pointer;
@@ -5106,7 +5197,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 85, src/scss/_components/dual-app/_pick.scss */
+/* line 84, src/scss/_components/dual-app/_pick.scss */
 .pick__form-btn:hover {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
@@ -5118,7 +5209,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 92, src/scss/_components/dual-app/_pick.scss */
+/* line 91, src/scss/_components/dual-app/_pick.scss */
 .pick__box {
   width: 100%;
   max-width: -webkit-calc((100% - (15px * 5)) / 5);
@@ -5139,7 +5230,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 92, src/scss/_components/dual-app/_pick.scss */
+  /* line 91, src/scss/_components/dual-app/_pick.scss */
   .pick__box {
     max-width: -webkit-calc((100% - (15px * 4)) / 4);
     max-width: calc((100% - (15px * 4)) / 4);
@@ -5147,7 +5238,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 92, src/scss/_components/dual-app/_pick.scss */
+  /* line 91, src/scss/_components/dual-app/_pick.scss */
   .pick__box {
     max-width: -webkit-calc((100% - (15px * 3)) / 3);
     max-width: calc((100% - (15px * 3)) / 3);
@@ -5155,14 +5246,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 92, src/scss/_components/dual-app/_pick.scss */
+  /* line 91, src/scss/_components/dual-app/_pick.scss */
   .pick__box {
     max-width: -webkit-calc((100% - (15px * 2)) / 2);
     max-width: calc((100% - (15px * 2)) / 2);
   }
 }
 
-/* line 119, src/scss/_components/dual-app/_pick.scss */
+/* line 118, src/scss/_components/dual-app/_pick.scss */
 .pick__box-icon {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5175,25 +5266,25 @@ picture {
   height: 70px;
 }
 
-/* line 124, src/scss/_components/dual-app/_pick.scss */
+/* line 123, src/scss/_components/dual-app/_pick.scss */
 .pick__box-icon img {
   display: block;
   max-width: 50px;
   height: auto;
 }
 
-/* line 131, src/scss/_components/dual-app/_pick.scss */
+/* line 130, src/scss/_components/dual-app/_pick.scss */
 .pick__box-title {
   text-align: center;
 }
 
-/* line 134, src/scss/_components/dual-app/_pick.scss */
+/* line 133, src/scss/_components/dual-app/_pick.scss */
 .pick__box-title p {
   color: #000;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 139, src/scss/_components/dual-app/_pick.scss */
+  /* line 138, src/scss/_components/dual-app/_pick.scss */
   .pick__box-wrapper {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -5202,7 +5293,7 @@ picture {
   }
 }
 
-/* line 144, src/scss/_components/dual-app/_pick.scss */
+/* line 143, src/scss/_components/dual-app/_pick.scss */
 .pick__box-wrapper > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5216,7 +5307,7 @@ picture {
   margin-left: -15px;
 }
 
-/* line 153, src/scss/_components/dual-app/_pick.scss */
+/* line 152, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown {
   top: 95px;
   width: 100%;
@@ -5226,18 +5317,18 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 153, src/scss/_components/dual-app/_pick.scss */
+  /* line 152, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown {
     position: relative;
     top: 0;
   }
-  /* line 162, src/scss/_components/dual-app/_pick.scss */
+  /* line 161, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown.is-open .dropdown-menu {
     display: block;
   }
 }
 
-/* line 168, src/scss/_components/dual-app/_pick.scss */
+/* line 167, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn {
   width: 100%;
   height: 50px;
@@ -5250,31 +5341,31 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 168, src/scss/_components/dual-app/_pick.scss */
+  /* line 167, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown .btn {
     font-size: 14px;
   }
 }
 
-/* line 179, src/scss/_components/dual-app/_pick.scss */
+/* line 178, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn .icon-font {
   margin-right: 10px;
   font-size: 10px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 179, src/scss/_components/dual-app/_pick.scss */
+  /* line 178, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown .btn .icon-font {
     font-size: 8px;
   }
 }
 
-/* line 187, src/scss/_components/dual-app/_pick.scss */
+/* line 186, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown .btn:after {
   display: none;
 }
 
-/* line 192, src/scss/_components/dual-app/_pick.scss */
+/* line 191, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-menu {
   display: block;
   width: 100%;
@@ -5286,39 +5377,39 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 192, src/scss/_components/dual-app/_pick.scss */
+  /* line 191, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-menu {
     min-width: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 192, src/scss/_components/dual-app/_pick.scss */
+  /* line 191, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-menu {
     display: none;
   }
 }
 
-/* line 207, src/scss/_components/dual-app/_pick.scss */
+/* line 206, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-item {
   height: 50px;
   padding: 0 15px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 207, src/scss/_components/dual-app/_pick.scss */
+  /* line 206, src/scss/_components/dual-app/_pick.scss */
   .pick .dropdown-item {
     font-size: 14px;
   }
 }
 
-/* line 214, src/scss/_components/dual-app/_pick.scss */
+/* line 213, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-item.is-active {
   background-color: #4f81e2;
   color: #ffffff;
 }
 
-/* line 220, src/scss/_components/dual-app/_pick.scss */
+/* line 219, src/scss/_components/dual-app/_pick.scss */
 .pick .dropdown-divider {
   margin-left: 5px;
   margin-right: 5px;
