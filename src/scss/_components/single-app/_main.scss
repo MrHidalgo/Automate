@@ -93,6 +93,8 @@
 
 	.pick {
 		&__form {
+			margin-bottom: 1.5rem;
+
 			.icon-search {
 				color: rgba(#000, 0.44);
 			}
@@ -137,7 +139,7 @@
 				margin-left: -1.5rem;
 				min-height: calc((130px * 2) + 40px);
 				max-height: calc((130px * 2) + 40px);
-				padding-top: 1.5rem;
+				//padding-top: 1.5rem;
 			}
 		}
 	}

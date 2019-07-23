@@ -50,9 +50,8 @@
 			padding-right: 0;
 			padding-top: 50px;
 		}
-		@include adaptive(575) {
+		@include adaptive(767) {
 			max-width: 100%;
-			//align-items: center;
 		}
 
 		&-left {
@@ -60,7 +59,7 @@
 			@include adaptive(575) {
 				flex: unset;
 				width: 100%;
-				max-width: 250px;
+				max-width: 50%;
 			}
 
 			label {
@@ -73,6 +72,13 @@
 				font-size: 12px;
 				color: #ffffff;
 				text-transform: uppercase;
+				@include adaptive(767) {
+					margin: 0 auto;
+				}
+				@include adaptive(575) {
+					font-size: 10px;
+					height: 15px;
+				}
 			}
 
 			p {
@@ -83,13 +89,20 @@
 				width: 100%;
 				max-width: 250px;
 				font-size: 18px;
+				@include adaptive(767) {
+					align-items: center;
+				}
 				@include adaptive(575) {
 					max-width: 100%;
-					font-size: 16px;
+					font-size: 14px;
 					padding-right: 30px;
+
+					&:nth-of-type(4) {
+						padding-top: 20px;
+					}
 				}
 				@include adaptive(374) {
-					font-size: 14px;
+					font-size: 12px;
 				}
 
 				&:nth-of-type(1) {
@@ -102,6 +115,9 @@
 
 				span {
 					display: block;
+					@include adaptive(767) {
+						text-align: center;
+					}
 				}
 			}
 		}
@@ -110,7 +126,7 @@
 			max-width: 180px;
 			@include adaptive(575) {
 				max-width: unset;
-				width: 180px;
+				width: 50%;
 			}
 
 			img {

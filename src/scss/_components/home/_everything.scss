@@ -80,6 +80,9 @@
 			font-size: 12px;
 			color: #ffffff;
 			text-transform: uppercase;
+			@include adaptive(767) {
+				margin: 0 auto;
+			}
 		}
 
 		p {
